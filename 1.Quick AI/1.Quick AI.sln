@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.Quick AI", "1.Quick AI.csproj", "{D8325DB0-B327-4B0D-B95C-D11604FD68B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8325DB0-B327-4B0D-B95C-D11604FD68B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8325DB0-B327-4B0D-B95C-D11604FD68B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8325DB0-B327-4B0D-B95C-D11604FD68B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8325DB0-B327-4B0D-B95C-D11604FD68B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {959B07CA-E4AF-444B-A5FC-E9CACB98A88C}
+	EndGlobalSection
+EndGlobal

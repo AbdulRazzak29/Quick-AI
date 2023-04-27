@@ -1,0 +1,5 @@
+C:\Users\USERD006\source\repos\Quick AI 001\obj\Debug\net5.0\Quick AI 001.csproj.AssemblyReference.cache
+C:\Users\USERD006\source\repos\Quick AI 001\obj\Debug\net5.0\Quick AI 001.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USERD006\source\repos\Quick AI 001\obj\Debug\net5.0\Quick AI 001.AssemblyInfoInputs.cache
+C:\Users\USERD006\source\repos\Quick AI 001\obj\Debug\net5.0\Quick AI 001.AssemblyInfo.cs
+C:\Users\USERD006\source\repos\Quick AI 001\obj\Debug\net5.0\Quick AI 001.csproj.CoreCompileInputs.cache

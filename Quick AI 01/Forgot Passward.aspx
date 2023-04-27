@@ -10,7 +10,7 @@
                 <!-- Breadcrumbs -->
                 <nav id="breadcrumbs" class="dark">
                     <ul>
-                        <li><a href="https://localhost:44308/WebForm2.aspx">Home</a></li>
+                        <li><a href="https://localhost:44308/Home.aspx">Home</a></li>
                         <li>Forgot Password?</li>
                     </ul>
                 </nav>
@@ -25,19 +25,20 @@
                 <div class="welcome-text">
                     <h3>Forgot Password?</h3>
                 </div>
-                                <form method="post">
-                    <div class="input-with-icon-left">
-                        <i class="la la-envelope"></i>
-                        <input type="email" class="input-text with-border" name="email" id="email" placeholder="Email Address" required="">
+                <form method="post">
+                    <div >
+                        <center> 
+                        <asp:TextBox class=textbox style="width:100%;height: 40px; " ID="TextBox1" name="email" placeholder="Email Address" runat="server"></asp:TextBox>
+                        </center>
                     </div>
-                    <div style="    padding-left: 20px; padding-right: 10px;" class="text-center hero-icon">
-                      <a href="https://localhost:44308/Forgotpasswardsucess.aspx" class="btn btn-primary active" aria-current="page">Resquest Password</a>
+                    <div style="padding-left: 20px; padding-right: 10px;" class="text-center hero-icon">
+                        <a href="https://localhost:44308/Forgotpasswardsucess.aspx" class="btn btn-primary active" aria-current="page">Resquest Password</a>
                         <br />
                         <br />
                         <br />
 
-                  </div>
-                    </form>
+                    </div>
+                </form>
                 </div>
        
             </div>

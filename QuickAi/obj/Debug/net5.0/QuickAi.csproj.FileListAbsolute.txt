@@ -1,0 +1,16 @@
+C:\Users\USERD006\source\repos\QuickAi\bin\Debug\net5.0\QuickAi.exe
+C:\Users\USERD006\source\repos\QuickAi\bin\Debug\net5.0\QuickAi.deps.json
+C:\Users\USERD006\source\repos\QuickAi\bin\Debug\net5.0\QuickAi.runtimeconfig.json
+C:\Users\USERD006\source\repos\QuickAi\bin\Debug\net5.0\QuickAi.runtimeconfig.dev.json
+C:\Users\USERD006\source\repos\QuickAi\bin\Debug\net5.0\QuickAi.dll
+C:\Users\USERD006\source\repos\QuickAi\bin\Debug\net5.0\ref\QuickAi.dll
+C:\Users\USERD006\source\repos\QuickAi\bin\Debug\net5.0\QuickAi.pdb
+C:\Users\USERD006\source\repos\QuickAi\obj\Debug\net5.0\QuickAi.csproj.AssemblyReference.cache
+C:\Users\USERD006\source\repos\QuickAi\obj\Debug\net5.0\QuickAi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USERD006\source\repos\QuickAi\obj\Debug\net5.0\QuickAi.AssemblyInfoInputs.cache
+C:\Users\USERD006\source\repos\QuickAi\obj\Debug\net5.0\QuickAi.AssemblyInfo.cs
+C:\Users\USERD006\source\repos\QuickAi\obj\Debug\net5.0\QuickAi.csproj.CoreCompileInputs.cache
+C:\Users\USERD006\source\repos\QuickAi\obj\Debug\net5.0\QuickAi.dll
+C:\Users\USERD006\source\repos\QuickAi\obj\Debug\net5.0\ref\QuickAi.dll
+C:\Users\USERD006\source\repos\QuickAi\obj\Debug\net5.0\QuickAi.pdb
+C:\Users\USERD006\source\repos\QuickAi\obj\Debug\net5.0\QuickAi.genruntimeconfig.cache

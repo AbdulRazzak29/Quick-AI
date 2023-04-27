@@ -2,7 +2,12 @@
 @import 'bootstrap-grid.css';
 @import 'https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800&amp;subset=latin-ext';
 .flex-grow-1{flex-grow: 1 }
-input, input[type=text], input[type=password], input[type=email], input[typebutton=number], textarea, select {height: 48px;line-height: 48px;padding: 0 20px;outline: none;font-size: 16px;color: gray;margin: 0 0 16px;max-width: 100%;width: 100%;box-sizing: border-box;display: block;background-color: #fff;font-weight: 500;opacity: 1;border-radius: 4px;border: none;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .12) }
+input, input[type=text], input[type=password], input[type=email], input[typebutton=number], textarea, select {border-style: none;
+    border-color: inherit;
+    border-width: medium;
+height: 74px;
+    line-height: 48px;padding: 0 20px;outline: none;font-size: 16px;color: gray;margin: 0 0 16px;max-width: 100%;box-sizing: border-box;display: block;background-color: #fff;font-weight: 500;opacity: 1;border-radius: 4px;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .12)
+}
 input.small-input, input[type=text].small-input, input[type=password].small-input, input[type=email].small-input, input[typebutton=number].small-input, textarea.small-input, select.small-input {height: 36px;line-height: 36px;padding: 0 12px;font-size: 12px;margin:0}
 select {padding: 15px 18px;cursor: pointer }
 input {-webkit-transition: all .1s ease-in-out;-moz-transition: all .1s ease-in-out;-o-transition: all .1s ease-in-out;-ms-transition: all .1s ease-in-out;transition: all .1s ease-in-out }
@@ -10,7 +15,12 @@ input:focus, input[type=text]:focus, input[type=password]:focus, input[type=emai
 input:-webkit-autofill:focus, input:-webkit-autofill {-webkit-box-shadow: 0 0 0 30px #fff inset !important;-webkit-text-fill-color: gray !important }
 input.with-border, input[type=text].with-border, input[type=password].with-border, input[type=email].with-border, input[type=number].with-border, textarea.with-border, select.with-border {border: 1px solid #e0e0e0;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05) }
 input.with-border:focus, input[type=text].with-border:focus, input[type=password].with-border:focus, input[type=email].with-border:focus, input[type=number].with-border:focus, textarea.with-border:focus {border: 1px solid #e0e0e0;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .08) }
-input[type=submit] {border: none;padding: 11px 18px;width: auto }
+input[type=submit] {border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    padding: 11px 18px;
+width: 384px
+}
 input[type=checkbox] {display: inline }
 input[type=radio] {width: 15px;height: 15px;cursor: pointer;box-shadow: none }
 ::placeholder {color: #aaa;opacity: 1 }
@@ -746,7 +756,7 @@ span.button, but
 span.button, button.button, input[type=button], input[type=submit], a.button {border-style: none;
     border-color: inherit;
     border-width: medium;
-    background-color: #66676b;top: 3px;
+    background-color: #66676b;top: 21px;
     padding: 10px 20px;line-height: 24px;color: #fff;position: relative;font-size: 16px;font-weight: 500;display: inline-block;transition: all .2s ease-in-out;cursor: pointer;overflow: hidden;border-radius: 4px;box-shadow: 0 4px 12px rgba(102, 103, 107, .15)
 }
 con-material], button.button i[class^=icon-material], input[type=button] i[class^=icon-material], input[type=submit] i[class^=icon-material], a.button i[class^=icon-material] {font-size: 18px;height: 0;width: 18px;line-height: 0;top: 2px;position: relative;display: inline-block;margin-left: 3px }
@@ -934,7 +944,12 @@ table td:last-child {border-bottom: 0 }
 .input-with-icon input {padding-right: 45px }
 .input-with-icon i {position: absolute;top: 50%;transform: translateY(-50%);right: 15px;font-size: 20px;color: #a0a0a0;font-style: normal;cursor: normal;pointer-events: none }
 .input-with-icon i.currency {font-size: 14px }
-.input-with-icon-left {position: relative }
+.input-with-icon-left {position: relative;
+    top: -2px;
+    left: 383px;
+    height: 53px;
+    width: 321px;
+}
 .input-with-icon-left input {padding-left: 65px }
 .input-with-icon-left i {position: absolute;top: 0;color: #a0a0a0;text-align: center;line-height: 48px;width: 48px;height: 48px;font-size: 19px;background-color: #f8f8f8;border: 1px solid #e0e0e0;box-sizing: border-box;display: block;border-radius: 4px 0 0 4px }
 .input-with-icon-left.no-border i {border: none }

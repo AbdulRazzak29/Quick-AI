@@ -23,7 +23,7 @@ a, .header-widget .log-in-button:hover i, .notification-text span.color, .header
 .freelancers-list-layout .freelancer-details a.button:hover {box-shadow: 0 4px 12px var(--theme-color-0_25) }
 .letters-list a.current {box-shadow: 0 2px 8px var(--theme-color-0_25) }
 span.button, button.button, input[type=button], input[type=submit], a.button {box-shadow: 0 4px 12px var(--theme-color-0_15);
-    left: 217px;
+    left: 223px;
 }
 .move-on-hover {box-shadow: 0 4px 12px var(--theme-color-0_1) }
 .move-on-hover:hover {box-shadow: 0 4px 12px var(--theme-color-0_2) }

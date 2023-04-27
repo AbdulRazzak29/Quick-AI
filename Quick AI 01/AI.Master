@@ -6,90 +6,73 @@
 <head runat="server">
     <title></title>
     <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
     <link href="font/css/all.css" rel="stylesheet" />
     <link href="boostrap/css/style.css" rel="stylesheet" />
-    <link href="boostrap/css/flags.min.css" rel="stylesheet" />
-    <link href="boostrap/css/color.css" rel="stylesheet" />
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//google.com">
-    <link rel="dns-prefetch" href="//apis.google.com">
-    <link rel="dns-prefetch" href="//ajax.googleapis.com">
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
-    <link rel="dns-prefetch" href="//gstatic.com">
-    <link rel="dns-prefetch" href="//oss.maxcdn.com">
-
+    
     <script src="boostrap/css/jquery.min.js"></script>
     <script src="boostrap/js/jquery.slim.min.js"></script>
     <script src="boostrap/js/popper.min.js"></script>
     <script src="boostrap/js/bootstrap.bundle.min.js"></script>
-  
-
+     
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-       <div>
-           <nav class="navbar navbar-expand-lg navbar-light">
+    <form id="form1" runat="server" method="post">
+       <!--  <div >
+           <nav class="navbar navbar-expand-lg navba style=" position: fixed;
+margin-top: 85px;"r-light">
                <a class="navbar-brand" href="#">
                   
                  </a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                    <span class="navbar-toggler-icon"></span>
-               </button>
-               
+               </button>               
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                    
-                        <a href="https://localhost:44308/WebForm2.aspx">
-                    <img src="img/hhh.png" / style="    border: none;max-width: 100px;height: auto;" href="https://localhost:44308/WebForm2.aspx">
+                        <a href="https://localhost:44308/Home.aspx">
+                    <img src="img/hhh.png" / style="    border: none;max-width: 100px;height: auto;" href="https://localhost:44308/Home.aspx">
                             </a>
                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    <div>
-                      <button style="color:	#0000ff" class="btn btn-primary active" aria-current="page" href="https://localhost:44308/Homepage.aspx">Join Now</button>
-                    
-                       
-                  </div>
+                       <a aria-current="page" class="btn btn-primary active" href="https://localhost:44308/Login.aspx">Join Now</a>  
+                  </div>  
                    &nbsp;&nbsp;&nbsp;&nbsp;
                    <div style="position: relative;display: inline-block;">
-                   <label for="Language"></label>
-                   <select name="Languge" id="Languge">
-                       <option value="en"></option>
-                       <option value=" Arabic "> Arabic </option>
-                       <option value="Bangali">Bangali</option>
-                       <option value="Bulgarian">Bulgarian</option>
-                       <option value="Chinese">Chinese</option>
-                       <option value="English">English</option>
-                       <option value="French">French</option>
-                       <option value="German">German</option>
-                       <option value="Hebrew">Hebrew</option>
-                       <option value="Hindi">Hindi</option>
-                       <option value="volvo">Volvo</option>
-                       <option value="volvo">Volvo</option>
-                       <option value="volvo">Volvo</option>
-                       <option value="volvo">Volvo</option>
-                       <option value="volvo">Volvo</option>
-                       <option value="volvo">Volvo</option>
-                       <option value="volvo">Volvo</option>
-                       <option value="volvo">Volvo</option>
-                       <option value="volvo">Volvo</option>
-                       <option value="volvo">Volvo</option>
-                       <option value="volvo">Volvo</option>
-                   </select>
-                       </div>
-
+                       <label for="Language"></label>
+                       <select name="Languge" id="Languge">
+                           <option value="en"></option>
+                           <option value=" Arabic "> Arabic </option>
+                           <option value="Bangali">Bangali</option>
+                           <option value="Bulgarian">Bulgarian</option>
+                           <option value="Chinese">Chinese</option>
+                           <option value="English">English</option>
+                           <option value="French">French</option>
+                           <option value="German">German</option>
+                           <option value="Hebrew">Hebrew</option>
+                           <option value="Hindi">Hindi</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="volvo">Volvo</option>
+                       </select>
+                  </div>
                </div>
-
-               
-
-           </nav>
-       </div>
+           </nav> 
+       </div-->
+        <nav style="     position: sticky;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);    background: #fff;    margin-top:33px;z-index: +1;">    <nav class="navbar navbar-expand-lg navbar-light"><div class="header navbar-light bg-light" style=" position:fixed;width:100%;height:82px;">     <div style="display:inline-block;border-right: 2px solid #e0e0e0;padding-right:10px;height:82px;padding-top:15px;padding-left:20px;padding-right:20px;" class="logo">           <a   href="https://localhost:44308/Home.aspx">
+            <img src="img/hhh.png" style="    width: 65px;height: 42px;" /></a>    </div>   <div class="dropdown" style="float:right;    margin-top: -25px;padding-right:10px;border-left: 2px solid #e0e0e0;padding-top:20px;padding-left:10px;height:82px;">        <label for="Language"></label>                   <select name="Languge" id="Languge">                       <option value="en">english</option>                       <option value=" Arabic "> Arabic </option>                       <option value="Bangali">Bangali</option>                       <option value="Bulgarian">Bulgarian</option>                       <option value="Chinese">Chinese</option>                       <option value="English">English</option>                       <option value="French">French</option>                       <option value="German">German</option>                       <option value="Hebrew">Hebrew</option>                       <option value="Hindi">Hindi</option>                       <option value="Italian">Italian</option>                       <option value="Japanesh">Japanesh</option>                       <option value="Polish">Polish</option>                       <option value="Romanin">Romanian</option>                       <option value="Russian">Russian</option>                       <option value="Spanish">Spanish</option>                       <option value="Swedish">Swedish</option>                       <option value="Thai">Thai</option>                       <option value="Turkish">Turkish</option>                       <option value="Urdu">Urdu</option>                       <option value="vietnamese">vietnamese</option>                   </select>    </div>          <div style="float:right;padding-right:30px;border-left: 2px solid #e0e0e0;padding-top:20px;padding-left:30px;height:82px;">          <a href="https://localhost:44308/Login.aspx" class="btn btn-primary" style="background-color:#184698;border-radius: 4px;box-shadow:0 4px 12px;color: #fff">Join Now</a>    </div></div>        </nav><br /><br /></nav>
         <div>
-
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
@@ -158,7 +141,8 @@
     </div>
 
 </div>
-    </form>
+        </form>
+    
 </body>
 </html>
  
