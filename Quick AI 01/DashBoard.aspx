@@ -153,63 +153,7 @@
         </div>
         <!-- Header / End -->
     </header>
-    <div class="simplebar-content" style="padding-bottom: 15px; margin-right: -15px;">
-        <div class="dashboard-nav-container">
-
-            <!-- Responsive Navigation Trigger -->
-            <a href="#" class="dashboard-responsive-nav-trigger">
-					<span class="hamburger hamburger--collapse">
-						<span class="hamburger-box">
-							<span class="hamburger-inner"></span>
-						</span>
-					</span>
-                <span class="trigger-title">Dashboard Navigation</span>
-            </a>
-            <!-- Navigation -->
-            <div class="dashboard-nav">
-                <div class="dashboard-nav-inner">
-                    <ul data-submenu-title="My Account">
-                        <li class="active"><a href="#"><i class="icon-feather-grid"></i> Dashboard</a></li>
-                        <li class="active-submenu">
-                            <a href="#"><i class="icon-feather-file-text"></i> My Documents</a>
-                            <ul>
-                                <li class=""><a href="#">All Documents</a></li>
-                                <li class=""><a href="#">All AI Images</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <ul data-submenu-title="Organize and Manage">
-                        <li class="">
-                            <a href="#"><i class="icon-feather-layers"></i> Templates</a></li>
-
-                                                <li class=""><a href="#"><i class="icon-feather-image"></i> AI Images</a></li>
-                                                    <li class=""><a href="#"><i class="icon-feather-message-circle"></i> AI Chat</a></li>
-                                                    <li class=""><a href="#"><i class="icon-feather-headphones"></i> Speech to Text</a></li>
-                                                    <li class=""><a href="#"><i class="icon-feather-code"></i> AI Code</a></li>
-                                            </ul>
-
-                    <ul data-submenu-title="Account">
-
-                                                <li class="">
-                            <a href="#"><i class="icon-feather-share-2"></i> Affiliate Program</a>
-                            <ul>
-                                <li class=""><a href="#">Affiliate Program</a></li>
-                                <li class=""><a href="#">Withdrawals</a></li>
-                            </ul>
-                        </li>
-                                                <li class=""><a href="#"><i class="icon-feather-gift"></i> Membership</a></li>
-                        <li class=""><a href="#"><i class="icon-feather-file-text"></i> Transactions</a></li>
-                        <li class=""><a href="#"><i class="icon-feather-log-out"></i> Account Setting</a></li>
-                        <li><a href="#"><i class="icon-material-outline-power-settings-new"></i> Logout</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-            <!-- Navigation / End -->
-        </div>
-    </div>
+ 
   <script>
     $(document).ready(function () {
         $("#header-container").removeClass('transparent-header').addClass('dashboard-header sticky');

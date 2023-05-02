@@ -30,7 +30,7 @@
                             </div>
                             <a href="https://localhost:44308/Forgot%20Passward.aspx" class="forgot-password">Forgot Password?</a>
                             <div>
-                                <center>
+                                <center href="https://localhost:44308/WebForm4.aspx">
                                 <asp:Button Class="btn btn-primary" ID="Button1" runat="server" Text="login" OnClick="Button1_Click" />
                                 </center>
                             </div>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AI.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Quick_AI_01.WebForm2" %>
+﻿<%@ Page Title="hype" Language="C#" MasterPageFile="~/AI.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Quick_AI_01.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
@@ -10,12 +10,12 @@
 <h1 class="margin-bottom-10 text_gradient_animation" style="font-size:60px">
                              <strong>Best AI Content Writer</strong>
                         </h1>
-            <p><h1>Create SEO-optimized and unique content for your blogs, ads, emails,<br />and website 10X faster &amp; save hours of work.</h1></p>
+            <p>Create SEO-optimized and unique content for your blogs, ads, emails,<br />and website 10X faster &amp; save hours of work.      m  </p>
     </div>
  </section>
      <br />
              <div class="text-center hero-icon" >
-     <a class="btn btn-primary ripple-effect button-sliding-icon" style="font-size: 30px;z-index: -1;" href="https://localhost:44308/LoginPage4.aspx">Get started For free
+     <a class="btn btn-primary ripple-effect button-sliding-icon" style="font-size: 30px; position:static" href="loginpage4.aspx">Get started For free
                         <i class="icon-feather-arrow-right"></i></a>
      
    </div>
@@ -47,7 +47,7 @@
                         <h4>Article And Blogs</h4>
                     </div>
                                             <div class="col-md-4 col-sm-6 category-1">
-                            <a href="">
+                            <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
@@ -61,7 +61,7 @@
                             </a>
                         </div>
                                             <div class="col-md-4 col-sm-6 category-1">
-                            <a href="">
+                            <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
@@ -75,7 +75,7 @@
                             </a>
                         </div>
                                             <div class="col-md-4 col-sm-6 category-1">
-                            <a href="">
+                            <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
@@ -89,7 +89,7 @@
                             </a>
                         </div>
                                             <div class="col-md-4 col-sm-6 category-1">
-                            <a href="" title="Not available in the free plan" data-tippy-placement="top">
+                            <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
@@ -104,7 +104,7 @@
                             </a>
                         </div>
                                             <div class="col-md-4 col-sm-6 category-1">
-                            <a href="">
+                            <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">

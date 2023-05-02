@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Quick_AI_01
+namespace _1.Quick_AI
 {
 
 
-    public partial class DashBoard
+    public partial class WebForm3
     {
     }
 }

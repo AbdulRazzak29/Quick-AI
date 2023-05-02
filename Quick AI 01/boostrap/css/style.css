@@ -47,7 +47,9 @@ header.fullwidth .container {max-width: 100%;margin: 0;padding: 0 35px }
 #header .right-side {float: right;text-align: right;width: auto;display: inline-block;position: absolute;right: 25px;background-color: #fff;flex: 1 }
 .full-width #header .left-side {float: left;width: 100%;display: inline-block;position: relative }
 .full-width #header .right-side {float: right;text-align: right;width: auto;display: inline-block;position: absolute;right: 25px;background-color: #fff }
-.header-widget {display: inline-block;height: 100%;border-left: 1px solid #e0e0e0;padding: 0 30px;text-align: left;float: left }
+.header-widget {display: inline-block;height: 63%;
+border-left: 1px solid #e0e0e0;padding: 0 30px;text-align: left;float: left
+}
 .fullwidth .header-widget:last-of-type {padding-right: 5px;float: right;border-right: none }
 .header-widget:last-of-type {padding-right: 0;margin-right: -5px }
 .fullwidth .header-widget:last-of-type {padding-right: 0;margin-right: 0 }

@@ -1,0 +1,405 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.master.cs" Inherits="Quick_AI_01.Dashboard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
+    width: 100%;
+    height: 85px;
+    display: grid;
+    grid-template-columns: 2.5fr 8fr 1fr 1fr;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
+   
+    border-right: 1px solid #e0e0e0;
+    justify-content: center;
+    height: 80px;
+    padding-top: 10px;
+/*    width: 260px;
+*/}
+
+.user {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+    .user img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+.selectlang {
+    float: right;
+    padding-right: 30px;
+    border-left: 1px solid #e0e0e0;
+    padding-top: 20px;
+    padding-left: 30px;
+    height: 82px;
+}
+
+#langbtn {
+    border: none;
+    background-color: #444444;
+    width: 120px;
+    height: 40px;
+    border-radius: 4px 4px;
+    color: white;
+}
+
+option {
+    background-color: white;
+    box-sizing: border-box;
+    color: black;
+}
+
+#langbtn:hover {
+    background-color: #314cc6;
+}
+
+.sidebar {
+    position: fixed;
+    top: 85px;
+    width: 260px;
+    background-color: #fff;
+    overflow-x: hidden;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 8px 02px rgb(0,0,0,0.5);
+    height: 100%
+}
+
+    .sidebar ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+        .sidebar ul li {
+            width: 100%;
+            list-style: none;
+        }
+
+            .sidebar ul li a {
+                width: 100%;
+                text-decoration: none;
+                color: #707070;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                font-size:13px;
+            }
+
+                .sidebar ul li a i {
+                    min-width: 60PX;
+                    font-size: 15PX;
+                    text-align: center;
+                }
+
+    </style>
+    <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="font/css/all.css" rel="stylesheet" />
+    <link href="boostrap/css/style.css" rel="stylesheet" />
+    
+    <script src="boostrap/css/jquery.min.js"></script>
+    <script src="boostrap/js/jquery.slim.min.js"></script>
+    <script src="boostrap/js/popper.min.js"></script>
+    <script src="boostrap/js/bootstrap.bundle.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <div>
+            <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
+
+                <div class="user-status-message">
+                    <div class="container container-active-msg">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <i class="icon-lock text-18"></i>
+                                <span>Your email address is not verified. Please verify your email address to use all the features.</span>
+                            </div>
+                            <div class="col-lg-4">
+                                <a class="button ripple-effect gray resend_buttons21 resend" href="javascript:void(0);" id="21">Resend Email</a>
+                                <span class="resend_count" id="resend_count21"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Header -->
+                <div id="header">
+                    <div class="container">
+                        <!-- Left Side Content -->
+                        <div class="left-side">
+                            <!-- Logo -->
+                            <div id="logo">
+                                <a href="https://localhost:44308/Home.aspx">
+                                    <img src="img/hhh.png" alt="Hype" />
+                                </a>
+                            </div>
+
+                            <a href="javascript:void(0);" class="header-icon">
+                                <i class="fa fa-bars"></i>
+                            </a>
+
+                        </div>
+                        <!-- Left Side Content / End -->
+
+
+                        <!-- Right Side Content / End -->
+                        <div class="right-side">
+
+                            <!-- User Menu -->
+                            <div class="header-widget">
+
+                                <!-- Messages -->
+                                <div class="header-notifications user-menu">
+                                    <div class="header-notifications-trigger">
+                                        <a href="#" title="rajaraja">
+                                            <div class="user-avatar status-online">
+                                                <img src="img/default_user.png" style="height: 42px;" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Dropdown -->
+                                   <!-- <div class="dropdown">
+                                        <ul class="user-menu-small-nav">
+                                            <li><a href="https://localhost:44308/DashBoard.aspx"><i class="icon-feather-grid"></i>Dashboard</a></li>
+                                            <li><a href="3"><i class="icon-feather-layers"></i>Templates</a></li>
+                                            <li><a href="#"><i class="icon-feather-image"></i>AI Images</a></li>
+                                            <li><a href="#"><i class="icon-feather-message-circle"></i>AI Chat</a></li>
+                                            <li><a href="#"><i class="icon-feather-headphones"></i>Speech to Text</a></li>
+                                            <li><a href="#"><i class="icon-feather-code"></i>AI Code</a></li>
+                                            <li><a href="#"><i class="icon-feather-file-text"></i>All Documents</a></li>
+                                            <li><a href="#"><i class="icon-feather-gift"></i>Membership</a></li>
+                                            <li><a href="#"><i class="icon-feather-settings"></i>Account Setting</a></li>
+                                            <li><a href="#"><i class="icon-feather-log-out"></i>Logout</a></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+
+                            </div>
+                            <!-- User Menu / End -->
+
+                            <div class="header-widget">
+                                <div class="btn-group bootstrap-select language-switcher">
+                                    <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="English">
+                                        <span class="filter-option pull-left" id="selected_lang">en</span>&nbsp;
+                                   
+                                <span class="caret"></span>
+                                    </button>
+                                    <div class="dropdown-menu scrollable-menu open">
+                                        <ul class="dropdown-menu inner">
+                                            <li data-lang="arabic">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Arabic</a>
+                                            </li>
+                                            <li data-lang="bangali">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Bangali</a>
+                                            </li>
+                                            <li data-lang="bulgarian">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Bulgarian</a>
+                                            </li>
+                                            <li data-lang="chinese">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Chinese</a>
+                                            </li>
+                                            <li data-lang="english">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">English</a>
+                                            </li>
+                                            <li data-lang="french">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">French</a>
+                                            </li>
+                                            <li data-lang="german">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">German</a>
+                                            </li>
+                                            <li data-lang="hebrew">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Hebrew</a>
+                                            </li>
+                                            <li data-lang="hindi">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Hindi</a>
+                                            </li>
+                                            <li data-lang="italian">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Italian</a>
+                                            </li>
+                                            <li data-lang="japanese">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Japanese</a>
+                                            </li>
+                                            <li data-lang="polish">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Polish</a>
+                                            </li>
+                                            <li data-lang="romanian">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Romanian</a>
+                                            </li>
+                                            <li data-lang="russian">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Russian</a>
+                                            </li>
+                                            <li data-lang="spanish">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Spanish</a>
+                                            </li>
+                                            <li data-lang="swedish">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Swedish</a>
+                                            </li>
+                                            <li data-lang="thai">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Thai</a>
+                                            </li>
+                                            <li data-lang="turkish">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Turkish</a>
+                                            </li>
+                                            <li data-lang="urdu">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Urdu</a>
+                                            </li>
+                                            <li data-lang="vietnamese">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Vietnamese</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right Side Content / End -->
+
+                    </div>
+                </div>
+                <!-- Header / End -->
+            </header>
+            <div class="sidebar" style="margin-top: 20%;">
+                <div class="sidebar-brand">
+                    <h1><span class="lab la-accusoft"></span>hype</h1>
+                </div>
+               <div class="sidebar"  style="margin-top: 5%;">
+                         <ul>
+                             <li "="">
+                                 <div style="color:darkblue;font-weight:600;">
+                                    <h9> My Account</h9>
+                                 </div>
+                             </li>
+                            <li>
+                              <a href="#">
+                                  <i class="fa fa-th-large"></i> <div>Dashboard</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-file"></i> <div> <select name="ctl13" class="dropdown-item-text">
+	<option selected="selected" value="All Documents">All Documents</option>
+	<option value="All AI Images">All AI Images</option>
+
+</select></div>
+                              </a>
+                           </li>                          
+                         </ul>
+
+                         <ul>
+                             <li>
+                                 <div style="color:darkblue;font-weight:600;">
+                                    <h9>  Organize And Manage</h9>
+                                 </div>
+                             </li>
+                            <li>
+                              <a href="#">
+                                 <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-image"></i> <div>AI Imagesa</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
+                              </a>
+                           </li>                    
+                            <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="#">
+                                 <i class="fa-solid fa-code"></i><div>AI Code</div>
+                              </a>
+                           </li> 
+                             </ul>
+
+                             <ul>
+                                 <li>
+                                 <div style="color:darkblue;font-weight:600;">
+                                    <h9>  Account</h9>
+                                 </div>
+                             </li>
+                              <li>
+                              <a href="#">
+                                  <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="#">
+                                 <i class="fa-solid fa-gift"></i> <div>Membership</div>
+                              </a>
+                           </li>
+                            
+                             <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-file"></i> <div>Transaction</div>
+                              </a>
+                           </li>
+                              <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div>
+                              </a>
+                           </li>
+                              <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
+                              </a>
+                           </li>
+                         </ul>
+                         
+                       
+                         
+                     </div>
+
+            </div>
+            <div class="main-content">
+           <main>
+                 <div class="small-footer margin-top-15">
+                <div class="footer-copyright">
+                    2023 Socius IGB Pvt Ltd, All right reserved                </div>
+                <ul class="footer-social-links">
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a></li><li><a href="https://www.twitter.com/" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li><li><a href="https://instagram.com" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a></li><li><a href="https://www.linkedin.com/" target="_blank" rel="nofollow"><i class="fa fa-linkedin"></i></a></li><li><a href="https://pinterest.com/" target="_blank" rel="nofollow"><i class="fa fa-pinterest"></i></a></li><li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><i class="fa fa-youtube"></i></a></li>                </ul>
+                <div class="clearfix"></div>
+            </div>
+           </main>
+            </div>
+        </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

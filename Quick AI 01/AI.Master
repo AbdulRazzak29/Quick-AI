@@ -70,8 +70,49 @@ margin-top: 85px;"r-light">
                </div>
            </nav> 
        </div-->
-        <nav style="     position: sticky;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);    background: #fff;    margin-top:33px;z-index: +1;">    <nav class="navbar navbar-expand-lg navbar-light"><div class="header navbar-light bg-light" style=" position:fixed;width:100%;height:82px;">     <div style="display:inline-block;border-right: 2px solid #e0e0e0;padding-right:10px;height:82px;padding-top:15px;padding-left:20px;padding-right:20px;" class="logo">           <a   href="https://localhost:44308/Home.aspx">
-            <img src="img/hhh.png" style="    width: 65px;height: 42px;" /></a>    </div>   <div class="dropdown" style="float:right;    margin-top: -25px;padding-right:10px;border-left: 2px solid #e0e0e0;padding-top:20px;padding-left:10px;height:82px;">        <label for="Language"></label>                   <select name="Languge" id="Languge">                       <option value="en">english</option>                       <option value=" Arabic "> Arabic </option>                       <option value="Bangali">Bangali</option>                       <option value="Bulgarian">Bulgarian</option>                       <option value="Chinese">Chinese</option>                       <option value="English">English</option>                       <option value="French">French</option>                       <option value="German">German</option>                       <option value="Hebrew">Hebrew</option>                       <option value="Hindi">Hindi</option>                       <option value="Italian">Italian</option>                       <option value="Japanesh">Japanesh</option>                       <option value="Polish">Polish</option>                       <option value="Romanin">Romanian</option>                       <option value="Russian">Russian</option>                       <option value="Spanish">Spanish</option>                       <option value="Swedish">Swedish</option>                       <option value="Thai">Thai</option>                       <option value="Turkish">Turkish</option>                       <option value="Urdu">Urdu</option>                       <option value="vietnamese">vietnamese</option>                   </select>    </div>          <div style="float:right;padding-right:30px;border-left: 2px solid #e0e0e0;padding-top:20px;padding-left:30px;height:82px;">          <a href="https://localhost:44308/Login.aspx" class="btn btn-primary" style="background-color:#184698;border-radius: 4px;box-shadow:0 4px 12px;color: #fff">Join Now</a>    </div></div>        </nav><br /><br /></nav>
+        <nav style=" 
+    position: sticky;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    margin-top:33px;z-index: +1;">
+    <nav class="navbar navbar-expand-lg navbar-light">
+<div class="header navbar-light bg-light" style=" position:fixed;width:100%;height:82px;"> 
+    <div style="display:inline-block;border-right: 2px solid #e0e0e0;padding-right:10px;height:82px;padding-top:15px;padding-left:20px;padding-right:20px;" class="logo">
+           <a   href="https://localhost:44308/Home.aspx">
+            <img src="img/hhh.png" style="    width: 65px;height: 42px;" /></a>
+    </div>
+   <div class="dropdown" style="float:right;    margin-top: -25px;padding-right:10px;border-left: 2px solid #e0e0e0;padding-top:20px;padding-left:10px;height:82px;">
+        <label for="Language"></label>
+                   <select name="Languge" id="Languge">
+                       <option value="en">english</option>
+                       <option value=" Arabic "> Arabic </option>
+                       <option value="Bangali">Bangali</option>
+                       <option value="Bulgarian">Bulgarian</option>
+                       <option value="Chinese">Chinese</option>
+                       <option value="English">English</option>
+                       <option value="French">French</option>
+                       <option value="German">German</option>
+                       <option value="Hebrew">Hebrew</option>
+                       <option value="Hindi">Hindi</option>
+                       <option value="Italian">Italian</option>
+                       <option value="Japanesh">Japanesh</option>
+                       <option value="Polish">Polish</option>
+                       <option value="Romanin">Romanian</option>
+                       <option value="Russian">Russian</option>
+                       <option value="Spanish">Spanish</option>
+                       <option value="Swedish">Swedish</option>
+                       <option value="Thai">Thai</option>
+                       <option value="Turkish">Turkish</option>
+                       <option value="Urdu">Urdu</option>
+                       <option value="vietnamese">vietnamese</option>
+                   </select>
+    </div>
+      
+    <div style="float:right;padding-right:30px;border-left: 2px solid #e0e0e0;padding-top:20px;padding-left:30px;height:82px;">
+          <a href="https://localhost:44308/Login.aspx" class="btn btn-primary" style="background-color:#184698;border-radius: 4px;box-shadow:0 4px 12px;color: #fff">Join Now</a>
+    </div>
+</div>
+        </nav><br /><br />
+</nav>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
@@ -81,12 +122,9 @@ margin-top: 85px;"r-light">
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-lg-5 col-md-12">
-                    <div class="footer-logo">
-           
+                    <div class="bg-image">
                       <img src="img/hhh.png" / >
                     </div>
-                        
-
                     <p>Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
                 </div>
                 <div class="col-xl-1 col-lg-1">
@@ -95,7 +133,7 @@ margin-top: 85px;"r-light">
                     <div class="footer-links">
                         <h3>My Account</h3>
                         <ul>
-                            <li><a href="https://localhost:44308/Homepage.aspx">Login</a></li><li><a href="https://localhost:44308/LoginPage4.aspx">Register</a></li>                        </ul>
+                            <li><a href="https://localhost:44308/Login.aspx">Login</a></li><li><a href="https://localhost:44308/LoginPage4.aspx">Register</a></li>                        </ul>
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-2 col-md-4">

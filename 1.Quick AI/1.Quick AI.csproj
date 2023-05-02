@@ -67,7 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bt\csss\bootstrap.min.css" />
+    <Content Include="bt\csss\boxicons.min.css" />
     <Content Include="bt\css\css\bootstrap-grid.css" />
     <Content Include="bt\css\css\bootstrap-grid.min.css" />
     <Content Include="bt\css\css\bootstrap-grid.rtl.css" />
@@ -2157,6 +2157,7 @@
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="userregister.aspx" />
+    <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -2190,6 +2191,13 @@
     </Compile>
     <Compile Include="userregister.aspx.designer.cs">
       <DependentUpon>userregister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

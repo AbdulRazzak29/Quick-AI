@@ -39,7 +39,7 @@ namespace Quick_AI_01
                         Session["username"] = dr.GetValue(1).ToString();
 
                     }
-                    Response.Redirect("dashboard.aspx");
+                    Response.Redirect("WebForm4.aspx");
                 }
                 else
                 {
