@@ -67,8 +67,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-align-left"></i>
                                         </div>
-                                        <h4>
-                                            Blog Intros                                                                                    </h4>
+                                        <h4> Blog Intros </h4>
                                         <p class="margin-bottom-0">Enticing article/blog introductions that capture the attention of the audience.</p>
                                     </div>
                                 </div>
@@ -81,8 +80,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-ellipsis-h"></i>
                                         </div>
-                                        <h4>
-                                            Blog Titles                                                                                    </h4>
+                                        <h4>Blog Titles </h4>
                                         <p class="margin-bottom-0">Nobody wants to read boring blog titles, generate catchy blog titles with this tool.</p>
                                     </div>
                                 </div>
@@ -96,7 +94,7 @@
                                             <i class="fa fa-book"></i>
                                         </div>
                                         <h4>
-                                            Blog Section                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
+                                            Blog Section   <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Write a few paragraphs about a subheading of your article.</p>
                                     </div>
@@ -137,7 +135,7 @@
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-pencil-square-o"></i>
+                                          <i class="fa-light fa-pen-to-square"></i>
                                         </div>
                                         <h4>
                                             Article Rewriter                                                                                    </h4>
@@ -211,7 +209,7 @@
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-facebook-official"></i>
+                                            <i class="fa-brands fa-facebook-f"></i>
                                         </div>
                                         <h4>
                                             Facebook Ads                                                                                    </h4>
@@ -225,7 +223,7 @@
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-facebook-square"></i>
+                                            <i class="fa-brands fa-facebook-f"></i>
                                         </div>
                                         <h4>
                                             Facebook Ads Headlines                                                                                    </h4>
@@ -239,7 +237,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-google"></i>
+                                           <i class="fa-solid fa-g"></i>
                                         </div>
                                         <h4>
                                             Google Ad Titles                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -254,7 +252,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-google"></i>
+                                           <i class="fa-solid fa-g"></i>
                                         </div>
                                         <h4>
                                             Google Ad Descriptions                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -269,7 +267,7 @@
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-linkedin"></i>
+                                             <i class="fa-brands fa-linkedin"></i>
                                         </div>
                                         <h4>
                                             LinkedIn Ad Headlines                                                                                    </h4>
@@ -283,7 +281,7 @@
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-linkedin"></i>
+                                            <i class="fa-brands fa-linkedin"></i>
                                         </div>
                                         <h4>
                                             LinkedIn Ad Descriptions                                                                                    </h4>
@@ -342,7 +340,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-quora"></i>
+                                            <i class="fa-brands fa-quora"></i>
                                         </div>
                                         <h4>
                                             Quora Answers                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -371,7 +369,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-heart-o"></i>
+                                            <i class="fa-regular fa-heart"></i>
                                         </div>
                                         <h4>
                                             Stories                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -516,7 +514,7 @@
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-envelope-open-o"></i>
+                                           <i class="fa-regular fa-envelope-open"></i>
                                         </div>
                                         <h4>
                                             Email Subject Lines                                                                                    </h4>
@@ -558,7 +556,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-file-text-o"></i>
+                                          <i class="fa-regular fa-file-lines"></i>
                                         </div>
                                         <h4>
                                             Company Mission                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -619,7 +617,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-amazon"></i>
+                                            <i class="fa-brands fa-amazon"></i>
                                         </div>
                                         <h4>
                                             Amazon Product Titles                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -634,7 +632,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-amazon"></i>
+                                            <i class="fa-brands fa-amazon"></i>
                                         </div>
                                         <h4>
                                             Amazon Product Descriptions                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -649,7 +647,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-amazon"></i>
+                                           <i class="fa-brands fa-amazon"></i>
                                         </div>
                                         <h4>
                                             Amazon Product Features                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -667,7 +665,7 @@
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-facebook"></i>
+                                            <i class="fa-brands fa-facebook-f"></i>
                                         </div>
                                         <h4>
                                             Social Media Post (Personal)                                                                                    </h4>
@@ -681,7 +679,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-facebook"></i>
+                                            <i class="fa-brands fa-facebook-f"></i>
                                         </div>
                                         <h4>
                                             Social Media Post (Business)                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -696,7 +694,7 @@
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-instagram"></i>
+                                            <i class="fa-brands fa-instagram"></i>
                                         </div>
                                         <h4>
                                             Instagram Captions                                                                                    </h4>
@@ -710,7 +708,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-instagram"></i>
+                                            <i class="fa-brands fa-instagram"></i>
                                         </div>
                                         <h4>
                                             Instagram Hashtags                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -725,7 +723,7 @@
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-twitter"></i>
+                                            <i class="fa-brands fa-twitter"></i>
                                         </div>
                                         <h4>
                                             Twitter Tweets                                                                                    </h4>
@@ -739,7 +737,7 @@
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-youtube-play"></i>
+                                           <i class="fa-brands fa-youtube"></i>
                                         </div>
                                         <h4>
                                             YouTube Titles                                                                                    </h4>
@@ -753,7 +751,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-youtube-play"></i>
+                                            <i class="fa-brands fa-youtube"></i>
                                         </div>
                                         <h4>
                                             YouTube Descriptions                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -768,7 +766,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-youtube-play"></i>
+                                           <i class="fa-brands fa-youtube"></i>
                                         </div>
                                         <h4>
                                             YouTube Outlines                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -783,7 +781,7 @@
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-linkedin"></i>
+                                           <i class="fa-brands fa-linkedin"></i>
                                         </div>
                                         <h4>
                                             LinkedIn Posts                                                                                    </h4>
@@ -815,7 +813,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-google"></i>
+                                           <i class="fa-solid fa-g"></i>
                                         </div>
                                         <h4>
                                             SEO Meta Tags (Blog Post)                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -830,7 +828,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-google"></i>
+                                          <i class="fa-solid fa-g"></i>
                                         </div>
                                         <h4>
                                             SEO Meta Tags (Homepage)                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -845,7 +843,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-google"></i>
+                                           <i class="fa-solid fa-g"></i>
                                         </div>
                                         <h4>
                                             SEO Meta Tags (Product Page)                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -907,7 +905,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-question-circle-o"></i>
+                                          <i class="fa-regular fa-circle-question"></i>
                                         </div>
                                         <h4>
                                             FAQs                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -922,7 +920,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-question-circle-o"></i>
+                                           <i class="fa-regular fa-circle-question"></i>
                                         </div>
                                         <h4>
                                             FAQ Answers                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -937,7 +935,7 @@
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
                                         </div>
                                         <h4>
                                             Testimonials / Reviews                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
@@ -950,7 +948,7 @@
                                 </div>
         </div>
     </div>
-    <div class="section border-top padding-top-60 padding-bottom-75">
+   <%-- <div class="section border-top padding-top-60 padding-bottom-75">
         <div class="container">
             <div class="row">
 
@@ -978,7 +976,7 @@
                                 </div>
                                                     </div>
                         <!-- Pricing Plans Container -->
-                        <div class="pricing-plans-container">
+                        <%--<div class="pricing-plans-container">
                                                             <!-- Plan -->
                                 <div class="pricing-plan " data-monthly-price="1" data-annual-price="1" data-lifetime-price="1">
                                                                         <h3>Free Plan</h3>
@@ -1078,12 +1076,12 @@
                                                                                         <li><span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span> Free Setup</li><li><span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span> Free Support</li>                                        </ul>
                                     </div>
                                     <button type="submit" class="button full-width margin-top-20 ripple-effect" name="upgrade" value="1">Upgrade</button>                                </div>
-                                                    </div>
+                                                    </div>--%>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
+    </div>--%>
 
    
 </asp:Content>

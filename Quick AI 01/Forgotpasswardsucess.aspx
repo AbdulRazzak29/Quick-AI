@@ -14,9 +14,9 @@
                         Please check your email account for the forgot password details
                     </span>                
                 <form method="post">
-                    <div >
+                    <div>
                         <i class="la la-envelope"></i>
-                        <input type="email" style="width:100%;height: 40px;" class="input-text with-border" name="email" id="email" placeholder="Email Address" required="">
+                        <input type="email" style="width: 100%; height: 40px;" class="input-text with-border" name="email" id="email" placeholder="Email Address" required="">
                     </div>
                     <button class="button full-width button-sliding-icon ripple-effect margin-top-10" name="submit" type="submit">Request Password <i class="icon-feather-arrow-right"></i></button>
                 </form>
