@@ -282,7 +282,7 @@ body {
                                    <div id="login" class="dropdown-content">
                                         <ul class="user-menu-small-nav">
                                             <li><a href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
-                                            <li><a href="3"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
+                                            <li><a href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
                                             <li><a href="#"><i class="fa-solid fa-image"></i>AI Images</a></li>
                                             <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
                                             <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
@@ -403,7 +403,7 @@ body {
                         <span onclick="myFunction()" class="dropbtn" >My Documents</span>
                           <div id="myDropdown1" class="dropdown-content" >
                                    <a href="https://localhost:44308/All%20Documents.aspx">All Documents</a>
-                                   <a href="#">All AI Images</a>
+                                   <a href="https://localhost:44308/All%20Image.aspx">All AI Images</a>
                               </div>
                               </div>
                             </div>
@@ -417,7 +417,7 @@ body {
                                  </div>
                              </li>
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/Templates.aspx">
                                  <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
                               </a>
                            </li>
@@ -461,12 +461,12 @@ body {
                            </li>
                             
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/Transactions.aspx">
                                   <i class="fa-solid fa-file"></i> <div>Transaction</div>
                               </a>
                            </li>
                               <li>
-                              <a href="https://localhost:44308/WebForm6.aspx">
+                              <a href="https://localhost:44308/Account%20Setting.aspx">
                                   <i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div>
                               </a>
                            </li>

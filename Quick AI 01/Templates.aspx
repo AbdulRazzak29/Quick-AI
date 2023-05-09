@@ -1,30 +1,544 @@
-﻿<%@ Page Title="hype" Language="C#" MasterPageFile="~/AI.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Quick_AI_01.WebForm2"%>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Templates.aspx.cs" Inherits="Quick_AI_01.WebForm9" %>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <img src="img/home-hero-icon.png" / style=" display: block;margin-left: auto;margin-right: auto;width: 270px;height: 10%;">
-    <section>
-        
-        <div style="text-align:center">
-<h1 class="margin-bottom-10 text_gradient_animation" style="font-size:60px">
-                             <strong>Best AI Content Writer</strong>
-                        </h1>
-            <p>Create SEO-optimized and unique content for your blogs, ads, emails,<br />and website 10X faster &amp; save hours of work.      m  </p>
-    </div>
- </section>
-     <br />
-             <div class="text-center hero-icon" >
-     <a class="btn btn-primary ripple-effect button-sliding-icon" style="font-size: 30px; position:static" href="loginpage4.aspx">Get started For free
-                        <i class="icon-feather-arrow-right"></i></a>
-     
-   </div>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="font/css/all.css" rel="stylesheet" />
+    <link href="boostrap/css/style.css" rel="stylesheet" />
+    <link href="boostrap/css/all.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="boostrap/css/jquery.min.js"></script>
+    <script src="boostrap/js/jquery.slim.min.js"></script>
+    <script src="boostrap/js/popper.min.js"></script>
+    <script src="boostrap/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+       * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
+    width: 100%;
+    height: 85px;
+    display: grid;
+    grid-template-columns: 2.5fr 8fr 1fr 1fr;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
    
-    <p style="text-align:center">No credit card required.</p>
-    <br />
-    <h1 style="text-align:center">How It Works?</h1>
-    <img src="img/Screenshot%202023-04-17%20170837.png" / style="    width: 200%; height: fit-content">
-  <div class="section padding-top-65 padding-bottom-65">
+    border-right: 1px solid #e0e0e0;
+    justify-content: center;
+    height: 80px;
+    padding-top: 10px;
+    width: 260px;
+}
+
+.user {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+    .user img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+.selectlang {
+    float: right;
+    padding-right: 30px;
+    border-left: 1px solid #e0e0e0;
+    padding-top: 20px;
+    padding-left: 30px;
+    height: 82px;
+}
+
+#langbtn {
+    border: none;
+    background-color: #444444;
+    width: 120px;
+    height: 40px;
+    border-radius: 4px 4px;
+    color: white;
+}
+
+option {
+    background-color: white;
+    box-sizing: border-box;
+    color: black;
+}
+
+#langbtn:hover {
+    background-color: #314cc6;
+}
+
+.sidebar {
+    position: fixed;
+    top: 85px;
+    width: 260px;
+    background-color: #fff;
+    overflow-x: hidden;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 8px 02px rgb(0,0,0,0.5);
+    height: 100%
+}
+
+    .sidebar ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+        .sidebar ul li {
+            width: 100%;
+            list-style: none;
+        }
+
+            .sidebar ul li a {
+                width: 100%;
+                text-decoration: none;
+                color: #707070;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                font-size:13px;
+            }
+
+                .sidebar ul li a i {
+                    min-width: 60PX;
+                    font-size: 15PX;
+                    text-align: center;
+                }
+                .dropbtn {
+  background-color:white;
+  color:#6c757d;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color:white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
+
+                <div class="user-status-message">
+                    <div class="container container-active-msg">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <i class="icon-lock text-18"></i>
+                                <span>Your email address is not verified. Please verify your email address to use all the features.</span>
+                            </div>
+                            <div class="col-lg-4">
+                                <a class="button ripple-effect gray resend_buttons21 resend" href="javascript:void(0);" id="21">Resend Email</a>
+                                <span class="resend_count" id="resend_count21"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Header -->
+                <div id="header">
+                    <div class="container">
+                        <!-- Left Side Content -->
+                        <div class="left-side">
+                            <!-- Logo -->
+                            <div id="logo" style="width: 261px;">
+                                <a href="https://localhost:44308/Home.aspx">
+                                    <img src="img/hhh.png" alt="Hype" style=" margin-top: 40px;" />
+                                </a>
+                            </div>
+                          
+                            
+                            
+                                <a href="javascript:void(0);"  class="header-icon">
+                       
+                   <i class="fa fa-bars" id="icon" style="margin-top: 32px;" onclick="myMine"></i>
+                    </a>
+                         
+                         
+                     
+                            
+                        </div><!-- Left Side Content / End -->
+
+
+                        <!-- Right Side Content / End -->
+                        <div class="right-side">
+
+                            <!-- User Menu -->
+                            <div class="header-widget">
+
+                                <!-- Messages -->
+                                <div class="header-notifications user-menu">
+                                    <div class="header-notifications-trigger">
+                                        <a href="#" title="">
+                                            <div class="user-avatar status-online">
+                                                <div class="dropdown">
+                                                    <span onclick="myFunction1()" class="dropbtn1" style="height: 69px; width: 64px;     top: -62px;" >
+                                                <img src="img/default_user.png" style=" height: 69px;"  />
+                                                        </span>
+                                            </div>
+                                                </div>
+                                        </a>
+                                    </div>
+                                    <!-- Dropdown -->
+                                   <div id="login" class="dropdown-content">
+                                        <ul class="user-menu-small-nav">
+                                            <li><a href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
+                                            <li><a href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-image"></i>AI Images</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
+                                            <li><a href="https://localhost:44308/All%20Documents.aspx"><i class="fa fa-file-text"></i>All Documents</a></li>
+                                            <li><a href="https://localhost:44308/Current%20Plan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
+                                            <li><a href="https://localhost:44308/Account%20Setting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                                        </ul>
+                                    </div> 
+                                </div>
+
+                            </div>
+                            <!-- User Menu / End -->
+
+                            <div class="header-widget">
+                                <div class="btn-group bootstrap-select language-switcher">
+                                    <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="English" style="    margin-top: -68px;">
+                                        <span onclick="myFunction2()" class="dropbtn2">en</span>&nbsp;
+                                
+                                    </button>
+                                    
+                                    <div id="login1" class="dropdown-content" >
+                                        <ul class="dropdown-menu inner">
+                                            <li data-lang="arabic">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Arabic</a>
+                                            </li>
+                                            <li data-lang="bangali">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Bangali</a>
+                                            </li>
+                                            <li data-lang="bulgarian">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Bulgarian</a>
+                                            </li>
+                                            <li data-lang="chinese">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Chinese</a>
+                                            </li>
+                                            <li data-lang="english">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">English</a>
+                                            </li>
+                                            <li data-lang="french">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">French</a>
+                                            </li>
+                                            <li data-lang="german">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">German</a>
+                                            </li>
+                                            <li data-lang="hebrew">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Hebrew</a>
+                                            </li>
+                                            <li data-lang="hindi">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Hindi</a>
+                                            </li>
+                                            <li data-lang="italian">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Italian</a>
+                                            </li>
+                                            <li data-lang="japanese">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Japanese</a>
+                                            </li>
+                                            <li data-lang="polish">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Polish</a>
+                                            </li>
+                                            <li data-lang="romanian">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Romanian</a>
+                                            </li>
+                                            <li data-lang="russian">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Russian</a>
+                                            </li>
+                                            <li data-lang="spanish">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Spanish</a>
+                                            </li>
+                                            <li data-lang="swedish">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Swedish</a>
+                                            </li>
+                                            <li data-lang="thai">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Thai</a>
+                                            </li>
+                                            <li data-lang="turkish">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Turkish</a>
+                                            </li>
+                                            <li data-lang="urdu">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Urdu</a>
+                                            </li>
+                                            <li data-lang="vietnamese">
+                                                <a role="menuitem" tabindex="-1" rel="alternate">Vietnamese</a>
+                                            </li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                              
+                            </div>
+                        </div>
+                        <!-- Right Side Content / End -->
+
+                    
+                </div>
+                        </div>
+             
+                <!-- Header / End -->
+            </header>
+                   </div>
+        <div class="row">
+            <div class="col-lg-3">
+                 <div class="sidebar" style="    margin-top: 61px; height: calc(100% - 90px);    width: 329px;"  >
+                         <ul>
+                             
+                             <li>
+                                 <div style="color:darkblue;font-weight:600;">
+                                    <h9> My Account</h9>
+                                 </div>
+                             </li>
+                            <li>
+                              <a href="https://localhost:44308/dashboard1.aspx">
+                                  <i class="fa fa-th-large"></i> <div>Dashboard</div>
+                              </a>
+                           </li>
+                             <li>
+                                 <div class="fa fa-file-text">
+                           <div class="dropdown">
+                        <span onclick="myFunction()" class="dropbtn" >My Documents</span>
+                          <div id="myDropdown1" class="dropdown-content" >
+                                   <a href="https://localhost:44308/All%20Documents.aspx">All Documents</a>
+                                   <a href="https://localhost:44308/All%20Image.aspx">All AI Images</a>
+                              </div>
+                              </div>
+                            </div>
+                          </li>
+                         </ul>
+
+                         <ul>
+                             <li>
+                                 <div style="color:darkblue;font-weight:600;">
+                                    <h9>  Organize And Manage</h9>
+                                 </div>
+                             </li>
+                            <li>
+                              <a href="https://localhost:44308/Templates.aspx">
+                                 <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-image"></i> <div>AI Images</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
+                              </a>
+                           </li>                    
+                            <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="#">
+                                 <i class="fa-solid fa-code"></i><div>AI Code</div>
+                              </a>
+                           </li> 
+                             </ul>
+
+                             <ul>
+                                 <li>
+                                 <div style="color:darkblue;font-weight:600;">
+                                    <h9>  Account</h9>
+                                 </div>
+                             </li>
+                              <li>
+                              <a href="#">
+                                  <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="https://localhost:44308/Current%20Plan.aspx">
+                                 <i class="fa-solid fa-gift"></i> <div>Membership</div>
+                              </a>
+                           </li>
+                            
+                             <li>
+                              <a href="https://localhost:44308/Transactions.aspx">
+                                  <i class="fa-solid fa-file"></i> <div>Transaction</div>
+                              </a>
+                           </li>
+                              <li>
+                              <a href="https://localhost:44308/Account%20Setting.aspx#">
+                                  <i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div>
+                              </a>
+                           </li>
+                              <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
+                              </a>
+                           </li>
+                         </ul>
+                         
+                       
+                         
+                     </div>
+            </div>
+            <div class="col-lg-9">
+                   <div class="main-content">
+
+                <main  style="margin-left: -270px;    margin-top: 130px;">
+                   <!-- <div class="cards">
+                        <div class="card-single">
+                          <div class="fun-fact" data-fun-fact-color="#b81b7f">
+                    <div class="fun-fact-text">
+                                  <span>Words Used</span>
+                                  <h4>0<small>/ 10,000</small>
+                                  </h4>
+                              </div>
+                    <div class="fun-fact-icon" style="background-color: rgba(184, 27, 127, 0.07);"><i class="icon-feather-trending-up" style="color: rgb(184, 27, 127);"></i></div>
+                </div>
+                            <div>
+                                <span class="las la-user"></span>
+                            </div>
+                        </div>
+                        <div class="card-single">
+                            <div>
+                                <span>Images Used</span>
+                                <h1>0/100</h1>
+                            </div>
+                            <div>
+                                <span class="las la-user"></span>
+                            </div>
+                        </div>
+                        <div class="card-single">
+                            <div>
+                                <span>Speech to Text</span>
+                                <h1>0/0</h1>
+                            </div>
+                            <div>
+                                <span class="las la-user"></span>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="simplebar-content" style="margin-left: 261px;">
+        <div class="dashboard-content-inner" >
+
+            
+            <!-- Dashboard Headline -->
+            <div class="dashboard-headline">
+                <h3>Templates<div class="word-used-wrapper margin-left-10"  style="background: #B2BEB5;">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <i id="quick-words-left">0</i> / 10,000 
+                    <strong>Words Used</strong>
+                        </div></h3>
+                
+                <!-- Breadcrumbs -->
+                <nav id="breadcrumbs" class="dark">
+                    <ul>
+                        <li><a href="https://localhost:44308/Home.aspx">Home</a></li>
+                        <li>Templates</li>
+                    </ul>
+                </nav>
+            </div>
+             <div class="section padding-top-65 padding-bottom-65">
         <div class="container margin-bottom-20">
             <div class="section-headline centered margin-top-0 margin-bottom-30">
                 <h3 class="margin-bottom-5">Templates</h3>
@@ -948,517 +1462,44 @@
                                 </div>
         </div>
     </div>
-      <div class="main">
-        <div class="section">
-            <div class="section1">
-                <h1>Membership Plan</h1>
-                <div class="radio">
-                    <input type="radio" name="radio-buttons" value="monthly" onchange="enableInputField(5)" style="opacity: 1; margin-left: -331px; top: -2px;" />
-                    Monthly&nbsp; &nbsp; &nbsp;
-               <input type="radio" name="radio-buttons" value="yearly" onchange="enableInputField(50)" style="opacity: 1; margin-top: -15px; margin-left: -257px; top: 18px;" />
-                    Yearly&nbsp; &nbsp; &nbsp;
-               <input type="radio" name="radio-buttons" value="Lifetime" onchange="enableInputField(550)" style="opacity: 1; margin-top: -16px; margin-left: -195px; top: 18px;" />
-                    Life Time&nbsp; &nbsp; &nbsp;
-                </div>
+
+
+                        <!-- Footer -->
+            <div class="dashboard-footer-spacer" style="padding-top: 151.705px;"></div>
+            <div class="small-footer margin-top-15">
+                <div class="footer-copyright">
+                    2023 Socius IGB Pvt Ltd, All right reserved                </div>
+                <ul class="footer-social-links">
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a></li><li><a href="https://www.twitter.com/" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li><li><a href="https://instagram.com" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a></li><li><a href="https://www.linkedin.com/" target="_blank" rel="nofollow"><i class="fa fa-linkedin"></i></a></li><li><a href="https://pinterest.com/" target="_blank" rel="nofollow"><i class="fa fa-pinterest"></i></a></li><li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><i class="fa fa-youtube"></i></a></li>                </ul>
+                <div class="clearfix"></div>
             </div>
-        </div>
-        <div class="section2">
-            <div class="innersection">
-                <ul>
-                    <li><strong>Free Plan</strong></li>
-                    <li>
-                        <div class="pricing-plan-label"><strong>Free </strong></div>
-                    </li>
-                    <li>Features of Free Plan</li>
-                    <li><b>32</b> AI Document Templates</li>
-                    <li><b>10,000</b> Words per month</li>
-                    <li><b>100</b> Images per month</li>
-                    <li><b>0</b> Speech to Text per month </li>
-                    <li><b>0</b> MB Audio file size limit</li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Chat <i class="fa-solid fa-circle-question"></i></li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Code<i class="fa-solid fa-circle-question"></i></li>
-                    <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Hide Ads</li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Setup</li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Support</li>
-                    <li>
-                        <button class="btn btn-primary" style="width: 200px;">Current Plan</button></li>
-                </ul>
-            </div>
-            <div class="innersection">
-                <ul>
-                    <li><strong>Trail Plan</strong></li>
-                    <li>
-                        <div class="pricing-plan-label"><strong>Trail</strong></div>
-                    </li>
-                    <li>Features of Free Plan</li>
-                    <li><b>32</b> AI Document Templates</li>
-                    <li><b>10,000</b> Words per month</li>
-                    <li><b>100</b> Images per month</li>
-                    <li><b>0</b> Speech to Text per month </li>
-                    <li><b>0</b> MB Audio file size limit</li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Chat <i class="fa-solid fa-circle-question"></i></li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Code<i class="fa-solid fa-circle-question"></i></li>
-                    <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Hide Ads</li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Setup</li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Support</li>
-                    <li>
-                        <button class="btn btn-primary" style="width: 200px;">Upgrade</button></li>
-                </ul>
-            </div>
-            <div class="innersection" style="width: 270px;">
-                <ul>
-                    <li><strong>Extended Plan</strong></li>
-                    <li>
-                        <div class="pricing-plan-label" style="height: 60px;    width: 175px;">
-                            <input type="text" id="input-field" disabled style="height: 30px;background-color: #f0f0f0;"></div>
-                    </li>
-                    <li>Features of Free Plan</li>
-                    <li><b>32</b> AI Document Templates</li>
-                    <li><b>10,000</b> Words per month</li>
-                    <li><b>100</b> Images per month</li>
-                    <li><b>0</b> Speech to Text per month </li>
-                    <li><b>0</b> MB Audio file size limit</li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Chat <i class="fa-solid fa-circle-question"></i></li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Code<i class="fa-solid fa-circle-question"></i></li>
-                    <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>AI Code</li>
-                    <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Free Setup</li>
-                    <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Free Support</li>
-                    <li>
-                        <button class="btn btn-primary" id="btn btn-primary1" name="buttons" style="width: 200px;"><a href="https://localhost:44308/Upgrade%20Membership%205.aspx">Upgrade</a></button>
-                        <button class="btn btn-primary" id="btn btn-primary2" name="buttons" style="width: 200px;"><a href="https://localhost:44308/Upgrade%20Membership%2050.aspx">Upgrade</a></button>
-                        <button class="btn btn-primary" id="btn btn-primary3" name="buttons"  style="width: 200px;"><a href="https://localhost:44308/Upgrade%20Membership%20550.aspx">Upgrade</a></button>
-                    </li>
-                    
-                </ul>
-            </div>
+
         </div>
     </div>
-    <br />
-    <br />
-    <br />
-
-   <%-- <div class="section border-top padding-top-60 padding-bottom-75">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-xl-12">
-                    <!-- Section Headline -->
-                    <div class="section-headline centered margin-top-0 margin-bottom-75">
-                        <h3>Membership Plan</h3>
-                    </div>
-                </div>
-
-                <div class="col-xl-12">
-                    <form name="form1" method="post" action="">
-                        <div class="billing-cycle-radios margin-bottom-70">
-                                                            <div class="radio billed-monthly-radio">
-                                    <input id="radio-monthly" name="billed-type" type="radio" value="monthly" checked="">
-                                    <label for="radio-monthly"><span class="radio-label"></span> Monthly                                    </label>
-                                </div>
-                                                                <div class="radio billed-yearly-radio">
-                                    <input id="radio-yearly" name="billed-type" type="radio" value="yearly">
-                                    <label for="radio-yearly"><span class="radio-label"></span> Yearly                                    </label>
-                                </div>
-                                                                <div class="radio billed-lifetime-radio">
-                                    <input id="radio-lifetime" name="billed-type" type="radio" value="lifetime">
-                                    <label for="radio-lifetime"><span class="radio-label"></span> Lifetime</label>
-                                </div>
-                                                    </div>
-                        <!-- Pricing Plans Container -->
-                        <%--<div class="pricing-plans-container">
-                                                            <!-- Plan -->
-                                <div class="pricing-plan " data-monthly-price="1" data-annual-price="1" data-lifetime-price="1">
-                                                                        <h3>Free Plan</h3>
-                                                                            <div class="pricing-plan-label"><strong>
-                                                Free                                            </strong></div>
-
-                                        
-                                    <div class="pricing-plan-features">
-                                        <strong>Features of&nbsp;Free Plan</strong>
-                                        <ul>
-                                                                                        <li>
-                                                <strong>32</strong> AI Document Templates                                            </li>
-                                            <li>
-                                                <strong>10,000</strong> Words per month                                            </li>
-                                                                                            <li>
-                                                    <strong>100</strong> Images per month                                                </li>
-                                                                                            <li>
-                                                    <strong>0</strong> Speech to Text per month                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Create audio transcription"></i></li>
-                                                <li>
-                                                    <strong>0 MB</strong> Audio file size limit                                                </li>
-                                                                                                                                        <li>
-                                                                                                            <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                        AI Chat                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Chat with the AI bot"></i>
-                                                </li>
-                                                                                                                                        <li>
-                                                                                                            <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                        AI Code                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Generate code of any programming language with the AI"></i>
-                                                </li>
-                                                                                        <li>
-                                                                                                    <span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span>
-                                                                                                Hide Ads                                            </li>
-                                                                                        <li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span> Free Setup</li><li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span> Free Support</li>                                        </ul>
-                                    </div>
-                                    <a href="javascript:void(0);" class="button full-width margin-top-20 ripple-effect">Current Plan</a>                                </div>
-                                                            <!-- Plan -->
-                                <div class="pricing-plan " data-monthly-price="1" data-annual-price="1" data-lifetime-price="1">
-                                                                        <h3>Trial Plan</h3>
-                                                                            <div class="pricing-plan-label"><strong>
-                                                Trial                                            </strong></div>
-
-                                        
-                                    <div class="pricing-plan-features">
-                                        <strong>Features of&nbsp;Trial Plan</strong>
-                                        <ul>
-                                                                                        <li>
-                                                <strong>61</strong> AI Document Templates                                            </li>
-                                            <li>
-                                                <strong>50,000</strong> Words per month                                            </li>
-                                                                                            <li>
-                                                    <strong>500</strong> Images per month                                                </li>
-                                                                                            <li>
-                                                    <strong>0</strong> Speech to Text per month                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Create audio transcription"></i></li>
-                                                <li>
-                                                    <strong>0 MB</strong> Audio file size limit                                                </li>
-                                                                                                                                        <li>
-                                                                                                            <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                        AI Chat                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Chat with the AI bot"></i>
-                                                </li>
-                                                                                                                                        <li>
-                                                                                                            <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                        AI Code                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Generate code of any programming language with the AI"></i>
-                                                </li>
-                                                                                        <li>
-                                                                                                    <span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span>
-                                                                                                Hide Ads                                            </li>
-                                                                                        <li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span> Free Setup</li><li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span> Free Support</li>                                        </ul>
-                                    </div>
-                                    <button type="submit" class="button full-width margin-top-20 ripple-effect" name="upgrade" value="trial">Upgrade</button>                                </div>
-                                                            <!-- Plan -->
-                                <div class="pricing-plan recommended" data-monthly-price="5" data-annual-price="50" data-lifetime-price="550">
-                                    <div class="recommended-badge">Recommended</div>                                     <h3>Extended Plan</h3>
-                                    <div class="pricing-plan-label billed-monthly-label"><strong>5 ₹</strong>/ Monthly</div><div class="pricing-plan-label billed-yearly-label"><strong>50 ₹</strong>/ Yearly</div><div class="pricing-plan-label billed-lifetime-label"><strong>550 ₹</strong>/ Lifetime</div>
-                                    <div class="pricing-plan-features">
-                                        <strong>Features of&nbsp;Extended Plan</strong>
-                                        <ul>
-                                                                                        <li>
-                                                <strong>61</strong> AI Document Templates                                            </li>
-                                            <li>
-                                                <strong>100,000</strong> Words per month                                            </li>
-                                                                                            <li>
-                                                    <strong>1,000</strong> Images per month                                                </li>
-                                                                                            <li>
-                                                    <strong>0</strong> Speech to Text per month                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Create audio transcription"></i></li>
-                                                <li>
-                                                    <strong>0 MB</strong> Audio file size limit                                                </li>
-                                                                                                                                        <li>
-                                                                                                            <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                        AI Chat                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Chat with the AI bot"></i>
-                                                </li>
-                                                                                                                                        <li>
-                                                                                                            <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                        AI Code                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Generate code of any programming language with the AI"></i>
-                                                </li>
-                                                                                        <li>
-                                                                                                    <span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span>
-                                                                                                Hide Ads                                            </li>
-                                                                                        <li><span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span> Free Setup</li><li><span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span> Free Support</li>                                        </ul>
-                                    </div>
-                                    <button type="submit" class="button full-width margin-top-20 ripple-effect" name="upgrade" value="1">Upgrade</button>                                </div>
-                                                    </div>--%>
-    <div class="section-headline centered margin-top-0 margin-bottom-5">
-                        <h3>Testimonials</h3>
-         <i class="fa-sharp fa-solid fa-quote-right" style="color: #0949b9; font-size: 63px;margin-left: -473px;"></i>
-                    </div>
-   
-    <div class="testimonials">
-      
-        <div class="slider-container">
-            <div class="slider">
-
-                <div class="slide-box">
-                    <!-- Testi One -->
-                    
-                    <img src="img/default_user%20(1).png" style="height: 15%;"  />
-                    <div class="testimonial-author">
-                        <h4>Natasha</h4>
-                        <span style="background: #0949b9;">Designer</span>
-                        <p class="comment">
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco labons nisi ut aliquip ea commodo consequat. Etsed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                    </p>
-                    </div>
-                </div>
-                <div class="slide-box">
-                    <!-- Testi Two -->
-                   
-                    <img src="img/default_user%20(1).png" style="height: 15%;"  />
-                    <div class="testimonial-author">
-                        <h4>Steve Roger</h4>
-                        <span style="background: #0949b9;">Content Writer</span>
-                         <p class="comment">
-                        Elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e
-                    </p>
-                    </div>
-                </div>
-                <div class="slide-box">
-                    <!-- Testi Three -->
-                    
-                    <img src="img/default_user%20(1).png" style="height: 15%;"  />
-                    <div class="testimonial-author">
-                        <h4>Tony Stark</h4>
-                        <span style="background: #0949b9;">Social Marketing</span>
-                        <p class="comment">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </p>
-                    </div>
-                </div>
+                </main>
             </div>
-
-            <a href="#!" class="control-slider btn-left">
-                <i class="fas fa-chevron-left"></i>
-            </a>
-            <a href="#!" class="control-slider btn-right">
-                <i class="fas fa-chevron-right"></i>
-            </a>
+            
         </div>
-    </div>
+         </div>
+    </form>
+    <script type="text/javascript">
 
-    <div class="section border-top padding-top-65 padding-bottom-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
+        $("#icon").on("click", function () {
+            $(".sidebar").toggle();
+            $(".col-lg-9").toggleClass('col-lg-12 full-width');
 
-                    <!-- Section Headline -->
-                    <div class="section-headline margin-top-0 margin-bottom-45">
-                        <h3>Recent Blog</h3>
-                        <a href="https://localhost:44308/Blog.aspx" class="headline" style="    margin-left: 824px;">View Blog<i class="fa-solid fa-arrow-right" ></i></a>
-                    </div>
-
-                    <div class="row">
-                        <!-- Blog Post Item -->
-                                                    <div class="col-xl-4">
-                                <a href="#" class="blog-compact-item-container">
-                                    <div class="blog-compact-item">
-                                        <img src="img/default_user%20(1).png" />
-                                        <span class="blog-item-tag">Admin</span>
-                                        <div class="blog-compact-item-content">
-                                            <ul class="blog-post-tags">
-                                                <li>3 years ago</li>
-                                            </ul>
-                                            <h3>First Blog</h3>
-                                            <p>Consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut eni...</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                                                <!-- Blog post Item / End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-
-.testimonials {
-  background: #fff;
-  text-align: center;
-  width: 95%;
-  max-width: 600px;
-  padding: 2rem;
-  margin: 1.5rem auto;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
-}
-.title {
-  font-size: 1.5rem;
-}
-.description {
-  font-size: 0.95rem;
-  color: #333;
-}
-
-.slider-container {
-  margin-top: 2rem;
-  margin: 2rem auto 0 auto;
-  position: relative;
-  overflow: hidden;
-}
-.slider {
-  display: flex;
-  flex: 0 0 1;
-  width: 300%; /* Depends On slide-box Length * 100 */
-  transition: all 0.5s linear;
-}
-.slide-box {
-  padding: 0 80px;
-}
-.slide-box .comment {
- 
-  font-size: 0.86rem;
-  padding: 1rem 1.5rem;
-  margin-bottom: 2rem;
-  letter-spacing: 0.4px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  position: relative;
-  font-weight: 400;
-}
-
-.slide-box img {
-  max-width: 60px;
-  border-radius: 50%;
-}
-.slide-box .name {
-  font-size: 1rem;
-}
-.slide-box .job {
-  font-size: 0.7rem;
-  color: #8d8e97;
-  font-weight: 400;
-}
-
-.control-slider {
-  position: absolute;
-  z-index: 5;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 40px;
-  width: 40px;
-  background-color: #fff;
-  line-height: 40px;
-  color: #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-}
-.btn-left {
-  left: 10px;
-}
-.btn-right {
-  right: 10px;
-}
-
-        @media screen and (max-width: 500px) {
-            .slide-box {
-                padding: 0 55px;
-            }
-        } 
-.main{
-            margin-left: 160px;
-            margin-right: 160px;
-            margin-top:100px;
-            
-        }
-        .section{
-           display: flex;
-           
-        }
-        .radio{
-            margin-left: 400px;
-            
-            
-        }
-        .section2{
-            margin-top: 118px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            width: 100%;
-            height: 500px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .innersection{
-            display: flex;
-        }
-        .innersection a{
-            color:whitesmoke;
-        }
-        .innersection li{
-            text-decoration: none;
-            list-style-type: none;
-            margin-top: 8px;
-           
-        }
-        .innersection li button:hover{
-            background-color: rgb(33, 148, 224);
-        }
-    </style>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="fontawesome/css/all.css" rel="stylesheet" />
-    <script src="fontawesome/js/all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-    <script>
-        function enableInputField(value) {
-            const radioButtons = document.getElementsByName('radio-buttons');
-            const inputField = document.getElementById('input-field');
-            for (let i = 0; i < radioButtons.length; i++) {
-                if (radioButtons[i].checked) {
-                    inputField.disabled = false;
-                    switch (value) {
-                        case 5:
-                            inputField.value = "₹" + value + " per month" ;
-                            break;
-                        case 50:
-                            inputField.value = "₹" + value + " per year";
-                            break;
-                        case 550:
-                            inputField.value = "₹" + value + " lifetime";
-                            break;
-                        default:
-                            inputField.value = "";
-                            break;
-                    }
-                    return;
-                }
-            }
-            inputField.disabled = true;
-            inputField.value = "";
-        }
+        });
 
     </script>
-    <script>
-        const sliderElm = document.querySelector(".slider-container .slider");
-        const btnLeft = document.querySelector(".slider-container .btn-left");
-        const btnRight = document.querySelector(".slider-container .btn-right");
+      <script type="text/javascript">
 
-        const numberSliderBoxs = sliderElm.children.length;
-        let idxCurrentSlide = 0;
+          $("#icon").on("click", function () {
+              $(".sidebar").toggle();
+              $(".col-lg-9").toggleClass('col-lg-12 full-width');
 
-        // Functions:
-        function moveSlider() {
-            let leftMargin = (sliderElm.clientWidth / numberSliderBoxs) * idxCurrentSlide;
-            sliderElm.style.marginLeft = -leftMargin + "px";
-            console.log(sliderElm.clientWidth, leftMargin);
-        }
-        function moveLeft() {
-            if (idxCurrentSlide === 0) idxCurrentSlide = numberSliderBoxs - 1;
-            else idxCurrentSlide--;
+          });
 
-            moveSlider();
-        }
-        function moveRight() {
-            if (idxCurrentSlide === numberSliderBoxs - 1) idxCurrentSlide = 0;
-            else idxCurrentSlide++;
-
-            moveSlider();
-        }
-
-        // Event Listeners:
-        btnLeft.addEventListener("click", moveLeft);
-        btnRight.addEventListener("click", moveRight);
-        window.addEventListener("resize", moveSlider);
-
-    </script>
+      </script>
     
-   
-</asp:Content>
+</body>
+</html>

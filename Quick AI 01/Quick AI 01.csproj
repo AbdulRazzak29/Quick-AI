@@ -68,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Blog.aspx" />
     <Content Include="boostrap\css\all.min.css" />
     <Content Include="boostrap\css\bootstrap.min.css" />
     <Content Include="boostrap\css\chart.js" />
@@ -2143,7 +2144,10 @@
     <Content Include="font\svgs\solid\z.svg" />
     <Content Include="Forgot Passward.aspx" />
     <Content Include="Forgotpasswardsucess.aspx" />
+    <Content Include="img\default.png" />
+    <Content Include="img\default_user %281%29.png" />
     <Content Include="img\default_user.png" />
+    <Content Include="img\logo.png" />
     <Content Include="Login.aspx" />
     <Content Include="img\hhh.png" />
     <Content Include="img\home-hero-icon.png" />
@@ -2152,6 +2156,10 @@
     <Content Include="img\Screenshot 2023-04-17 170837.png" />
     <Content Include="img\Screenshot 2023-04-17 174526.png" />
     <Content Include="LoginPage4.aspx" />
+    <Content Include="Testimonials1.aspx" />
+    <Content Include="Upgrade Membership 5.aspx" />
+    <Content Include="Upgrade Membership 50.aspx" />
+    <Content Include="Upgrade Membership 550.aspx" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
     <Content Include="dashboard1.aspx" />
@@ -2159,8 +2167,9 @@
     <Content Include="Account Setting.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="All Image.aspx" />
-    <Content Include="WebForm5.aspx" />
-    <Content Include="WebForm6.aspx" />
+    <Content Include="Transactions.aspx" />
+    <Content Include="Membership Plan.aspx" />
+    <Content Include="Templates.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI.Master.cs">
@@ -2169,6 +2178,13 @@
     </Compile>
     <Compile Include="AI.Master.designer.cs">
       <DependentUpon>AI.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
     </Compile>
     <Compile Include="Current Plan.aspx.cs">
       <DependentUpon>Current Plan.aspx</DependentUpon>
@@ -2248,6 +2264,34 @@
     <Compile Include="Account Setting.aspx.designer.cs">
       <DependentUpon>Account Setting.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Testimonials1.aspx.cs">
+      <DependentUpon>Testimonials1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testimonials1.aspx.designer.cs">
+      <DependentUpon>Testimonials1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upgrade Membership 5.aspx.cs">
+      <DependentUpon>Upgrade Membership 5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upgrade Membership 5.aspx.designer.cs">
+      <DependentUpon>Upgrade Membership 5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upgrade Membership 50.aspx.cs">
+      <DependentUpon>Upgrade Membership 50.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upgrade Membership 50.aspx.designer.cs">
+      <DependentUpon>Upgrade Membership 50.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upgrade Membership 550.aspx.cs">
+      <DependentUpon>Upgrade Membership 550.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upgrade Membership 550.aspx.designer.cs">
+      <DependentUpon>Upgrade Membership 550.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2262,19 +2306,26 @@
     <Compile Include="All Image.aspx.designer.cs">
       <DependentUpon>All Image.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm5.aspx.cs">
-      <DependentUpon>WebForm5.aspx</DependentUpon>
+    <Compile Include="Transactions.aspx.cs">
+      <DependentUpon>Transactions.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm5.aspx.designer.cs">
-      <DependentUpon>WebForm5.aspx</DependentUpon>
+    <Compile Include="Transactions.aspx.designer.cs">
+      <DependentUpon>Transactions.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm6.aspx.cs">
-      <DependentUpon>WebForm6.aspx</DependentUpon>
+    <Compile Include="Membership Plan.aspx.cs">
+      <DependentUpon>Membership Plan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm6.aspx.designer.cs">
-      <DependentUpon>WebForm6.aspx</DependentUpon>
+    <Compile Include="Membership Plan.aspx.designer.cs">
+      <DependentUpon>Membership Plan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates.aspx.cs">
+      <DependentUpon>Templates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates.aspx.designer.cs">
+      <DependentUpon>Templates.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
