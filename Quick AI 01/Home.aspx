@@ -22,8 +22,66 @@
    
     <p style="text-align:center">No credit card required.</p>
     <br />
-    <h1 style="text-align:center">How It Works?</h1>
-    <img src="img/Screenshot%202023-04-17%20170837.png" / style="    width: 200%; height: fit-content">
+   <div class="section gray padding-top-65 padding-bottom-65">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-12">
+                    <!-- Section Headline -->
+                    <div class="section-headline centered margin-top-0 margin-bottom-5">
+                        <h3>How It Works?</h3>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-4">
+                    <!-- Icon Box -->
+                    <div class="icon-box with-line">
+                        <!-- Icon -->
+                        <div class="icon-box-circle">
+                            <div class="icon-box-circle-inner" >
+                             <i class="fa-solid fa-layer-group" style="color: #6d6d6f;"></i>
+                                <div class="icon-box-check" style="background-color: #0d55fd;background-color: #0d55fd;top: 59px;">
+                                    <i class="fa-solid fa-check" style="color: #fff;"></i></div>
+                            </div>
+                        </div>
+                        <h3>Select a template</h3>
+                        <p>Choose a content creation template. Multiple templates are available for your all needs.</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-4">
+                    <!-- Icon Box -->
+                    <div class="icon-box with-line">
+                        <!-- Icon -->
+                        <div class="icon-box-circle">
+                            <div class="icon-box-circle-inner" >
+                                <i class="fa-regular fa-folder" style="color: #636363;"></i>
+                                <div class="icon-box-check" style="background-color: #0d55fd;top: 59px;"><i class="fa-solid fa-check" style="color: #fff;"></i></div>
+                            </div>
+                        </div>
+                        <h3>Fill the form</h3>
+                        <p>Enter a detailed description of your content. Tell the AI what do you want.</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-4">
+                    <!-- Icon Box -->
+                    <div class="icon-box">
+                        <!-- Icon -->
+                        <div class="icon-box-circle">
+                            <div class="icon-box-circle-inner" >
+                               <i class="fa-regular fa-file-lines" style="color: #6e7072;"></i>
+                                <div class="icon-box-check" style="background-color: #0d55fd;top: 59px;"><i class="fa-solid fa-check" style="color: #fff;"></i></div>
+                            </div>
+                        </div>
+                        <h3>Get your content</h3>
+                        <p>Get a unique high quality content. The content is plagiarism free and you can use it anywhere.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
   <div class="section padding-top-65 padding-bottom-65">
         <div class="container margin-bottom-20">
             <div class="section-headline centered margin-top-0 margin-bottom-30">

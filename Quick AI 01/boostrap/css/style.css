@@ -5,7 +5,7 @@
 input, input[type=text], input[type=password], input[type=email], input[typebutton=number], textarea, select {border-style: none;
     border-color: inherit;
     border-width: medium;
-height: 74px;
+height: 52px;
     line-height: 48px;padding: 0 20px;outline: none;font-size: 16px;color: gray;margin: 0 0 16px;max-width: 100%;box-sizing: border-box;display: block;background-color: #fff;font-weight: 500;opacity: 1;border-radius: 4px;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .12)
 }
 input.small-input, input[type=text].small-input, input[type=password].small-input, input[type=email].small-input, input[typebutton=number].small-input, textarea.small-input, select.small-input {height: 36px;line-height: 36px;padding: 0 12px;font-size: 12px;margin:0}

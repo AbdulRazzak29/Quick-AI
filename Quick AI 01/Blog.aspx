@@ -108,7 +108,8 @@
                                                 </div>
                                                 <div class="testi-author-info">
                                                     <div class="image">
-                                                        <img src="http://hype.sociusus.com/storage/testimonials/default_user.png" alt="Natasha"></div>
+                                                        <img src="img/default_user%20(1).png"  alt="Natasha"/>
+                                                        </div>
                                                     <h5 class="name">Natasha</h5>
                                                     <span class="designation">Designer</span>
                                                 </div>
@@ -121,7 +122,8 @@
                                                 </div>
                                                 <div class="testi-author-info">
                                                     <div class="image">
-                                                        <img src="http://hype.sociusus.com/storage/testimonials/default_user.png" alt="Steve Roger"></div>
+                                                        <img src="img/default_user%20(1).png" alt="Steve Roger" />
+                                                      </div>
                                                     <h5 class="name">Steve Roger</h5>
                                                     <span class="designation">Content Writer</span>
                                                 </div>
@@ -134,7 +136,8 @@
                                                 </div>
                                                 <div class="testi-author-info">
                                                     <div class="image">
-                                                        <img src="http://hype.sociusus.com/storage/testimonials/default_user.png" alt="Tony Stark"></div>
+                                                        <img src="img/default_user%20(1).png" alt="Tony Stark" />
+                                                      </div>
                                                     <h5 class="name">Tony Stark</h5>
                                                     <span class="designation">Social Marketing</span>
                                                 </div>
@@ -147,7 +150,8 @@
                                                 </div>
                                                 <div class="testi-author-info">
                                                     <div class="image">
-                                                        <img src="http://hype.sociusus.com/storage/testimonials/default_user.png" alt="Natasha"></div>
+                                                        <img src="img/default_user%20(1).png" alt="Natasha"/>
+                                                        </div>
                                                     <h5 class="name">Natasha</h5>
                                                     <span class="designation">Designer</span>
                                                 </div>
@@ -160,7 +164,8 @@
                                                 </div>
                                                 <div class="testi-author-info">
                                                     <div class="image">
-                                                        <img src="http://hype.sociusus.com/storage/testimonials/default_user.png" alt="Steve Roger"></div>
+                                                        <img src="img/default_user%20(1).png" alt="Steve Roger" />
+                                                       </div>
                                                     <h5 class="name">Steve Roger</h5>
                                                     <span class="designation">Content Writer</span>
                                                 </div>
@@ -173,7 +178,8 @@
                                                 </div>
                                                 <div class="testi-author-info">
                                                     <div class="image">
-                                                        <img src="http://hype.sociusus.com/storage/testimonials/default_user.png" alt="Tony Stark"></div>
+                                                        <img src="img/default_user%20(1).png" alt="Tony Stark" />
+                                                        </div>
                                                     <h5 class="name">Tony Stark</h5>
                                                     <span class="designation">Social Marketing</span>
                                                 </div>
@@ -199,7 +205,7 @@
                         <div class="sidebar-widget">
                             <h3>Tags</h3>
                             <div class="task-tags">
-                                <a href="http://hype.sociusus.com/blog?s=travel-fun"><span>travel fun</span></a>  <a href="http://hype.sociusus.com/blog?s=love"><span>love</span></a>
+                                <a href="3"><span>travel fun</span></a>  <a href="3"><span>love</span></a>
                             </div>
                         </div>
 
@@ -228,5 +234,5 @@
         <!-- Spacer -->
 
     </div>
-   
+  
 </asp:Content>

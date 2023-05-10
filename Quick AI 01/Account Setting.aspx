@@ -599,12 +599,14 @@
                                <label>
                                    <h3>Type*</h3>
                                </label>
-                               <select class="form-select" aria-label="Default select example" style="height: 50px;">
-                                   <option selected="">Personal</option>
-                                   <option value="1">Personal</option>
-                                   <option value="2">business</option>
-
-                               </select>
+                               <select id="mySelect" onchange="myFunction2()" class="btn btn-primary" style="    background: white; color: #666; border: black;height: 60%;    width: 100%;">
+                           <option value="Personal">Personal</option>
+                           <option value="Business">Business</option>
+                           </select>
+                              <div id="textbox" style="display:none" cssclass="form-control" height="26px" ><br />
+                           <h5>Text ID</h5><br />
+                       <input type="text" style="width:100%"    height: 52px;/>
+                      </div>
                            </div>
                            <div>
                                <label>
@@ -994,6 +996,16 @@
               }
           }
       </script>
+     <script>
+         function myFunction2() {
+             var x = document.getElementById("mySelect").value;
+             if (x == "Business") {
+                 document.getElementById("textbox").style.display = "block";
+             } else {
+                 document.getElementById("textbox").style.display = "none";
+             }
+         }
+        </script>
      
 </body>
 </html>

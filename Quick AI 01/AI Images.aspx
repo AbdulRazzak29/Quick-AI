@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="All Image.aspx.cs" Inherits="Quick_AI_01.WebForm3" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AI Images.aspx.cs" Inherits="Quick_AI_01.WebForm10" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-     <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="font/css/all.css" rel="stylesheet" />
     <link href="boostrap/css/style.css" rel="stylesheet" />
     <link href="boostrap/css/all.min.css" rel="stylesheet" />
@@ -17,208 +17,218 @@
     <script src="boostrap/js/bootstrap.bundle.min.js"></script>
 
     <style>
-       * {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-    padding: 0px;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.topbar {
-    position: fixed;
-    background-color: #fff;
-    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
-    width: 100%;
-    height: 85px;
-    display: grid;
-    grid-template-columns: 2.5fr 8fr 1fr 1fr;
-    align-items: center;
-    z-index: 1;
-}
-
-.logo {
-   
-    border-right: 1px solid #e0e0e0;
-    justify-content: center;
-    height: 80px;
-    padding-top: 10px;
-    width: 260px;
-}
-
-.user {
-    position: relative;
-    width: 50px;
-    height: 50px;
-}
-
-    .user img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-    }
-
-.selectlang {
-    float: right;
-    padding-right: 30px;
-    border-left: 1px solid #e0e0e0;
-    padding-top: 20px;
-    padding-left: 30px;
-    height: 82px;
-}
-
-#langbtn {
-    border: none;
-    background-color: #444444;
-    width: 120px;
-    height: 40px;
-    border-radius: 4px 4px;
-    color: white;
-}
-
-option {
-    background-color: white;
-    box-sizing: border-box;
-    color: black;
-}
-
-#langbtn:hover {
-    background-color: #314cc6;
-}
-
-.sidebar {
-    position: fixed;
-    top: 85px;
-    width: 260px;
-    background-color: #fff;
-    overflow-x: hidden;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    box-shadow: 0px 0px 8px 02px rgb(0,0,0,0.5);
-    height: 100%
-}
-
-    .sidebar ul {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-        .sidebar ul li {
-            width: 100%;
-            list-style: none;
+        * {
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-            .sidebar ul li a {
+        .container {
+            padding: 0px;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topbar {
+            position: fixed;
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
+            width: 100%;
+            height: 85px;
+            display: grid;
+            grid-template-columns: 2.5fr 8fr 1fr 1fr;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .logo {
+            border-right: 1px solid #e0e0e0;
+            justify-content: center;
+            height: 80px;
+            padding-top: 10px;
+            width: 260px;
+        }
+
+        .user {
+            position: relative;
+            width: 50px;
+            height: 50px;
+        }
+
+            .user img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
                 width: 100%;
-                text-decoration: none;
-                color: #707070;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                font-size:13px;
             }
 
-                .sidebar ul li a i {
-                    min-width: 60PX;
-                    font-size: 15PX;
-                    text-align: center;
+        .selectlang {
+            float: right;
+            padding-right: 30px;
+            border-left: 1px solid #e0e0e0;
+            padding-top: 20px;
+            padding-left: 30px;
+            height: 82px;
+        }
+
+        #langbtn {
+            border: none;
+            background-color: #444444;
+            width: 120px;
+            height: 40px;
+            border-radius: 4px 4px;
+            color: white;
+        }
+
+        option {
+            background-color: white;
+            box-sizing: border-box;
+            color: black;
+        }
+
+        #langbtn:hover {
+            background-color: #314cc6;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 85px;
+            width: 260px;
+            background-color: #fff;
+            overflow-x: hidden;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            box-shadow: 0px 0px 8px 02px rgb(0,0,0,0.5);
+            height: 100%
+        }
+
+            .sidebar ul {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+                .sidebar ul li {
+                    width: 100%;
+                    list-style: none;
                 }
-                .dropbtn {
-  background-color:white;
-  color:#6c757d;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color:white;
-}
+                    .sidebar ul li a {
+                        width: 100%;
+                        text-decoration: none;
+                        color: #707070;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        font-size: 13px;
+                    }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+                        .sidebar ul li a i {
+                            min-width: 60PX;
+                            font-size: 15PX;
+                            text-align: center;
+                        }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+        .dropbtn {
+            background-color: white;
+            color: #6c757d;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+            .dropbtn:hover, .dropbtn:focus {
+                background-color: white;
+            }
 
-.dropdown a:hover {background-color: #ddd;}
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
-.show {display: block;}
-body {
-  font-family: "Lato", sans-serif;
-}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
+        .show {
+            display: block;
+        }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
+        body {
+            font-family: "Lato", sans-serif;
+        }
 
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+                .sidenav a:hover {
+                    color: #f1f1f1;
+                }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+                .sidenav a {
+                    font-size: 18px;
+                }
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
+                        <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
 
                 <div class="user-status-message">
                     <div class="container container-active-msg">
@@ -381,8 +391,7 @@ body {
              
                 <!-- Header / End -->
             </header>
-        </div>
-         <div class="row">
+            <div class="row">
             <div class="col-lg-3">
                  <div class="sidebar" style="    margin-top: 61px; height: calc(100% - 90px);    width: 329px;"  >
                          <ul>
@@ -485,39 +494,7 @@ body {
                    <div class="main-content">
 
                 <main  style="margin-left: -270px;    margin-top: 130px;">
-                   <!-- <div class="cards">
-                        <div class="card-single">
-                          <div class="fun-fact" data-fun-fact-color="#b81b7f">
-                    <div class="fun-fact-text">
-                                  <span>Words Used</span>
-                                  <h4>0<small>/ 10,000</small>
-                                  </h4>
-                              </div>
-                    <div class="fun-fact-icon" style="background-color: rgba(184, 27, 127, 0.07);"><i class="icon-feather-trending-up" style="color: rgb(184, 27, 127);"></i></div>
-                </div>
-                            <div>
-                                <span class="las la-user"></span>
-                            </div>
-                        </div>
-                        <div class="card-single">
-                            <div>
-                                <span>Images Used</span>
-                                <h1>0/100</h1>
-                            </div>
-                            <div>
-                                <span class="las la-user"></span>
-                            </div>
-                        </div>
-                        <div class="card-single">
-                            <div>
-                                <span>Speech to Text</span>
-                                <h1>0/0</h1>
-                            </div>
-                            <div>
-                                <span class="las la-user"></span>
-                            </div>
-                        </div>
-                    </div> -->
+                 
                     <div class="simplebar-content" style="margin-left: 261px;">
         <div class="dashboard-content-inner" >
 
@@ -525,55 +502,181 @@ body {
             <!-- Dashboard Headline -->
            <div class="dashboard-headline">
                     <h3 class="d-flex align-items-center">
-                        AI Images                       
+                        All Images                       
                         <div class="word-used-wrapper margin-left-10" style="background: #B2BEB5;">
                            <i class="fa-solid fa-chart-simple"></i>
-                            <i id="quick-words-left">0 / 100 Images Used
+                            <i id="quick-words-left">0 / 100 
                             <strong> Images Used</strong>
                         </div>
                     </h3>
                     <!-- Breadcrumbs -->
                     <nav id="breadcrumbs" class="dark">
                         <ul>
-                            <li><a href="https://localhost:44308/Home.aspx">Home</a></li>
-                            <li>AI Images</li>
+                            <li><a href="http://hype.sociusus.com/">Home</a></li>
+                            <li>All Images</li>
                         </ul>
                     </nav>
                 </div>
-
-           
-           <div class="dashboard-box">
-                        <!-- Headline -->
-                        <div class="headline">
-                            <h3><i class="fa-light fa-file"></i> All Images</h3>
+            <!---Onclick display-->
+            <form id="ai_images" name="ai_images" method="post" action="#">
+                    <h4 class="margin-bottom-10 padding-left-5">Start with a detailed description. <a href="#" class="try-example"><strong>Try an example</strong></a></h4>
+                    <div class="message-reply ai_image_description margin-bottom-10">
+                                <textarea name="description" class="with-border small-input image-description" placeholder="SpongeBob SquarePants dressed as a mailman drinking a cup of coffee in a mountainside scene, watercolors by 5 year old" required=""></textarea>
+                        <button type="submit" name="submit" class="button ripple-effect border-pilled">Generate                            <i class="icon-feather-arrow-right"></i></button>
+                    </div>
+                    <div id="main" class="row image-advance-settings" style="display: none;">
+                        <div class="col-sm-3">
+                            <div class="submit-field margin-bottom-20">
+                                <h6>Image Title</h6>
+                                <input name="title" class="with-border small-input" type="text" value="New Image">
+                            </div>
                         </div>
-                        <div class="content with-padding">
-                            <div class="table-responsive">
-                                <table id="js-table-list" class="basic-table dashboard-box-list">
-                                    <tbody><tr>
-                                        <th>Image</th>
-                                        <th>Resolution</th>
-                                        <th> Date</th>
-                                        <th> Action</th>
-                                                                            </tr>
-                                    <tr>
-                                        <td colspan="4" class="text-center">No images found.</td>
-                                        
-                                                                            </tr>
+                        <div class="col-sm-3">
+                            <div class="submit-field margin-bottom-20">
+                                <h6>Art style</h6>
+                                <div class="btn-group bootstrap-select with-border small-input">
                                    
-                                </tbody></table>
+                                   
+                                    <div>
+                                    <select >
+                                    <option value="" selected="selected">None</option>
+                                    <option value="3d_render">3D render</option>
+                                    <option value="pixel">Pixel</option>
+                                    <option value="sticker">Sticker</option>
+                                    <option value="realistic">Realistic</option>
+                                    <option value="isometric">Isometric</option>
+                                    <option value="cyberpunk">Cyberpunk</option>
+                                    <option value="line">Line art</option>
+                                    <option value="pencil">Pencil drawing</option>
+                                    <option value="ballpoint_pen">Ballpoint pen drawing</option>
+                                    <option value="watercolor">Watercolor</option>
+                                    <option value="origami">Origami</option>
+                                    <option value="cartoon">Cartoon</option>
+                                    <option value="retro">Retro</option>
+                                    <option value="anime">Anime</option>
+                                    <option value="renaissance">Renaissance</option>
+                                    <option value="clay">Clay</option>
+                                    <option value="vaporwave">Vaporwave</option>
+                                    <option value="steampunk">Steampunk</option>
+                                    <option value="glitchcore">Glitchcore</option>
+                                    <option value="bauhaus">Bauhaus</option>
+                                    <option value="vector">Vector</option>
+                                    <option value="low_poly">Low poly</option>
+                                    <option value="ukiyo_e">Ukiyo-e</option>
+                                    <option value="cubism">Cubism</option>
+                                    <option value="modern">Modern</option>
+                                    <option value="pop">Pop</option>
+                                    <option value="contemporary">Contemporary</option>
+                                    <option value="impressionism">Impressionism</option>
+                                    <option value="pointillism">Pointillism</option>
+                                    <option value="minimalism">Minimalism</option>
+                                </select></div></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="submit-field margin-bottom-20">
+                                <h6>Lighting style</h6>
+                                <div class="btn-group bootstrap-select with-border small-input">
+                                    
+                                    <div >
+                                       
+                                    <select>
+                                    <option value="" selected="selected">None</option>
+                                    <option value="warm">Warm</option>
+                                    <option value="cold">Cold</option>
+                                    <option value="golden_hour">Golden Hour</option>
+                                    <option value="blue_hour">Blue Hour</option>
+                                    <option value="ambient">Ambient</option>
+                                    <option value="studio">Studio</option>
+                                    <option value="neon">Neon</option>
+                                    <option value="dramatic">Dramatic</option>
+                                    <option value="cinematic">Cinematic</option>
+                                    <option value="natural">Natural</option>
+                                    <option value="foggy">Foggy</option>
+                                    <option value="backlight">Backlight</option>
+                                    <option value="hard">Hard</option>
+                                </select></div></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="submit-field margin-bottom-20">
+                                <h6>Mood</h6>
+                                <div class="btn-group bootstrap-select with-border small-input">
+                                    
+                                    
+                                        <div>
+                                    <select >
+                                    <option value="" selected="selected">None</option>
+                                    <option value="aggressive">Aggressive</option>
+                                    <option value="angry">Angry</option>
+                                    <option value="boring">Boring</option>
+                                    <option value="bright">Bright</option>
+                                    <option value="calm">Calm</option>
+                                    <option value="cheerful">Cheerful</option>
+                                    <option value="chilling">Chilling</option>
+                                    <option value="colorful">Colorful</option>
+                                    <option value="dark">Dark</option>
+                                    <option value="neutral">Neutral</option>
+                                </select></div></div>
+
+                            </div>
+                            </div>
+                        
+                        <div class="col-sm-3">
+                            <div class="submit-field margin-bottom-20">
+                                <h6>Resolution</h6>
+                                <div class="btn-group bootstrap-select with-border small-input">
+                                 
+                                    <div>
+                                    <select >
+                                                                            <option value="256x256">Small Image (256x256)</option>
+                                                                        <option value="512x512">Medium Image (512x512)</option>
+                                    <option value="1024x1024">Large Image (1024x1024)</option>
+                                </select></div></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="submit-field margin-bottom-20">
+                                <h6>Number of Images</h6>
+                                <div class="btn-group bootstrap-select with-border small-input">
+                                    
+                                    <div>
+                                       
+                                    <select >
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select></div></div>
                             </div>
                         </div>
                     </div>
-
+                    <small><button onclick="hideshow()" >Advanced Settings</button> <strong>+</strong></small>
+                    <div>
+                        <small class="form-error"></small>
+                    </div>
+                </form>
            
+           
+            <!-- Dashboard Box / End -->
                         <!-- Footer -->
             <div class="dashboard-footer-spacer" style="padding-top: 151.705px;"></div>
             <div class="small-footer margin-top-15">
                 <div class="footer-copyright">
                     2023 Socius IGB Pvt Ltd, All right reserved                </div>
                 <ul class="footer-social-links">
-                    <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a></li><li><a href="https://www.twitter.com/" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li><li><a href="https://instagram.com" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a></li><li><a href="https://www.linkedin.com/" target="_blank" rel="nofollow"><i class="fa fa-linkedin"></i></a></li><li><a href="https://pinterest.com/" target="_blank" rel="nofollow"><i class="fa fa-pinterest"></i></a></li><li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><i class="fa fa-youtube"></i></a></li>                </ul>
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow">
+                        <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.twitter.com/" target="_blank" rel="nofollow">
+                        <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="nofollow">
+                            <i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" rel="nofollow"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://pinterest.com/" target="_blank" rel="nofollow"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><i class="fa fa-youtube"></i></a></li>  
+
+                </ul>
                 <div class="clearfix"></div>
             </div>
 
@@ -636,5 +739,20 @@ body {
               }
           }
       </script>
+    <script>
+        var div = document.getElementById('main');
+        var display = 0;
+        function hideshow() {
+            if (display == 1) {
+                div.style.display = 'block';
+                display = 0;
+            }
+            else {
+                div.style.display = 'none';
+                display = 1;
+            }
+        }
+    </script>
+  
 </body>
 </html>

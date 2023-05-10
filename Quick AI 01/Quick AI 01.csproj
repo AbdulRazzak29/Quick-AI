@@ -2170,6 +2170,7 @@
     <Content Include="Transactions.aspx" />
     <Content Include="Membership Plan.aspx" />
     <Content Include="Templates.aspx" />
+    <Content Include="AI Images.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI.Master.cs">
@@ -2326,6 +2327,13 @@
     </Compile>
     <Compile Include="Templates.aspx.designer.cs">
       <DependentUpon>Templates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AI Images.aspx.cs">
+      <DependentUpon>AI Images.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AI Images.aspx.designer.cs">
+      <DependentUpon>AI Images.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
