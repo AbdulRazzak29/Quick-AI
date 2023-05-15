@@ -227,7 +227,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+       
                         <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
 
                 <div class="user-status-message">
@@ -310,74 +310,32 @@
 
                             <div class="header-widget">
                                 <div class="btn-group bootstrap-select language-switcher">
-                                    <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="English" style="    margin-top: -68px;">
-                                        <span onclick="myFunction2()" class="dropbtn2">en</span>&nbsp;
-                                
-                                    </button>
                                     
-                                    <div id="login1" class="dropdown-content" >
-                                        <ul class="dropdown-menu inner">
-                                            <li data-lang="arabic">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Arabic</a>
-                                            </li>
-                                            <li data-lang="bangali">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Bangali</a>
-                                            </li>
-                                            <li data-lang="bulgarian">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Bulgarian</a>
-                                            </li>
-                                            <li data-lang="chinese">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Chinese</a>
-                                            </li>
-                                            <li data-lang="english">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">English</a>
-                                            </li>
-                                            <li data-lang="french">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">French</a>
-                                            </li>
-                                            <li data-lang="german">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">German</a>
-                                            </li>
-                                            <li data-lang="hebrew">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Hebrew</a>
-                                            </li>
-                                            <li data-lang="hindi">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Hindi</a>
-                                            </li>
-                                            <li data-lang="italian">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Italian</a>
-                                            </li>
-                                            <li data-lang="japanese">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Japanese</a>
-                                            </li>
-                                            <li data-lang="polish">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Polish</a>
-                                            </li>
-                                            <li data-lang="romanian">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Romanian</a>
-                                            </li>
-                                            <li data-lang="russian">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Russian</a>
-                                            </li>
-                                            <li data-lang="spanish">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Spanish</a>
-                                            </li>
-                                            <li data-lang="swedish">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Swedish</a>
-                                            </li>
-                                            <li data-lang="thai">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Thai</a>
-                                            </li>
-                                            <li data-lang="turkish">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Turkish</a>
-                                            </li>
-                                            <li data-lang="urdu">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Urdu</a>
-                                            </li>
-                                            <li data-lang="vietnamese">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Vietnamese</a>
-                                            </li>
-                                        </ul>
+                                    
+                                    <div  >
+                                         <select name="Languge" id="Languge" style="height: auto; background-color: #444;">
+                       <option value="en">english</option>
+                       <option value=" Arabic "> Arabic </option>
+                       <option value="Bangali">Bangali</option>
+                       <option value="Bulgarian">Bulgarian</option>
+                       <option value="Chinese">Chinese</option>
+                       <option value="English">English</option>
+                       <option value="French">French</option>
+                       <option value="German">German</option>
+                       <option value="Hebrew">Hebrew</option>
+                       <option value="Hindi">Hindi</option>
+                       <option value="Italian">Italian</option>
+                       <option value="Japanesh">Japanesh</option>
+                       <option value="Polish">Polish</option>
+                       <option value="Romanin">Romanian</option>
+                       <option value="Russian">Russian</option>
+                       <option value="Spanish">Spanish</option>
+                       <option value="Swedish">Swedish</option>
+                       <option value="Thai">Thai</option>
+                       <option value="Turkish">Turkish</option>
+                       <option value="Urdu">Urdu</option>
+                       <option value="vietnamese">vietnamese</option>
+                   </select>
                                         </div>
                                     </div>
                               
@@ -512,7 +470,7 @@
                     <!-- Breadcrumbs -->
                     <nav id="breadcrumbs" class="dark">
                         <ul>
-                            <li><a href="http://hype.sociusus.com/">Home</a></li>
+                            <li><a href="#">Home</a></li>
                             <li>All Images</li>
                         </ul>
                     </nav>
@@ -656,7 +614,7 @@
                     <div>
                         <small class="form-error"></small>
                     </div>
-                </form>
+                </form> 
            
            
             <!-- Dashboard Box / End -->
@@ -665,18 +623,14 @@
             <div class="small-footer margin-top-15">
                 <div class="footer-copyright">
                     2023 Socius IGB Pvt Ltd, All right reserved                </div>
-                <ul class="footer-social-links">
-                    <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow">
-                        <i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.twitter.com/" target="_blank" rel="nofollow">
-                        <i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://instagram.com" target="_blank" rel="nofollow">
-                            <i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/" target="_blank" rel="nofollow"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://pinterest.com/" target="_blank" rel="nofollow"><i class="fa fa-pinterest"></i></a></li>
-                    <li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><i class="fa fa-youtube"></i></a></li>  
-
-                </ul>
+                 <ul class="footer-social-links">
+                                <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.twitter.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-twitter" ></i></a></li>
+                                <li><a href="https://instagram.com" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram" ></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin" ></i></a></li>
+                                <li><a href="https://pinterest.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-pinterest"></i></a></li>
+                                <li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
                 <div class="clearfix"></div>
             </div>
 
@@ -753,6 +707,31 @@
             }
         }
     </script>
-  
+    <script>
+        // text counter
+        $('.quick-text-counter').each(function () {
+            var $this = $(this);
+
+            $this.simpleTxtCounter({
+                maxLength: $this.data('maxlength'),
+                countElem: '<div class="form-text"></div>',
+                lineBreak: false,
+            });
+        });
+
+        var examples = ["A boombox reflecting the surroundings in a cave, Painting by H.R. Giger, Closeup",
+            "SpongeBob SquarePants talking to a mouse in an airport, 1960s Cartoon",
+            "SpongeBob SquarePants dressed as a mailman drinking a cup of coffee in a mountainside scene, watercolors by 5 year old",
+            "A cactus sitting next to onion rings in a farm, 1960s Cartoon",
+            "Garfield driving a school bus in a rock concert, Painting by Leonardo Da Vinci",
+            "A mouse riding on a horse in a mountainside scene, Painting by Rembrandt",
+            "Super Mario dressed as a medieval knight riding a pterodactyl in the back of a bus, Baroque painting"];
+        $('.try-example').on('click', function (e) {
+            e.preventDefault();
+
+            $('.image-description').val(examples[Math.floor(Math.random() * examples.length)]);
+        })
+    </script>
+ 
 </body>
 </html>

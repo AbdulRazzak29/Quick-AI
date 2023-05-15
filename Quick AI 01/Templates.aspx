@@ -15,7 +15,7 @@
     <script src="boostrap/js/jquery.slim.min.js"></script>
     <script src="boostrap/js/popper.min.js"></script>
     <script src="boostrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="jsss/bootstrap-select.min.js"></script>
     <style>
        * {
     font-family: Arial, Helvetica, sans-serif;
@@ -546,7 +546,7 @@ body {
             </div>
             <div class="template-categories home-templates">
                 <ul>
-                    <li class="active"><a href="javascript:void();" class="ai-templates-category" data-category="all" style="    color: #777;">All templates</a></li>
+                    <li class="active"><a href="javascript:void();" class="ai-templates-category" data-category="all" style="color: #777;">All templates</a></li>
                                             <li><a href="javascript:void();" class="ai-templates-category" data-category="1">Article And Blogs</a></li>
                                             <li><a href="javascript:void();" class="ai-templates-category" data-category="2">Ads And Marketing Tools</a></li>
                                             <li><a href="javascript:void();" class="ai-templates-category" data-category="3">General Writing</a></li>
@@ -565,7 +565,7 @@ body {
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-comment"></i>
+                                            0<i class="fa fa-comment"></i>
                                         </div>
                                         <h4>
                                             Blog Ideas                                                                                    </h4>
@@ -1469,8 +1469,14 @@ body {
             <div class="small-footer margin-top-15">
                 <div class="footer-copyright">
                     2023 Socius IGB Pvt Ltd, All right reserved                </div>
-                <ul class="footer-social-links">
-                    <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a></li><li><a href="https://www.twitter.com/" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li><li><a href="https://instagram.com" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a></li><li><a href="https://www.linkedin.com/" target="_blank" rel="nofollow"><i class="fa fa-linkedin"></i></a></li><li><a href="https://pinterest.com/" target="_blank" rel="nofollow"><i class="fa fa-pinterest"></i></a></li><li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><i class="fa fa-youtube"></i></a></li>                </ul>
+                 <ul class="footer-social-links">
+                                <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.twitter.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-twitter" ></i></a></li>
+                                <li><a href="https://instagram.com" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram" ></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin" ></i></a></li>
+                                <li><a href="https://pinterest.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-pinterest"></i></a></li>
+                                <li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
                 <div class="clearfix"></div>
             </div>
 
@@ -1482,15 +1488,9 @@ body {
         </div>
          </div>
     </form>
-    <script type="text/javascript">
+  
 
-        $("#icon").on("click", function () {
-            $(".sidebar").toggle();
-            $(".col-lg-9").toggleClass('col-lg-12 full-width');
-
-        });
-
-    </script>
+      
       <script type="text/javascript">
 
           $("#icon").on("click", function () {
@@ -1500,6 +1500,65 @@ body {
           });
 
       </script>
-    
+    <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+              document.getElementById("myDropdown1").classList.toggle("show");
+         }
+
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function (event) {
+             if (!event.target.matches('.dropbtn')) {
+                 var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+                     var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+
+          }
+                 }
+             }
+         }
+    </script>
+      <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction1() {
+              document.getElementById("login").classList.toggle("show");
+          }
+
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function (event) {
+              if (!event.target.matches('.dropbtn1')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+
+          }
+                  }
+              }
+          }
+      </script>
+    <script>   $('.ai-templates-category').on('click', function (e) {
+            e.preventDefault();
+            // make active
+            $('.template-categories li').removeClass('active');
+            $(this).parents('li').addClass('active');
+
+            if ($(this).data('category') === 'all') {
+                $('.ai-template-blocks > div').show();
+                $('.ai-templates-category-title').show();
+            } else {
+                $('.ai-template-blocks > div').hide();
+                $('.category-' + $(this).data('category')).show();
+                $('.ai-templates-category-title').hide();
+
+                // empty search
+                $('#template-search').val('');
+            }
+        });</script>
 </body>
 </html>

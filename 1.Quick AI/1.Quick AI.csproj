@@ -2147,6 +2147,7 @@
     <Content Include="fant\svgs\solid\yin-yang.svg" />
     <Content Include="fant\svgs\solid\z.svg" />
     <Content Include="Global.asax" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="Img\hhh.png" />
     <Content Include="Img\home-hero-icon.png" />
     <Content Include="loginpage.aspx" />

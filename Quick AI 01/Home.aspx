@@ -105,7 +105,7 @@
                         <h4>Article And Blogs</h4>
                     </div>
                                             <div class="col-md-4 col-sm-6 category-1">
-                            <a href="#">
+                            <a href="https://localhost:44308/Blog%20Ideas.aspx">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
@@ -119,7 +119,7 @@
                             </a>
                         </div>
                                             <div class="col-md-4 col-sm-6 category-1">
-                            <a href="#">
+                            <a href="https://localhost:44308/Blog%20Ideas.aspx">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
@@ -132,7 +132,7 @@
                             </a>
                         </div>
                                             <div class="col-md-4 col-sm-6 category-1">
-                            <a href="#">
+                            <a href="https://localhost:44308/Blog%20Titles.aspx">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
@@ -1095,135 +1095,7 @@
     <br />
     <br />
 
-   <%-- <div class="section border-top padding-top-60 padding-bottom-75">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-xl-12">
-                    <!-- Section Headline -->
-                    <div class="section-headline centered margin-top-0 margin-bottom-75">
-                        <h3>Membership Plan</h3>
-                    </div>
-                </div>
-
-                <div class="col-xl-12">
-                    <form name="form1" method="post" action="">
-                        <div class="billing-cycle-radios margin-bottom-70">
-                                                            <div class="radio billed-monthly-radio">
-                                    <input id="radio-monthly" name="billed-type" type="radio" value="monthly" checked="">
-                                    <label for="radio-monthly"><span class="radio-label"></span> Monthly                                    </label>
-                                </div>
-                                                                <div class="radio billed-yearly-radio">
-                                    <input id="radio-yearly" name="billed-type" type="radio" value="yearly">
-                                    <label for="radio-yearly"><span class="radio-label"></span> Yearly                                    </label>
-                                </div>
-                                                                <div class="radio billed-lifetime-radio">
-                                    <input id="radio-lifetime" name="billed-type" type="radio" value="lifetime">
-                                    <label for="radio-lifetime"><span class="radio-label"></span> Lifetime</label>
-                                </div>
-                                                    </div>
-                        <!-- Pricing Plans Container -->
-                        <%--<div class="pricing-plans-container">
-                                                            <!-- Plan -->
-                                <div class="pricing-plan " data-monthly-price="1" data-annual-price="1" data-lifetime-price="1">
-                                                                        <h3>Free Plan</h3>
-                                                                            <div class="pricing-plan-label"><strong>
-                                                Free                                            </strong></div>
-
-                                        
-                                    <div class="pricing-plan-features">
-                                        <strong>Features of&nbsp;Free Plan</strong>
-                                        <ul>
-                                                                                        <li>
-                                                <strong>32</strong> AI Document Templates                                            </li>
-                                            <li>
-                                                <strong>10,000</strong> Words per month                                            </li>
-                                                                                            <li>
-                                                    <strong>100</strong> Images per month                                                </li>
-                                                                                            <li>
-                                                    <strong>0</strong> Speech to Text per month                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Create audio transcription"></i></li>
-                                                <li>
-                                                    <strong>0 MB</strong> Audio file size limit                                                </li>
-                                                                                                                                        <li>
-                                                                                                            <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                        AI Chat                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Chat with the AI bot"></i>
-                                                </li>
-                                                                                                                                        <li>
-                                                                                                            <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                        AI Code                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Generate code of any programming language with the AI"></i>
-                                                </li>
-                                                                                        <li>
-                                                                                                    <span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span>
-                                                                                                Hide Ads                                            </li>
-                                                                                        <li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span> Free Setup</li><li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span> Free Support</li>                                        </ul>
-                                    </div>
-                                    <a href="javascript:void(0);" class="button full-width margin-top-20 ripple-effect">Current Plan</a>                                </div>
-                                                            <!-- Plan -->
-                                <div class="pricing-plan " data-monthly-price="1" data-annual-price="1" data-lifetime-price="1">
-                                                                        <h3>Trial Plan</h3>
-                                                                            <div class="pricing-plan-label"><strong>
-                                                Trial                                            </strong></div>
-
-                                        
-                                    <div class="pricing-plan-features">
-                                        <strong>Features of&nbsp;Trial Plan</strong>
-                                        <ul>
-                                                                                        <li>
-                                                <strong>61</strong> AI Document Templates                                            </li>
-                                            <li>
-                                                <strong>50,000</strong> Words per month                                            </li>
-                                                                                            <li>
-                                                    <strong>500</strong> Images per month                                                </li>
-                                                                                            <li>
-                                                    <strong>0</strong> Speech to Text per month                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Create audio transcription"></i></li>
-                                                <li>
-                                                    <strong>0 MB</strong> Audio file size limit                                                </li>
-                                                                                                                                        <li>
-                                                                                                            <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                        AI Chat                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Chat with the AI bot"></i>
-                                                </li>
-                                                                                                                                        <li>
-                                                                                                            <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                        AI Code                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Generate code of any programming language with the AI"></i>
-                                                </li>
-                                                                                        <li>
-                                                                                                    <span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span>
-                                                                                                Hide Ads                                            </li>
-                                                                                        <li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span> Free Setup</li><li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span> Free Support</li>                                        </ul>
-                                    </div>
-                                    <button type="submit" class="button full-width margin-top-20 ripple-effect" name="upgrade" value="trial">Upgrade</button>                                </div>
-                                                            <!-- Plan -->
-                                <div class="pricing-plan recommended" data-monthly-price="5" data-annual-price="50" data-lifetime-price="550">
-                                    <div class="recommended-badge">Recommended</div>                                     <h3>Extended Plan</h3>
-                                    <div class="pricing-plan-label billed-monthly-label"><strong>5 ₹</strong>/ Monthly</div><div class="pricing-plan-label billed-yearly-label"><strong>50 ₹</strong>/ Yearly</div><div class="pricing-plan-label billed-lifetime-label"><strong>550 ₹</strong>/ Lifetime</div>
-                                    <div class="pricing-plan-features">
-                                        <strong>Features of&nbsp;Extended Plan</strong>
-                                        <ul>
-                                                                                        <li>
-                                                <strong>61</strong> AI Document Templates                                            </li>
-                                            <li>
-                                                <strong>100,000</strong> Words per month                                            </li>
-                                                                                            <li>
-                                                    <strong>1,000</strong> Images per month                                                </li>
-                                                                                            <li>
-                                                    <strong>0</strong> Speech to Text per month                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Create audio transcription"></i></li>
-                                                <li>
-                                                    <strong>0 MB</strong> Audio file size limit                                                </li>
-                                                                                                                                        <li>
-                                                                                                            <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                        AI Chat                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Chat with the AI bot"></i>
-                                                </li>
-                                                                                                                                        <li>
-                                                                                                            <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                        AI Code                                                    <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Generate code of any programming language with the AI"></i>
-                                                </li>
-                                                                                        <li>
-                                                                                                    <span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span>
-                                                                                                Hide Ads                                            </li>
-                                                                                        <li><span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span> Free Setup</li><li><span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span> Free Support</li>                                        </ul>
-                                    </div>
-                                    <button type="submit" class="button full-width margin-top-20 ripple-effect" name="upgrade" value="1">Upgrade</button>                                </div>
-                                                    </div>--%>
+  
     <div class="section-headline centered margin-top-0 margin-bottom-5">
                         <h3>Testimonials</h3>
          <i class="fa-sharp fa-solid fa-quote-right" style="color: #0949b9; font-size: 63px;margin-left: -473px;"></i>
@@ -1311,6 +1183,66 @@
                             </div>
                                                 <!-- Blog post Item / End -->
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section gray border-top padding-top-45 padding-bottom-45">
+        <!-- Logo Carousel -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <!-- Carousel -->
+                    <div class="col-md-12">
+                        <div class="logo-carousel slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+                                                            
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4370px; transform: translate3d(-1610px, 0px, 0px);"><div class="carousel-item slick-slide slick-cloned" style="width: 230px;" tabindex="-1" role="tabpanel" aria-describedby="slick-slide-control12" data-slick-index="-5" aria-hidden="true">
+                                    <img src="img/logo-carousel-02.png" /> 
+                                </div><div class="carousel-item slick-slide slick-cloned" style="width: 230px;" tabindex="-1" role="tabpanel" aria-describedby="slick-slide-control13" data-slick-index="-4" aria-hidden="true">
+                                    <img src="img/logo-carousel-03.png" /> 
+                                </div><div class="carousel-item slick-slide slick-cloned" style="width: 230px;" tabindex="-1" role="tabpanel" aria-describedby="slick-slide-control14" data-slick-index="-3" aria-hidden="true">
+                                    <img src="img/logo-carousel-04.png" /> 
+                                </div><div class="carousel-item slick-slide slick-cloned" style="width: 230px;" tabindex="-1" role="tabpanel" aria-describedby="slick-slide-control15" data-slick-index="-2" aria-hidden="true">
+                                    <img src="img/logo-carousel-05.png" /> 
+                                </div><div class="carousel-item slick-slide slick-cloned" style="width: 230px;" tabindex="-1" role="tabpanel" aria-describedby="slick-slide-control16" data-slick-index="-1" aria-hidden="true">
+                                    <img src="img/logo-carousel-06.png" /> 
+                                </div><div class="carousel-item slick-slide" style="width: 230px;" tabindex="-1" role="tabpanel" id="slick-slide10" aria-describedby="slick-slide-control10" data-slick-index="0" aria-hidden="true">
+                                    <img src="img/logo-carousel-01.png" /> 
+                                </div><div class="carousel-item slick-slide" style="width: 230px;" tabindex="-1" role="tabpanel" id="slick-slide11" aria-describedby="slick-slide-control11" data-slick-index="1" aria-hidden="true">
+                                    <img src="img/logo-carousel-01.png" /> 
+                                </div><div class="carousel-item slick-slide slick-current slick-active" style="width: 230px;" tabindex="0" role="tabpanel" id="slick-slide12" aria-describedby="slick-slide-control12" data-slick-index="2" aria-hidden="false">
+                                    <img src="img/logo-carousel-02.png" /> 
+                                </div><div class="carousel-item slick-slide slick-active" style="width: 230px;" tabindex="0" role="tabpanel" id="slick-slide13" aria-describedby="slick-slide-control13" data-slick-index="3" aria-hidden="false">
+                                    <img src="img/logo-carousel-03.png" /> 
+                                </div><div class="carousel-item slick-slide slick-active" style="width: 230px;" tabindex="0" role="tabpanel" id="slick-slide14" aria-describedby="slick-slide-control14" data-slick-index="4" aria-hidden="false">
+                                    <img src="img/logo-carousel-04.png" /> 
+                                </div><div class="carousel-item slick-slide slick-active" style="width: 230px;" tabindex="0" role="tabpanel" id="slick-slide15" aria-describedby="slick-slide-control15" data-slick-index="5" aria-hidden="false">
+                                    <img src="img/logo-carousel-05.png" /> 
+                                </div><div class="carousel-item slick-slide slick-active" style="width: 230px;" tabindex="0" role="tabpanel" id="slick-slide16" aria-describedby="slick-slide-control16" data-slick-index="6" aria-hidden="false">
+                                    <img src="img/logo-carousel-06.png" /> 
+                                </div><div class="carousel-item slick-slide slick-cloned" style="width: 230px;" tabindex="-1" role="tabpanel" aria-describedby="slick-slide-control10" data-slick-index="7" aria-hidden="true">
+                                    <img src="img/logo-carousel-01.png" /> 
+                                </div><div class="carousel-item slick-slide slick-cloned" style="width: 230px;" tabindex="-1" role="tabpanel" aria-describedby="slick-slide-control11" data-slick-index="8" aria-hidden="true">
+                                    <img src="img/logo-carousel-01.png" /> 
+                                </div><div class="carousel-item slick-slide slick-cloned" style="width: 230px;" tabindex="-1" role="tabpanel" aria-describedby="slick-slide-control12" data-slick-index="9" aria-hidden="true">
+                                    <img src="img/logo-carousel-02.png" /> 
+                                </div><div class="carousel-item slick-slide slick-cloned" style="width: 230px;" tabindex="-1" role="tabpanel" aria-describedby="slick-slide-control13" data-slick-index="10" aria-hidden="true">
+                                    <img src="img/logo-carousel-03.png" /> 
+                                </div><div class="carousel-item slick-slide slick-cloned" style="width: 230px;" tabindex="-1" role="tabpanel" aria-describedby="slick-slide-control14" data-slick-index="11" aria-hidden="true">
+                                    <img src="img/logo-carousel-04.png" /> 
+                                </div><div class="carousel-item slick-slide slick-cloned" style="width: 230px;" tabindex="-1" role="tabpanel" aria-describedby="slick-slide-control15" data-slick-index="12" aria-hidden="true">
+                                    <img src="img/logo-carousel-05.png" /> 
+                                </div><div class="carousel-item slick-slide slick-cloned" style="width: 230px;" tabindex="-1" role="tabpanel" aria-describedby="slick-slide-control16" data-slick-index="13" aria-hidden="true">
+                                    <img src="img/logo-carousel-06.png" /> 
+                                </div></div></div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button></div>
+                    </div>
+                    <!-- Carousel / End -->
                 </div>
             </div>
         </div>
@@ -1444,6 +1376,11 @@
         .innersection li button:hover{
             background-color: rgb(33, 148, 224);
         }
+        .template-categories ul li.active {
+            color: #fff;
+            background: blue;
+            border-radius: 50vh;
+        }
     </style>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -1517,6 +1454,25 @@
         window.addEventListener("resize", moveSlider);
 
     </script>
-    
+
+
+<script>   $('.ai-templates-category').on('click', function (e) {
+        e.preventDefault();
+        // make active
+        $('.template-categories li').removeClass('active');
+        $(this).parents('li').addClass('active');
+
+        if ($(this).data('category') === 'all') {
+            $('.ai-template-blocks > div').show();
+            $('.ai-templates-category-title').show();
+        } else {
+            $('.ai-template-blocks > div').hide();
+            $('.category-' + $(this).data('category')).show();
+            $('.ai-templates-category-title').hide();
+
+            // empty search
+            $('#template-search').val('');
+        }
+    });</script>    
    
 </asp:Content>

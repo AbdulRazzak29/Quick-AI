@@ -16,7 +16,6 @@
     <script src="boostrap/js/popper.min.js"></script>
     <script src="boostrap/js/bootstrap.bundle.min.js"></script>
 
-
      
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -83,7 +82,7 @@ margin-top: 85px;"r-light">
     </div>
    <div class="dropdown" style="float:right;    margin-top: -3px;padding-right:10px;border-left: 2px solid #e0e0e0;padding-top:20px;padding-left:10px;height:82px;">
         <label for="Language"></label>
-                   <select name="Languge" id="Languge" style="height: auto; background-color: #444;">
+                   <select name="Languge" id="Languge" style="height: auto; background-color: #444;    color: white;">
                        <option value="en">english</option>
                        <option value=" Arabic "> Arabic </option>
                        <option value="Bangali">Bangali</option>

@@ -68,6 +68,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Blog Ideas.aspx" />
+    <Content Include="Blog Intros.aspx" />
+    <Content Include="Blog Section.aspx" />
+    <Content Include="Blog Titles.aspx" />
     <Content Include="Blog.aspx" />
     <Content Include="boostrap\css\all.min.css" />
     <Content Include="boostrap\css\bootstrap.min.css" />
@@ -86,6 +90,7 @@
     <Content Include="DashBoard.aspx" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
+    <Content Include="First Blog.aspx" />
     <Content Include="font\css\all.css" />
     <Content Include="font\css\all.min.css" />
     <Content Include="font\css\brands.css" />
@@ -2147,7 +2152,26 @@
     <Content Include="img\default.png" />
     <Content Include="img\default_user %281%29.png" />
     <Content Include="img\default_user.png" />
+    <Content Include="img\logo-carousel-01.png" />
+    <Content Include="img\logo-carousel-02.png" />
+    <Content Include="img\logo-carousel-03.png" />
+    <Content Include="img\logo-carousel-04.png" />
+    <Content Include="img\logo-carousel-05.png" />
+    <Content Include="img\logo-carousel-06.png" />
     <Content Include="img\logo.png" />
+    <Content Include="jsss\bootstrap-select.min.js" />
+    <Content Include="jsss\bootstrap-slider.min.js" />
+    <Content Include="jsss\chosen.min.js" />
+    <Content Include="jsss\counterup.min.js" />
+    <Content Include="jsss\custom.js" />
+    <Content Include="jsss\jquery.cookie.min.js" />
+    <Content Include="jsss\jquery.lazyload.min.js" />
+    <Content Include="jsss\magnific-popup.min.js" />
+    <Content Include="jsss\simplebar.min.js" />
+    <Content Include="jsss\slick.min.js" />
+    <Content Include="jsss\snackbar.js" />
+    <Content Include="jsss\tippy.all.min.js" />
+    <Content Include="jsss\user-ajax.js" />
     <Content Include="Login.aspx" />
     <Content Include="img\hhh.png" />
     <Content Include="img\home-hero-icon.png" />
@@ -2156,6 +2180,7 @@
     <Content Include="img\Screenshot 2023-04-17 170837.png" />
     <Content Include="img\Screenshot 2023-04-17 174526.png" />
     <Content Include="LoginPage4.aspx" />
+    <Content Include="love blog.aspx" />
     <Content Include="Testimonials1.aspx" />
     <Content Include="Upgrade Membership 5.aspx" />
     <Content Include="Upgrade Membership 50.aspx" />
@@ -2171,6 +2196,7 @@
     <Content Include="Membership Plan.aspx" />
     <Content Include="Templates.aspx" />
     <Content Include="AI Images.aspx" />
+    <Content Include="FAQ.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI.Master.cs">
@@ -2179,6 +2205,34 @@
     </Compile>
     <Compile Include="AI.Master.designer.cs">
       <DependentUpon>AI.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Blog Ideas.aspx.cs">
+      <DependentUpon>Blog Ideas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog Ideas.aspx.designer.cs">
+      <DependentUpon>Blog Ideas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog Intros.aspx.cs">
+      <DependentUpon>Blog Intros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog Intros.aspx.designer.cs">
+      <DependentUpon>Blog Intros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog Section.aspx.cs">
+      <DependentUpon>Blog Section.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog Section.aspx.designer.cs">
+      <DependentUpon>Blog Section.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog Titles.aspx.cs">
+      <DependentUpon>Blog Titles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog Titles.aspx.designer.cs">
+      <DependentUpon>Blog Titles.aspx</DependentUpon>
     </Compile>
     <Compile Include="Blog.aspx.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
@@ -2208,6 +2262,13 @@
     <Compile Include="Dashboard.Master.designer.cs">
       <DependentUpon>Dashboard.Master</DependentUpon>
     </Compile>
+    <Compile Include="First Blog.aspx.cs">
+      <DependentUpon>First Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="First Blog.aspx.designer.cs">
+      <DependentUpon>First Blog.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Forgot Passward.aspx.cs">
       <DependentUpon>Forgot Passward.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2235,6 +2296,13 @@
     </Compile>
     <Compile Include="LoginPage4.aspx.designer.cs">
       <DependentUpon>LoginPage4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="love blog.aspx.cs">
+      <DependentUpon>love blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="love blog.aspx.designer.cs">
+      <DependentUpon>love blog.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Home.aspx.cs">
@@ -2334,6 +2402,13 @@
     </Compile>
     <Compile Include="AI Images.aspx.designer.cs">
       <DependentUpon>AI Images.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

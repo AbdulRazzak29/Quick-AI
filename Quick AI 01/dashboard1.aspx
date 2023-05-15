@@ -282,7 +282,7 @@ body {
                                         <ul class="user-menu-small-nav">
                                             <li><a href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
                                             <li><a href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-image"></i>AI Images</a></li>
+                                            <li><a href="https://localhost:44308/AI%20Images.aspx"><i class="fa-solid fa-image"></i>AI Images</a></li>
                                             <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
                                             <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                                             <li><a href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
@@ -326,7 +326,7 @@ body {
                             </div>
                          
                         <!-- Right Side Content / End -->
-
+                            </div>
                     
                 </div>
                         </div>
@@ -376,7 +376,7 @@ body {
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/AI%20Images.aspx">
                                   <i class="fa-solid fa-image"></i> <div>AI Images</div>
                               </a>
                            </li>
@@ -548,8 +548,14 @@ body {
             <div class="small-footer margin-top-15">
                 <div class="footer-copyright">
                     2023 Socius IGB Pvt Ltd, All right reserved                </div>
-                <ul class="footer-social-links">
-                    <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a></li><li><a href="https://www.twitter.com/" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li><li><a href="https://instagram.com" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a></li><li><a href="https://www.linkedin.com/" target="_blank" rel="nofollow"><i class="fa fa-linkedin"></i></a></li><li><a href="https://pinterest.com/" target="_blank" rel="nofollow"><i class="fa fa-pinterest"></i></a></li><li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><i class="fa fa-youtube"></i></a></li>                </ul>
+                  <ul class="footer-social-links">
+                                <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.twitter.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-twitter" ></i></a></li>
+                                <li><a href="https://instagram.com" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram" ></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin" ></i></a></li>
+                                <li><a href="https://pinterest.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-pinterest"></i></a></li>
+                                <li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
                 <div class="clearfix"></div>
             </div>
 
@@ -669,7 +675,27 @@ body {
             });
         });
     </script>
-    
+    <script>
+        $('.resend').on('click', function (e) { 						// Button which will activate our modal
+            var the_id = $(this).attr('id');						//get the id
+            // show the spinner
+            $(this).html("<i class='fa fa-spinner fa-pulse'></i>");
+            $.ajax({											//the main ajax request
+                type: "POST",
+                data: "action=email_verify&id=" + $(this).attr("id"),
+                url: ajaxurl,
+                success: function (data) {
+                    $("span#resend_count" + the_id).html(data);
+                    //fadein the vote count
+                    $("span#resend_count" + the_id).fadeIn();
+                    //remove the spinner
+                    $("a.resend_buttons" + the_id).remove();
+
+                }
+            });
+            return false;
+        });
+    </script>
     
 </body>    
 </html>
