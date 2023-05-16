@@ -283,7 +283,7 @@ body {
                                             <li><a href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
                                             <li><a href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
                                             <li><a href="https://localhost:44308/AI%20Images.aspx"><i class="fa-solid fa-image"></i>AI Images</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
+                                            <li><a href="https://localhost:44308/AI%20Images.aspx#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
                                             <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                                             <li><a href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
                                             <li><a href="#"><i class="fa fa-file-text"></i>All Documents</a></li>

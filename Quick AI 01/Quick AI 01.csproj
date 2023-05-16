@@ -68,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AI Chat.aspx" />
     <Content Include="Blog Ideas.aspx" />
     <Content Include="Blog Intros.aspx" />
     <Content Include="Blog Section.aspx" />
@@ -2164,6 +2165,7 @@
     <Content Include="jsss\chosen.min.js" />
     <Content Include="jsss\counterup.min.js" />
     <Content Include="jsss\custom.js" />
+    <Content Include="jsss\highlight.min.js" />
     <Content Include="jsss\jquery.cookie.min.js" />
     <Content Include="jsss\jquery.lazyload.min.js" />
     <Content Include="jsss\magnific-popup.min.js" />
@@ -2181,6 +2183,7 @@
     <Content Include="img\Screenshot 2023-04-17 174526.png" />
     <Content Include="LoginPage4.aspx" />
     <Content Include="love blog.aspx" />
+    <Content Include="Speech to Text.aspx" />
     <Content Include="Testimonials1.aspx" />
     <Content Include="Upgrade Membership 5.aspx" />
     <Content Include="Upgrade Membership 50.aspx" />
@@ -2199,6 +2202,13 @@
     <Content Include="FAQ.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI Chat.aspx.cs">
+      <DependentUpon>AI Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AI Chat.aspx.designer.cs">
+      <DependentUpon>AI Chat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AI.Master.cs">
       <DependentUpon>AI.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2332,6 +2342,13 @@
     </Compile>
     <Compile Include="Account Setting.aspx.designer.cs">
       <DependentUpon>Account Setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Speech to Text.aspx.cs">
+      <DependentUpon>Speech to Text.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Speech to Text.aspx.designer.cs">
+      <DependentUpon>Speech to Text.aspx</DependentUpon>
     </Compile>
     <Compile Include="Testimonials1.aspx.cs">
       <DependentUpon>Testimonials1.aspx</DependentUpon>

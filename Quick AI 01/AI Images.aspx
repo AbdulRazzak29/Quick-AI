@@ -223,132 +223,135 @@
                     font-size: 18px;
                 }
         }
+                #snackbar {  visibility: hidden;  min-width: 250px;  color: white;  color:red;  text-align: center;  border-radius: 2px;  padding: 16px;  position: absolute;  z-index: 1;  font-size: 15px;  margin-left:0;  top:270px;}#snackbar.show {  visibility: visible;  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;  animation: fadein 0.5s, fadeout 0.5s 2.5s;}
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
        
-                        <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
+        <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
 
-                <div class="user-status-message">
-                    <div class="container container-active-msg">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <i class="icon-lock text-18"></i>
-                                <span>Your email address is not verified. Please verify your email address to use all the features.</span>
-                            </div>
-                            <div class="col-lg-4">
-                                <a class="button ripple-effect gray resend_buttons21 resend" href="javascript:void(0);" id="21">Resend Email</a>
-                                <span class="resend_count" id="resend_count21"></span>
-                            </div>
+            <div class="user-status-message">
+                <div class="container container-active-msg">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <i class="icon-lock text-18"></i>
+                            <span>Your email address is not verified. Please verify your email address to use all the features.</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <a class="button ripple-effect gray resend_buttons21 resend" href="javascript:void(0);" id="21">Resend Email</a>
+                            <span class="resend_count" id="resend_count21"></span>
                         </div>
                     </div>
                 </div>
-                <!-- Header -->
-                <div id="header">
-                    <div class="container">
-                        <!-- Left Side Content -->
-                        <div class="left-side">
-                            <!-- Logo -->
-                            <div id="logo" style="width: 261px;">
-                                <a href="https://localhost:44308/Home.aspx">
-                                    <img src="img/hhh.png" alt="Hype" style=" margin-top: 40px;" />
-                                </a>
-                            </div>
-                          
-                            
-                            
-                                <a href="javascript:void(0);"  class="header-icon">
-                       
-                   <i class="fa fa-bars" id="icon" style="margin-top: 32px;" onclick="myMine"></i>
-                    </a>
-                         
-                         
-                     
-                            
-                        </div><!-- Left Side Content / End -->
+            </div>
+            <!-- Header -->
+            <div id="header">
+                <div class="container">
+                    <!-- Left Side Content -->
+                    <div class="left-side">
+                        <!-- Logo -->
+                        <div id="logo" style="width: 261px;">
+                            <a href="https://localhost:44308/Home.aspx">
+                                <img src="img/hhh.png" alt="Hype" style="margin-top: 40px;" />
+                            </a>
+                        </div>
 
 
-                        <!-- Right Side Content / End -->
-                        <div class="right-side">
 
-                            <!-- User Menu -->
-                            <div class="header-widget">
+                        <a href="javascript:void(0);" class="header-icon">
 
-                                <!-- Messages -->
-                                <div class="header-notifications user-menu">
-                                    <div class="header-notifications-trigger">
-                                        <a href="#" title="">
-                                            <div class="user-avatar status-online">
-                                                <div class="dropdown">
-                                                    <span onclick="myFunction1()" class="dropbtn1" style="height: 69px; width: 64px;     top: -62px;" >
-                                                <img src="img/default_user.png" style=" height: 69px;"  />
-                                                        </span>
+                            <i class="fa fa-bars" id="icon" style="margin-top: 32px;" onclick="myMine"></i>
+                        </a>
+
+
+
+
+                    </div>
+                    <!-- Left Side Content / End -->
+
+
+                    <!-- Right Side Content / End -->
+                    <div class="right-side">
+
+                        <!-- User Menu -->
+                        <div class="header-widget">
+
+                            <!-- Messages -->
+                            <div class="header-notifications user-menu">
+                                <div class="header-notifications-trigger">
+                                    <a href="#" title="">
+                                        <div class="user-avatar status-online">
+                                            <div class="dropdown">
+                                                <span onclick="myFunction1()" class="dropbtn1" style="height: 69px; width: 64px; top: -62px;">
+                                                    <img src="img/default_user.png" style="height: 69px;" />
+                                                </span>
                                             </div>
-                                                </div>
-                                        </a>
-                                    </div>
-                                    <!-- Dropdown -->
-                                   <div id="login" class="dropdown-content">
-                                        <ul class="user-menu-small-nav">
-                                            <li><a href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
-                                            <li><a href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-image"></i>AI Images</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
-                                            <li><a href="#"><i class="fa fa-file-text"></i>All Documents</a></li>
-                                            <li><a href="https://localhost:44308/Current%20Plan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
-                                            <li><a href="https://localhost:44308/Account%20Setting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
-                                        </ul>
-                                    </div> 
-                                </div>
-
-                            </div>
-                            <!-- User Menu / End -->
-
-                            <div class="header-widget">
-                                <div class="btn-group bootstrap-select language-switcher">
-                                    
-                                    
-                                    <div  >
-                                         <select name="Languge" id="Languge" style="height: auto; background-color: #444;">
-                       <option value="en">english</option>
-                       <option value=" Arabic "> Arabic </option>
-                       <option value="Bangali">Bangali</option>
-                       <option value="Bulgarian">Bulgarian</option>
-                       <option value="Chinese">Chinese</option>
-                       <option value="English">English</option>
-                       <option value="French">French</option>
-                       <option value="German">German</option>
-                       <option value="Hebrew">Hebrew</option>
-                       <option value="Hindi">Hindi</option>
-                       <option value="Italian">Italian</option>
-                       <option value="Japanesh">Japanesh</option>
-                       <option value="Polish">Polish</option>
-                       <option value="Romanin">Romanian</option>
-                       <option value="Russian">Russian</option>
-                       <option value="Spanish">Spanish</option>
-                       <option value="Swedish">Swedish</option>
-                       <option value="Thai">Thai</option>
-                       <option value="Turkish">Turkish</option>
-                       <option value="Urdu">Urdu</option>
-                       <option value="vietnamese">vietnamese</option>
-                   </select>
                                         </div>
-                                    </div>
-                              
+                                    </a>
+                                </div>
+                                <!-- Dropdown -->
+                                <div id="login" class="dropdown-content">
+                                    <ul class="user-menu-small-nav">
+                                        <li><a href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
+                                        <li><a href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
+                                        <li><a href="https://localhost:44308/AI%20Images.aspx#"><i class="fa-solid fa-image"></i>AI Images</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
+                                        <li><a href="#"><i class="fa fa-file-text"></i>All Documents</a></li>
+                                        <li><a href="https://localhost:44308/Current%20Plan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
+                                        <li><a href="https://localhost:44308/Account%20Setting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Right Side Content / End -->
 
-                    
-                </div>
                         </div>
-             
-                <!-- Header / End -->
-            </header>
+                        <!-- User Menu / End -->
+
+                        <div class="header-widget">
+                            <div class="btn-group bootstrap-select language-switcher">
+
+
+                                <div class="dropdown" style="float: right; margin-top: -88px; padding-right: 10px; border-left: 2px solid #e0e0e0; padding-top: 20px; padding-left: 10px; height: 82px;">
+                                    <label for="Language"></label>
+                                    <select name="Languge" id="Languge" style="height: auto; background-color: #444; margin-top: -15px;">
+                                        <option value="en">english</option>
+                                        <option value=" Arabic ">Arabic </option>
+                                        <option value="Bangali">Bangali</option>
+                                        <option value="Bulgarian">Bulgarian</option>
+                                        <option value="Chinese">Chinese</option>
+                                        <option value="English">English</option>
+                                        <option value="French">French</option>
+                                        <option value="German">German</option>
+                                        <option value="Hebrew">Hebrew</option>
+                                        <option value="Hindi">Hindi</option>
+                                        <option value="Italian">Italian</option>
+                                        <option value="Japanesh">Japanesh</option>
+                                        <option value="Polish">Polish</option>
+                                        <option value="Romanin">Romanian</option>
+                                        <option value="Russian">Russian</option>
+                                        <option value="Spanish">Spanish</option>
+                                        <option value="Swedish">Swedish</option>
+                                        <option value="Thai">Thai</option>
+                                        <option value="Turkish">Turkish</option>
+                                        <option value="Urdu">Urdu</option>
+                                        <option value="vietnamese">vietnamese</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Right Side Content / End -->
+
+
+                </div>
+            </div>
+
+            <!-- Header / End -->
+        </header>
             <div class="row">
             <div class="col-lg-3">
                  <div class="sidebar" style="    margin-top: 61px; height: calc(100% - 90px);    width: 329px;"  >
@@ -389,7 +392,7 @@
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/AI%20Images.aspx#">
                                   <i class="fa-solid fa-image"></i> <div>AI Images</div>
                               </a>
                            </li>
@@ -460,7 +463,7 @@
             <!-- Dashboard Headline -->
            <div class="dashboard-headline">
                     <h3 class="d-flex align-items-center">
-                        All Images                       
+                        AI Images                       
                         <div class="word-used-wrapper margin-left-10" style="background: #B2BEB5;">
                            <i class="fa-solid fa-chart-simple"></i>
                             <i id="quick-words-left">0 / 100 
@@ -471,16 +474,16 @@
                     <nav id="breadcrumbs" class="dark">
                         <ul>
                             <li><a href="#">Home</a></li>
-                            <li>All Images</li>
+                            <li>AI Images</li>
                         </ul>
                     </nav>
                 </div>
             <!---Onclick display-->
             <form id="ai_images" name="ai_images" method="post" action="#">
                     <h4 class="margin-bottom-10 padding-left-5">Start with a detailed description. <a href="#" class="try-example"><strong>Try an example</strong></a></h4>
-                    <div class="message-reply ai_image_description margin-bottom-10">
+                    <div class="message-reply ai_image_description margin-bottom-10" >
                                 <textarea name="description" class="with-border small-input image-description" placeholder="SpongeBob SquarePants dressed as a mailman drinking a cup of coffee in a mountainside scene, watercolors by 5 year old" required=""></textarea>
-                        <button type="submit" name="submit" class="button ripple-effect border-pilled">Generate                            <i class="icon-feather-arrow-right"></i></button>
+                        <button id="app" type="submit" @click="validate"  name="submit" class="button ripple-effect border-pilled">Generate<i class="icon-feather-arrow-right"></i></button>
                     </div>
                     <div id="main" class="row image-advance-settings" style="display: none;">
                         <div class="col-sm-3">
@@ -489,7 +492,7 @@
                                 <input name="title" class="with-border small-input" type="text" value="New Image">
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3" style="    margin-left: 198px; margin-top: -76px;">
                             <div class="submit-field margin-bottom-20">
                                 <h6>Art style</h6>
                                 <div class="btn-group bootstrap-select with-border small-input">
@@ -531,7 +534,7 @@
                                 </select></div></div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3" style="margin-left: 439px; margin-top: -107px;">
                             <div class="submit-field margin-bottom-20">
                                 <h6>Lighting style</h6>
                                 <div class="btn-group bootstrap-select with-border small-input">
@@ -556,7 +559,7 @@
                                 </select></div></div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3" style="    margin-left: 630px;  margin-top: -107px;">
                             <div class="submit-field margin-bottom-20">
                                 <h6>Mood</h6>
                                 <div class="btn-group bootstrap-select with-border small-input">
@@ -593,10 +596,10 @@
                                 </select></div></div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3" style="margin-left: 300px;  margin-top: -108px;">
                             <div class="submit-field margin-bottom-20">
                                 <h6>Number of Images</h6>
-                                <div class="btn-group bootstrap-select with-border small-input">
+                                <div class="btn-group bootstrap-select with-border small-input" >
                                     
                                     <div>
                                        
@@ -611,6 +614,7 @@
                         </div>
                     </div>
                     <small><button onclick="hideshow()" >Advanced Settings</button> <strong>+</strong></small>
+               <div id="snackbar" v-if="visible" >API Error: The API key is missing or invalid.</div>
                     <div>
                         <small class="form-error"></small>
                     </div>
@@ -732,6 +736,23 @@
             $('.image-description').val(examples[Math.floor(Math.random() * examples.length)]);
         })
     </script>
+    <script>        new Vue({
+            el: "#app",
+            data: {
+                visible: false,
+                text: ''
+            },
+            methods: {
+                validate() {
+                    if (this.text) {
+                        this.visible = false
+                        alert("Action fired")
+                    } else {
+                        this.visible = true
+                    }
+                }
+            }
+        })    </script>
  
 </body>
 </html>

@@ -283,7 +283,7 @@ body {
                                         <ul class="user-menu-small-nav">
                                             <li><a href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
                                             <li><a href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-image"></i>AI Images</a></li>
+                                            <li><a href="https://localhost:44308/AI%20Images.aspx#"><i class="fa-solid fa-image"></i>AI Images</a></li>
                                             <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
                                             <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                                             <li><a href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
@@ -305,70 +305,32 @@ body {
                                 
                                     </button>
                                     
-                                    <div id="login1" class="dropdown-content" >
-                                        <ul class="dropdown-menu inner">
-                                            <li data-lang="arabic">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Arabic</a>
-                                            </li>
-                                            <li data-lang="bangali">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Bangali</a>
-                                            </li>
-                                            <li data-lang="bulgarian">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Bulgarian</a>
-                                            </li>
-                                            <li data-lang="chinese">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Chinese</a>
-                                            </li>
-                                            <li data-lang="english">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">English</a>
-                                            </li>
-                                            <li data-lang="french">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">French</a>
-                                            </li>
-                                            <li data-lang="german">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">German</a>
-                                            </li>
-                                            <li data-lang="hebrew">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Hebrew</a>
-                                            </li>
-                                            <li data-lang="hindi">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Hindi</a>
-                                            </li>
-                                            <li data-lang="italian">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Italian</a>
-                                            </li>
-                                            <li data-lang="japanese">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Japanese</a>
-                                            </li>
-                                            <li data-lang="polish">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Polish</a>
-                                            </li>
-                                            <li data-lang="romanian">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Romanian</a>
-                                            </li>
-                                            <li data-lang="russian">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Russian</a>
-                                            </li>
-                                            <li data-lang="spanish">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Spanish</a>
-                                            </li>
-                                            <li data-lang="swedish">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Swedish</a>
-                                            </li>
-                                            <li data-lang="thai">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Thai</a>
-                                            </li>
-                                            <li data-lang="turkish">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Turkish</a>
-                                            </li>
-                                            <li data-lang="urdu">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Urdu</a>
-                                            </li>
-                                            <li data-lang="vietnamese">
-                                                <a role="menuitem" tabindex="-1" rel="alternate">Vietnamese</a>
-                                            </li>
-                                        </ul>
-                                        </div>
+                                    <div class="dropdown" style="float: right; margin-top: -88px; padding-right: 10px; border-left: 2px solid #e0e0e0; padding-top: 20px; padding-left: 10px; height: 82px;">
+                                <label for="Language"></label>
+                                <select name="Languge" id="Languge" style="height: auto; background-color: #444;    margin-top: -15px;">
+                                    <option value="en">english</option>
+                                    <option value=" Arabic ">Arabic </option>
+                                    <option value="Bangali">Bangali</option>
+                                    <option value="Bulgarian">Bulgarian</option>
+                                    <option value="Chinese">Chinese</option>
+                                    <option value="English">English</option>
+                                    <option value="French">French</option>
+                                    <option value="German">German</option>
+                                    <option value="Hebrew">Hebrew</option>
+                                    <option value="Hindi">Hindi</option>
+                                    <option value="Italian">Italian</option>
+                                    <option value="Japanesh">Japanesh</option>
+                                    <option value="Polish">Polish</option>
+                                    <option value="Romanin">Romanian</option>
+                                    <option value="Russian">Russian</option>
+                                    <option value="Spanish">Spanish</option>
+                                    <option value="Swedish">Swedish</option>
+                                    <option value="Thai">Thai</option>
+                                    <option value="Turkish">Turkish</option>
+                                    <option value="Urdu">Urdu</option>
+                                    <option value="vietnamese">vietnamese</option>
+                                </select>
+                            </div>
                                     </div>
                               
                             </div>
@@ -422,7 +384,7 @@ body {
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/AI%20Images.aspx">
                                   <i class="fa-solid fa-image"></i> <div>AI Images</div>
                               </a>
                            </li>
