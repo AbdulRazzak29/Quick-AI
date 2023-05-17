@@ -23,7 +23,7 @@
                         <h4>Recent Blog</h4>
                     </div>
                     <!-- Blog Post -->
-                    <a href="#" class="blog-post">
+                    <a href="https://localhost:44308/First%20Blog.aspx" class="blog-post">
                         <!-- Blog Post Thumbnail -->
                         <div class="blog-post-thumbnail">
                             <div class="blog-post-thumbnail-inner">
@@ -69,136 +69,83 @@
                         <!-- Category Widget / End-->
 
                         <!-- Testimonials Widget -->
-                        <div class="sidebar-widget">
-                            <h3>Testimonials</h3>
-                            <div class="single-carousel slick-initialized slick-slider slick-dotted">
-                                <div class="slick-list draggable" style="padding: 0px; height: 266.479px; overflow: hidden;">
-                                    <div class="slick-track" style="opacity: 1; width: 2872px; transform: translate3d(-1077px, 0px, 0px); transition: transform 500ms ease 0s;">
-                                        <div class="single-testimonial slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 359px;" tabindex="-1">
-                                            <div class="single-inner">
-                                                <div class="testimonial-content">
-                                                    <p>Elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e</p>
-                                                </div>
-                                                <div class="testi-author-info">
-                                                    <div class="image">
-                                                        <img src="img/default_user%20(1).png" alt="Steve Roger"/>
+                       <div class="carouselpg">
+                                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                                    <!-- Indicators/dots -->
+                                    <div class="carousel-indicators">
+                                        <button id="courbtn" type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                                        <button id="courbtn1" type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                                        <button id="courbtn2" type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                                    </div>
+
+                                    <!-- The slideshow/carousel -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="single-testimonial-blog">
+                                                <div class="single-inner">
+                                                    <div class="testimonial-content-blog">
+                                                        <i class="fa-solid fa-quote-left quoteupblg"></i>
+                                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paria tur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                                        <i class="fa-solid fa-quote-right quotedwnblg"></i>
                                                     </div>
-                                                    <h5 class="name">Steve Roger</h5>
-                                                    <span class="designation">Content Writer</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="single-testimonial slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 359px;" tabindex="-1">
-                                            <div class="single-inner">
-                                                <div class="testimonial-content">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paria tur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                                <div class="testi-author-info">
-                                                    <div class="image">
-                                                        <img src="img/default_user%20(1).png" alt="Tony Stark"/></div>
-                                                    <h5 class="name">Tony Stark</h5>
-                                                    <span class="designation">Social Marketing</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="single-testimonial slick-slide" data-slick-index="0" aria-hidden="true" style="width: 359px;" tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
-                                            <div class="single-inner">
-                                                <div class="testimonial-content">
-                                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                </div>
-                                                <div class="testi-author-info">
-                                                    <div class="image">
-                                                        <img src="img/default_user%20(1).png"  alt="Natasha"/>
+                                                    <div class="testi-author-info">
+                                                        <div class="image-blog">
+                                                            <img src="img/default_user%20(1).png" style="height: 80px; width: 80px; border-radius: 100px;" />
+
                                                         </div>
-                                                    <h5 class="name">Natasha</h5>
-                                                    <span class="designation">Designer</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="single-testimonial slick-slide slick-current slick-active slick-center" data-slick-index="1" aria-hidden="false" style="width: 359px;" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
-                                            <div class="single-inner">
-                                                <div class="testimonial-content">
-                                                    <p>Elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e</p>
-                                                </div>
-                                                <div class="testi-author-info">
-                                                    <div class="image">
-                                                        <img src="img/default_user%20(1).png" alt="Steve Roger" />
-                                                      </div>
-                                                    <h5 class="name">Steve Roger</h5>
-                                                    <span class="designation">Content Writer</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="single-testimonial slick-slide" data-slick-index="2" aria-hidden="true" style="width: 359px;" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02">
-                                            <div class="single-inner">
-                                                <div class="testimonial-content">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paria tur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                                <div class="testi-author-info">
-                                                    <div class="image">
-                                                        <img src="img/default_user%20(1).png" alt="Tony Stark" />
-                                                      </div>
-                                                    <h5 class="name">Tony Stark</h5>
-                                                    <span class="designation">Social Marketing</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="single-testimonial slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" style="width: 359px;" tabindex="-1">
-                                            <div class="single-inner">
-                                                <div class="testimonial-content">
-                                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                </div>
-                                                <div class="testi-author-info">
-                                                    <div class="image">
-                                                        <img src="img/default_user%20(1).png" alt="Natasha"/>
+                                                        <div class="imgtext">
+                                                            <h5 class="name">Natasha</h5>
+                                                            <span class="designation">Social Marketing</span>
                                                         </div>
-                                                    <h5 class="name">Natasha</h5>
-                                                    <span class="designation">Designer</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="single-testimonial slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" style="width: 359px;" tabindex="-1">
-                                            <div class="single-inner">
-                                                <div class="testimonial-content">
-                                                    <p>Elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e</p>
-                                                </div>
-                                                <div class="testi-author-info">
-                                                    <div class="image">
-                                                        <img src="img/default_user%20(1).png" alt="Steve Roger" />
-                                                       </div>
-                                                    <h5 class="name">Steve Roger</h5>
-                                                    <span class="designation">Content Writer</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="single-testimonial slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" style="width: 359px;" tabindex="-1">
-                                            <div class="single-inner">
-                                                <div class="testimonial-content">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paria tur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                                <div class="testi-author-info">
-                                                    <div class="image">
-                                                        <img src="img/default_user%20(1).png" alt="Tony Stark" />
+                                        <div class="carousel-item">
+                                            <div class="single-testimonial-blog">
+                                                <div class="single-inner">
+                                                    <div class="testimonial-content-blog">
+                                                        <i class="fa-solid fa-quote-left quoteupblg"></i>
+                                                        <p>Elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e</p>
+                                                        <i class="fa-solid fa-quote-right quotedwnblg"></i>
+                                                    </div>
+                                                    <div class="testi-author-info">
+                                                        <div class="image-blog">
+                                                            <img src="img/default_user%20(1).png" style="height: 80px; width: 80px; border-radius: 100px;" />
+
                                                         </div>
-                                                    <h5 class="name">Tony Stark</h5>
-                                                    <span class="designation">Social Marketing</span>
+                                                        <div class="imgtext">
+                                                            <h5 class="name">Steve Rogers</h5>
+                                                            <span class="designation">Social Marketing</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="single-testimonial-blog">
+                                                <div class="single-inner">
+                                                    <div class="testimonial-content-blog">
+                                                        <i class="fa-solid fa-quote-left quoteupblg"></i>
+                                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua  </p>
+                                                        <i class="fa-solid fa-quote-right quotedwnblg"></i>
+                                                    </div>
+                                                    <div class="testi-author-info">
+                                                        <div class="image-blog">
+                                                            <img src="img/default_user%20(1).png" style="height: 80px; width: 80px; border-radius: 100px;" />
+
+                                                        </div>
+                                                        <div class="imgtext">
+                                                            <h5 class="name">Tony stark</h5>
+                                                            <span class="designation">Designer</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-
-                                <ul class="slick-dots" style="" role="tablist">
-                                    <li class="" role="presentation">
-                                        <button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li>
-                                    <li role="presentation" class="slick-active">
-                                        <button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 3" tabindex="-1">2</button></li>
-                                    <li role="presentation" class="">
-                                        <button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 3" tabindex="-1">3</button></li>
-                                </ul>
                             </div>
-                        </div>
                         <!-- Testimonials Widget / End-->
 
                         <!-- Tags Widget -->
@@ -234,5 +181,315 @@
         <!-- Spacer -->
 
     </div>
-  
+  <style>
+       
+.blogmain {
+    padding: 0px;
+    margin: 0;
+    width: auto;
+    background-color: #f5f5f5;
+}
+
+.goodlook3-blog {
+    padding-bottom: 50px;
+}
+
+.img-blog-flex {
+    margin-top: 50px;
+}
+.Istblog {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: .5s;
+}
+    .Istblog:hover {
+        transform: translate(0,-10px);
+    }
+.blogclm {
+    padding: 0px;
+}
+.size-img {
+    width: 100%;
+    height:220px;
+    padding:0px;
+}
+
+.acls {
+    text-decoration: none;
+    color: black;
+    padding:0px;
+}
+
+    .acls h5 {
+        background-color: #f0f0f0;
+        width: 130px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    .acls h3 {
+        margin: 10px;
+    }
+
+    .acls p {
+        margin: 30px 10px;
+    }
+
+.searchbar {
+    margin: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.search {
+    width: auto;
+    height: 30px;
+}
+/*--------testimonals blog page---------*/
+.bloghm {
+    padding-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.blogrow {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.carouselpg {
+    padding-bottom: 0px;
+}
+
+.single-inner {
+    background-color: #cccccc1a;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.single-testimonial-blog {
+    text-align: center;
+    padding-bottom: 40px;
+    margin-top: 0px;
+}
+
+.quoteupblg {
+    font-size: 40px;
+    float: left;
+}
+
+.quotedwnblg {
+    font-size: 40px;
+    float: right;
+}
+
+.testimonial-content-blog p {
+    padding-top: 40px;
+}
+
+.image-blog {
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.image {
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+}
+
+#courbtn {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+#courbtn1 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+#courbtn2 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.tag {
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+
+    .tag h3 {
+        padding:20px 0px;
+    }
+
+.travelbtn {
+    border-style: none;
+    background-color: #18469812;
+    color: blue;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.lovebtn {
+    border-style:none;
+    background-color: #18469812;
+    color: blue;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.social-profile {
+    text-align: left;
+    padding-left: 20px;
+}
+    .social-profile h3 {
+        padding: 20px 0px;
+    }
+.blogicons {
+    font-size: 20px;
+}
+
+    .blogicons a {
+        padding-right: 15px;
+    }
+
+        .blogicons a i {
+            color: grey;
+        }
+
+            .blogicons a i:hover {
+                color: black;
+            }
+
+/*---------------footer----------------*/
+h6 {
+    padding: 0;
+    padding-right: 0;
+    color: azure;
+    padding-left: 37PX;
+}
+
+.footer-col1 {
+    padding-top: 50px;
+}
+
+ul li {
+    padding: 5px;
+    list-style: none;
+}
+
+    ul li a {
+        text-decoration: none;
+        color: whitesmoke
+    }
+
+.footer-col2 {
+    padding-top: 50px;
+}
+
+ul li {
+    padding: 5px;
+    list-style: none;
+}
+
+    ul li a {
+        text-decoration: none;
+        color: whitesmoke
+    }
+
+.footer-col3 {
+    padding-top: 50px;
+}
+
+ul li {
+    padding: 5px;
+    list-style: none;
+    text-align: left;
+}
+
+    ul li a {
+        text-decoration: none;
+        color: grey;
+    }
+
+        ul li a:hover {
+            color: white;
+        }
+
+.logofoot {
+    padding-left: 15px;
+    padding-top: 50px;
+    padding-right: 0px;
+}
+.footcopy{
+    padding-top:10px;
+    margin:10px 0px;
+}
+#border-right-line {
+    border-right: 1px solid #484848;
+}
+.icons {
+    font-size: 20px;
+}
+
+    .icons a {
+        padding-left: 15px;
+    }
+
+        .icons a i {
+            color: grey;
+        }
+
+a i:hover {
+    color: white;
+}
+
+
+
+
+
+/*-------------media-------------*/
+@media(max-width:1100px){
+    .tag {
+        text-align: center;
+       
+    }
+    .social-profile {
+        text-align: center;
+    }
+    .bloghm{
+        margin:0px;
+    }
+    .blogrow {
+         margin-left: 0px; 
+         margin-right: 0px; 
+         height:auto;
+    }
+    .footcopy {
+        text-align: center;
+        padding:0;
+        margin:0px;
+    }
+    #border-right-line {
+        padding-top: 20px;
+    }
+    .icons {
+        padding-bottom: 20px;
+    }
+}
+   </style>
 </asp:Content>

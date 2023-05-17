@@ -213,6 +213,26 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+ #snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  color: white;
+  color:red;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: absolute;
+  z-index: 1;
+  font-size: 15px;
+  margin-left:-31px;
+  top:500px;
+  }
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
 </style>
 </head>
 <body>
@@ -554,10 +574,10 @@ body {
                                             <textarea name="description" class="with-border small-input quick-text-counter" data-maxlength="200"></textarea>
                                             <small>Describe the speech from the file to help the AI. (Optional)</small>
                                         </div>
-                                        <small class="form-error"></small>
+                                       <div id="snackbar" >Unexpected error, please try again.</div>
                                         <button type="submit" name="submit"
-                                                    class="button ripple-effect full-width">Generate   <i class="icon-feather-arrow-right"></i></button>
-                                        <div class="notification small-notification notice margin-top-5">Audio transcription may takes time due to the file size.</div>
+                                                    class="button ripple-effect full-width" onclick="myFunction3()">Generate  <i class="fa-solid fa-arrow-right"></i></button>
+                                        <div class="notification small-notification notice margin-top-5" style="top:20px">Audio transcription may takes time due to the file size.</div>
                                     </div>
                                 </div>
                             </div>
@@ -651,7 +671,7 @@ body {
                                     <div id="text-input" contenteditable="true" style="height: 500px">
                                     </div>
                                 </div>
-
+                                 
                                 <%-- <div class="content with-padding">
                                 <div id="content-focus"></div>
                                 <textarea  name="content" class="tiny-editor"></textarea>
@@ -840,5 +860,12 @@ body {
               }
           }
       </script>
+        <script>
+            function myFunction3() {
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+            }
+        </script>
 </body>
 </html>

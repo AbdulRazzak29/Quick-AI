@@ -223,7 +223,26 @@
                     font-size: 18px;
                 }
         }
-                #snackbar {  visibility: hidden;  min-width: 250px;  color: white;  color:red;  text-align: center;  border-radius: 2px;  padding: 16px;  position: absolute;  z-index: 1;  font-size: 15px;  margin-left:0;  top:270px;}#snackbar.show {  visibility: visible;  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;  animation: fadein 0.5s, fadeout 0.5s 2.5s;}
+  #snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  color: white;
+  color:red;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: absolute;
+  z-index: 1;
+  font-size: 15px;
+  margin-left:0;
+  top:270px;
+  }
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
     </style>
 </head>
 <body>
@@ -483,7 +502,7 @@
                     <h4 class="margin-bottom-10 padding-left-5">Start with a detailed description. <a href="#" class="try-example"><strong>Try an example</strong></a></h4>
                     <div class="message-reply ai_image_description margin-bottom-10" >
                                 <textarea name="description" class="with-border small-input image-description" placeholder="SpongeBob SquarePants dressed as a mailman drinking a cup of coffee in a mountainside scene, watercolors by 5 year old" required=""></textarea>
-                        <button id="app" type="submit" @click="validate"  name="submit" class="button ripple-effect border-pilled">Generate<i class="icon-feather-arrow-right"></i></button>
+                        <button id="app" type="submit" onclick="myFunction3()"  style="top: 0;    width: 158px; " name="submit" class="button ripple-effect border-pilled">Generate&nbsp<i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                     <div id="main" class="row image-advance-settings" style="display: none;">
                         <div class="col-sm-3">
@@ -614,10 +633,8 @@
                         </div>
                     </div>
                     <small><button onclick="hideshow()" >Advanced Settings</button> <strong>+</strong></small>
-               <div id="snackbar" v-if="visible" >API Error: The API key is missing or invalid.</div>
-                    <div>
-                        <small class="form-error"></small>
-                    </div>
+              <div id="snackbar" >API Error: The API key is missing or invalid.</div>
+                 <hr />
                 </form> 
            
            
@@ -736,23 +753,14 @@
             $('.image-description').val(examples[Math.floor(Math.random() * examples.length)]);
         })
     </script>
-    <script>        new Vue({
-            el: "#app",
-            data: {
-                visible: false,
-                text: ''
-            },
-            methods: {
-                validate() {
-                    if (this.text) {
-                        this.visible = false
-                        alert("Action fired")
-                    } else {
-                        this.visible = true
-                    }
-                }
+    <script>
+            function myFunction3() {
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
             }
-        })    </script>
+    </script>
+  
  
 </body>
 </html>

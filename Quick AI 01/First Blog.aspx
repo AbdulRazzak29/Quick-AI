@@ -45,7 +45,7 @@
                             <p>&nbsp;</p>
                         </div>
                         <div class="task-tags margin-bottom-20">
-                            Tags: <a href="#">travel fun</a>  <a href="#">love</a>
+                            Tags: <a href="#">travel fun</a>  <a href="https://localhost:44308/love%20blog.aspx">love</a>
                         </div>
                         <!-- Share Buttons -->
                         <div class="share-buttons margin-top-25">

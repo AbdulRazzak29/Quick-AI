@@ -72,8 +72,8 @@
                                                     </div>
                                                     <div class="testi-author-info">
                                                         <div class="image-blog">
-                <img src="img/default_user%20(1).png" style="height: 80px;width: 80px;border-radius: 100px;" />
-                                                           
+                                                            <img src="img/default_user%20(1).png" style="height: 80px; width: 80px; border-radius: 100px;" />
+
                                                         </div>
                                                         <div class="imgtext">
                                                             <h5 class="name">Natasha</h5>
@@ -93,8 +93,8 @@
                                                     </div>
                                                     <div class="testi-author-info">
                                                         <div class="image-blog">
-                    <img src="img/default_user%20(1).png" style="height: 80px;width: 80px;border-radius: 100px;" />
-                                                           
+                                                            <img src="img/default_user%20(1).png" style="height: 80px; width: 80px; border-radius: 100px;" />
+
                                                         </div>
                                                         <div class="imgtext">
                                                             <h5 class="name">Steve Rogers</h5>
@@ -114,8 +114,8 @@
                                                     </div>
                                                     <div class="testi-author-info">
                                                         <div class="image-blog">
-                        <img src="img/default_user%20(1).png" style="height: 80px;width: 80px;border-radius: 100px;" />
-                                                           
+                                                            <img src="img/default_user%20(1).png" style="height: 80px; width: 80px; border-radius: 100px;" />
+
                                                         </div>
                                                         <div class="imgtext">
                                                             <h5 class="name">Tony stark</h5>
@@ -133,7 +133,7 @@
                                 <span>
                                     <a href="TravelFun.aspx" class="travelbtn">Travel Fun</a></span>
                                 <span>
-                                    <a href="Love.aspx"  class="lovebtn" >Love</a></span>
+                                    <a href="https://localhost:44308/love%20blog.aspx"  class="lovebtn" >Love</a></span>
                             </div>
                             <div class="social-profile">
                                 <h3>Social Profile</h3>

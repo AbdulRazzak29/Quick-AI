@@ -283,7 +283,7 @@ body {
                                         <ul class="user-menu-small-nav">
                                             <li><a href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
                                             <li><a href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                                            <li><a href="https://localhost:44308/AI%20Images.aspx#"><i class="fa-solid fa-image"></i>AI Images</a></li>
+                                            <li><a href="https://localhost:44308/AI%20Images.aspx"><i class="fa-solid fa-image"></i>AI Images</a></li>
                                             <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
                                             <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                                             <li><a href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
@@ -300,10 +300,7 @@ body {
 
                             <div class="header-widget">
                                 <div class="btn-group bootstrap-select language-switcher">
-                                    <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="English" style="    margin-top: -68px;">
-                                        <span onclick="myFunction2()" class="dropbtn2">en</span>&nbsp;
-                                
-                                    </button>
+                                     
                                     
                                      <div class="dropdown" style="float: right; margin-top: -88px; padding-right: 10px; border-left: 2px solid #e0e0e0; padding-top: 20px; padding-left: 10px; height: 82px;">
                                 <label for="Language"></label>
@@ -508,7 +505,7 @@ body {
             </div>
             <div class="template-categories home-templates">
                 <ul>
-                    <li class="active"><a href="javascript:void();" class="ai-templates-category" data-category="all" style="color: #777;">All templates</a></li>
+                    <li class="active"><a href="javascript:void();" class="ai-templates-category" data-category="all" >All templates</a></li>
                                             <li><a href="javascript:void();" class="ai-templates-category" data-category="1">Article And Blogs</a></li>
                                             <li><a href="javascript:void();" class="ai-templates-category" data-category="2">Ads And Marketing Tools</a></li>
                                             <li><a href="javascript:void();" class="ai-templates-category" data-category="3">General Writing</a></li>
@@ -1522,6 +1519,8 @@ body {
                 // empty search
                 $('#template-search').val('');
             }
-        });</script>
+        });
+
+    </script>
 </body>
 </html>

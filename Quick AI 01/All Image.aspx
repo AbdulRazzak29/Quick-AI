@@ -300,10 +300,7 @@ body {
 
                             <div class="header-widget">
                                 <div class="btn-group bootstrap-select language-switcher">
-                                    <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="English" style="    margin-top: -68px;">
-                                        <span onclick="myFunction2()" class="dropbtn2">en</span>&nbsp;
-                                
-                                    </button>
+                                  
                                     
                                      <div class="dropdown" style="float: right; margin-top: -88px; padding-right: 10px; border-left: 2px solid #e0e0e0; padding-top: 20px; padding-left: 10px; height: 82px;">
                                 <label for="Language"></label>
@@ -345,104 +342,116 @@ body {
             </header>
         </div>
          <div class="row">
-            <div class="col-lg-3">
-                 <div class="sidebar" style="    margin-top: 61px; height: calc(100% - 90px);    width: 329px;"  >
-                         <ul>
-                             
-                             <li>
-                                 <div style="color:darkblue;font-weight:600;">
-                                    <h9> My Account</h9>
-                                 </div>
-                             </li>
-                            <li>
-                              <a href="https://localhost:44308/dashboard1.aspx">
-                                  <i class="fa fa-th-large"></i> <div>Dashboard</div>
-                              </a>
-                           </li>
-                             <li>
-                                 <div class="fa fa-file-text">
-                           <div class="dropdown">
-                        <span onclick="myFunction()" class="dropbtn" >My Documents</span>
-                          <div id="myDropdown1" class="dropdown-content" >
-                                   <a href="https://localhost:44308/All%20Documents.aspx">All Documents</a>
-                                   <a href="https://localhost:44308/All%20Image.aspx">All AI Images</a>
-                              </div>
-                              </div>
-                            </div>
-                          </li>
-                         </ul>
+             <div class="col-lg-3">
 
-                         <ul>
-                             <li>
-                                 <div style="color:darkblue;font-weight:600;">
-                                    <h9>  Organize And Manage</h9>
-                                 </div>
-                             </li>
-                            <li>
-                              <a href="https://localhost:44308/Templates.aspx">
-                                 <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
-                              </a>
-                           </li>
-                             <li>
-                              <a href="https://localhost:44308/AI%20Images.aspx#">
-                                  <i class="fa-solid fa-image"></i> <div>AI Images</div>
-                              </a>
-                           </li>
-                             <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
-                              </a>
-                           </li>                    
-                            <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
-                              </a>
-                           </li>
-                             <li>
-                              <a href="#">
-                                 <i class="fa-solid fa-code"></i><div>AI Code</div>
-                              </a>
-                           </li> 
-                             </ul>
+                 <div class="sidebar" style="margin-top: 61px; height: calc(100% - 90px); width: 329px;">
+                     <ul>
 
-                             <ul>
-                                 <li>
-                                 <div style="color:darkblue;font-weight:600;">
-                                    <h9>  Account</h9>
+                         <li>
+                             <div style="color: darkblue; font-weight: 600;">
+                                 <h9>My Account</h9>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="https://localhost:44308/dashboard1.aspx">
+                                 <i class="fa fa-th-large"></i>
+                                 <div>Dashboard</div>
+                             </a>
+                         </li>
+                         <li>
+                             <div class="fa fa-file-text">
+                                 <div class="dropdown">
+                                     <span onclick="myFunction()" class="dropbtn">My Documents</span>
+                                     <div id="myDropdown1" class="dropdown-content">
+                                         <a href="https://localhost:44308/All%20Documents.aspx">All Documents</a>
+                                         <a href="https://localhost:44308/All%20Image.aspx">All AI Images</a>
+                                     </div>
                                  </div>
-                             </li>
-                              <li>
-                              <a href="#">
-                                  <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
-                              </a>
-                           </li>
-                             <li>
-                              <a href="https://localhost:44308/Current%20Plan.aspx">
-                                 <i class="fa-solid fa-gift"></i> <div>Membership</div>
-                              </a>
-                           </li>
-                            
-                             <li>
-                              <a href="https://localhost:44308/Transactions.aspx">
-                                  <i class="fa-solid fa-file"></i> <div>Transaction</div>
-                              </a>
-                           </li>
-                              <li>
-                              <a href="https://localhost:44308/Account%20Setting.aspx">
-                                  <i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div>
-                              </a>
-                           </li>
-                              <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
-                              </a>
-                           </li>
-                         </ul>
-                         
-                       
-                         
-                     </div>
-            </div>
+                             </div>
+                         </li>
+                     </ul>
+
+                     <ul>
+                         <li>
+                             <div style="color: darkblue; font-weight: 600;">
+                                 <h9>Organize And Manage</h9>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="https://localhost:44308/Templates.aspx">
+                                 <i class="fa-solid fa-layer-group"></i>
+                                 <div>Templates</div>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="https://localhost:44308/AI%20Images.aspx#">
+                                 <i class="fa-solid fa-image"></i>
+                                 <div>AI Images</div>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#">
+                                 <i class="fa-solid fa-comment-dots"></i>
+                                 <div>AI Chats</div>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#">
+                                 <i class="fa-solid fa-headphones"></i>
+                                 <div>Speech To Text</div>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#">
+                                 <i class="fa-solid fa-code"></i>
+                                 <div>AI Code</div>
+                             </a>
+                         </li>
+                     </ul>
+
+                     <ul>
+                         <li>
+                             <div style="color: darkblue; font-weight: 600;">
+                                 <h9>Account</h9>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#">
+                                 <i class="fa fa-th-large"></i>
+                                 <div>Affiliate Program</div>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="https://localhost:44308/Current%20Plan.aspx">
+                                 <i class="fa-solid fa-gift"></i>
+                                 <div>Membership</div>
+                             </a>
+                         </li>
+
+                         <li>
+                             <a href="https://localhost:44308/Transactions.aspx">
+                                 <i class="fa-solid fa-file"></i>
+                                 <div>Transaction</div>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="https://localhost:44308/Account%20Setting.aspx">
+                                 <i class="fa-solid fa-right-from-bracket"></i>
+                                 <div>Account Setting</div>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#">
+                                 <i class="fa-solid fa-power-off"></i>
+                                 <div>Log Out</div>
+                             </a>
+                         </li>
+                     </ul>
+
+
+
+                 </div>
+             </div>
             <div class="col-lg-9">
                    <div class="main-content">
 
