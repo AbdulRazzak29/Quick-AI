@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Blog Intros.aspx.cs" Inherits="Quick_AI_01.Blog_Intros" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Article Writer.aspx.cs" Inherits="Quick_AI_01.WebForm12" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
+       <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="font/css/all.css" rel="stylesheet" />
     <link href="boostrap/css/style.css" rel="stylesheet" />
     <link href="boostrap/css/all.min.css" rel="stylesheet" />
@@ -562,7 +562,7 @@ select:focus,select:hover
             <!-- Dashboard Headline -->
            <div class="dashboard-headline">
                     <h3 class="d-flex align-items-center">
-                      Blog Intros                       
+                     Article Writer                      
                         <div class="word-used-wrapper margin-left-10" style="background: #B2BEB5;">
                            <i class="fa-solid fa-chart-simple"></i>
                             <i id="quick-words-left">0 / 10,000  
@@ -574,7 +574,7 @@ select:focus,select:hover
                         <ul>
                             <li><a href="https://localhost:44308/Home.aspx">Home</a></li>
                             <li>Templetes</li>
-                            <li>Blog Intros</li>
+                            <li>Article Writer</li>
                         </ul>
                     </nav>
                 </div>
@@ -584,18 +584,19 @@ select:focus,select:hover
                         <!-- Headline -->
                         <div class="headline">
                             <h3>
-                                <i class="fa fa-align-left"></i>Blog Intros </h3>
+                                <i class="fa fa-pencil-square"></i>Article Writer</h3>
+                             <span class="dashboard-status-button yellow margin-bottom-0 margin-left-10" data-tippy-placement="top" data-tippy="" data-original-title="Upgrade your plan to use this template"><i class="fa fa-gift"></i> Pro</span>
                         </div>
                         <div class="content with-padding">
-                            <div class="notification small-notification notice">Article/blog ideas that you can use to generate more traffic, leads, and sales for your business.</div>
+                            <div class="notification small-notification notice">Create a fully complete high quality article from a title and outline text.</div>
                             <div class="submit-field margin-bottom-20">
                                 <div class="submit-field margin-bottom-20">
-                                                <h6>Blog Title<span class="form-required">*</span></h6>
+                                                <h6>Article Title<span class="form-required">*</span></h6>
                                                 <input name="title" class="with-border quick-text-counter small-input" data-maxlength="200" required="">
-                                    <div class="form-text" id="simple-txt-counter-0">0 / 200</div>
+                                    <div class="form-text" >0 / 200</div>
                                             </div>
-                                <h6>What is your blog is about?<span class="form-required">*</span></h6>
-                                <textarea name="description" class="with-border quick-text-counter small-input" data-maxlength="400" placeholder="Describe your blog here..." required=""></textarea><div class="form-text" id="simple-txt-counter-0">0 / 400</div>
+                                <h6>Keywords<span class="form-required">*</span></h6>
+                                <textarea name="description" class="with-border quick-text-counter small-input" data-maxlength="400" placeholder="Keywords 1,Keywords 2" required=""></textarea><div class="form-text" id="simple-txt-counter-0">0 / 400</div>
                             </div>
                             <div class="submit-field margin-bottom-20">
                                 <h6>Language</h6>
@@ -689,8 +690,7 @@ select:focus,select:hover
                                 <input name="max_results" type="number" class="with-border small-input" value="200" min="50">
                             </div>
                             <div>
-                                <small class="form-error"></small>
-                                <button type="submit" name="submit" class="button ripple-effect full-width">Generate  <i class="icon-feather-arrow-right"></i></button>
+                                 <div class="notification small-notification notice" style="color:red; background-color:#f1cdd1">Upgrade your plan to use this template</div>
                             </div>
                         </div>
                     </div>
@@ -848,27 +848,7 @@ select:focus,select:hover
         });
 
     </script>
-     <script>
-         /* When the user clicks on the button, 
-         toggle between hiding and showing the dropdown content */
-         function myFunction() {
-             document.getElementById("myDropdown1").classList.toggle("show");
-         }
-
-         // Close the dropdown if the user clicks outside of it
-         window.onclick = function (event) {
-             if (!event.target.matches('.dropbtn')) {
-                 var dropdowns = document.getElementsByClassName("dropdown-content");
-                 var i;
-                 for (i = 0; i < dropdowns.length; i++) {
-                     var openDropdown = dropdowns[i];
-                     if (openDropdown.classList.contains('show')) {
-
-                     }
-                 }
-             }
-         }
-     </script>
+    
       <script>
           /* When the user clicks on the button, 
           toggle between hiding and showing the dropdown content */

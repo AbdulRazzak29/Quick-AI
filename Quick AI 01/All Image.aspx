@@ -269,30 +269,28 @@ body {
                                 <div class="header-notifications user-menu">
                                     <div class="header-notifications-trigger">
                                         <a href="#" title="">
-                                            <div class="user-avatar status-online">
+                                            
                                                 <div class="dropdown">
-                                                    <span onclick="myFunction1()" class="dropbtn1" style="height: 69px; width: 64px;     top: -62px;" >
-                                                <img src="img/default_user.png" style=" height: 69px;"  />
-                                                        </span>
-                                            </div>
+                                                    <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px; margin-left: -59px; margin-top: -24px;">
+                                                        <img src="img/default_user.png" style="height: 69px;" />
+                                                    </a>
+                                                    <ul class="dropdown-menu" >
+                                                        <li><a class="dropdown-item" href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
+                        <li><a class="dropdown-item" href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
+                        <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
+                        <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
+                        <li><a class="dropdown-item" href="https://localhost:44308/Current%20Plan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
+                        <li><a class="dropdown-item" href="https://localhost:44308/Account%20Setting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
+                        <li><a class="dropdown-item" href="homepage.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                                                    </ul>
                                                 </div>
                                         </a>
                                     </div>
                                     <!-- Dropdown -->
-                                   <div id="login" class="dropdown-content">
-                                        <ul class="user-menu-small-nav">
-                                            <li><a href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
-                                            <li><a href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                                            <li><a href="https://localhost:44308/AI%20Images.aspx#"><i class="fa-solid fa-image"></i>AI Images</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
-                                            <li><a href="#"><i class="fa fa-file-text"></i>All Documents</a></li>
-                                            <li><a href="https://localhost:44308/Current%20Plan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
-                                            <li><a href="https://localhost:44308/Account%20Setting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
-                                        </ul>
-                                    </div> 
+                                    
                                 </div>
 
                             </div>
@@ -358,17 +356,19 @@ body {
                                  <div>Dashboard</div>
                              </a>
                          </li>
-                         <li>
-                             <div class="fa fa-file-text">
-                                 <div class="dropdown">
-                                     <span onclick="myFunction()" class="dropbtn">My Documents</span>
-                                     <div id="myDropdown1" class="dropdown-content">
-                                         <a href="https://localhost:44308/All%20Documents.aspx">All Documents</a>
-                                         <a href="https://localhost:44308/All%20Image.aspx">All AI Images</a>
-                                     </div>
-                                 </div>
-                             </div>
-                         </li>
+                       <li>
+
+                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline"><span class="fa fa-file-text"></span>My Documents</span></a>
+                        <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="https://localhost:44308/All%20Documents.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">All Documents</span> </a>
+                            </li>
+                            <li>
+                                <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">All  Images</span> </a>
+                            </li>
+                        </ul>
+                    </li>
                      </ul>
 
                      <ul>
@@ -571,27 +571,7 @@ body {
         });
 
     </script>
-     <script>
-         /* When the user clicks on the button, 
-         toggle between hiding and showing the dropdown content */
-         function myFunction() {
-             document.getElementById("myDropdown1").classList.toggle("show");
-         }
-
-         // Close the dropdown if the user clicks outside of it
-         window.onclick = function (event) {
-             if (!event.target.matches('.dropbtn')) {
-                 var dropdowns = document.getElementsByClassName("dropdown-content");
-                 var i;
-                 for (i = 0; i < dropdowns.length; i++) {
-                     var openDropdown = dropdowns[i];
-                     if (openDropdown.classList.contains('show')) {
-
-                     }
-                 }
-             }
-         }
-     </script>
+     
       <script>
           /* When the user clicks on the button, 
           toggle between hiding and showing the dropdown content */

@@ -15,6 +15,17 @@
     <script src="boostrap/js/jquery.slim.min.js"></script>
     <script src="boostrap/js/popper.min.js"></script>
     <script src="boostrap/js/bootstrap.bundle.min.js"></script>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
 
     <style>
        * {
@@ -1010,7 +1021,6 @@ select:focus,select:hover
                }
            });
        });
-   </script>
-</body>
+   </script></body>
    
 </html>

@@ -69,6 +69,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AI Chat.aspx" />
+    <Content Include="AI Code.aspx" />
+    <Content Include="Blog Conclusion.aspx" />
     <Content Include="Blog Ideas.aspx" />
     <Content Include="Blog Intros.aspx" />
     <Content Include="Blog Section.aspx" />
@@ -2184,7 +2186,9 @@
     <Content Include="LoginPage4.aspx" />
     <Content Include="love blog.aspx" />
     <Content Include="Speech to Text.aspx" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="Testimonials1.aspx" />
+    <Content Include="testing.aspx" />
     <Content Include="Upgrade Membership 5.aspx" />
     <Content Include="Upgrade Membership 50.aspx" />
     <Content Include="Upgrade Membership 550.aspx" />
@@ -2200,6 +2204,8 @@
     <Content Include="Templates.aspx" />
     <Content Include="AI Images.aspx" />
     <Content Include="FAQ.aspx" />
+    <Content Include="Article Writer.aspx" />
+    <Content Include="WebForm13.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI Chat.aspx.cs">
@@ -2209,12 +2215,26 @@
     <Compile Include="AI Chat.aspx.designer.cs">
       <DependentUpon>AI Chat.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AI Code.aspx.cs">
+      <DependentUpon>AI Code.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AI Code.aspx.designer.cs">
+      <DependentUpon>AI Code.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AI.Master.cs">
       <DependentUpon>AI.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AI.Master.designer.cs">
       <DependentUpon>AI.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Blog Conclusion.aspx.cs">
+      <DependentUpon>Blog Conclusion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog Conclusion.aspx.designer.cs">
+      <DependentUpon>Blog Conclusion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Blog Ideas.aspx.cs">
       <DependentUpon>Blog Ideas.aspx</DependentUpon>
@@ -2264,13 +2284,6 @@
     </Compile>
     <Compile Include="DashBoard.aspx.designer.cs">
       <DependentUpon>DashBoard.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Dashboard.Master.cs">
-      <DependentUpon>Dashboard.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Dashboard.Master.designer.cs">
-      <DependentUpon>Dashboard.Master</DependentUpon>
     </Compile>
     <Compile Include="First Blog.aspx.cs">
       <DependentUpon>First Blog.aspx</DependentUpon>
@@ -2357,6 +2370,13 @@
     <Compile Include="Testimonials1.aspx.designer.cs">
       <DependentUpon>Testimonials1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="testing.aspx.cs">
+      <DependentUpon>testing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testing.aspx.designer.cs">
+      <DependentUpon>testing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Upgrade Membership 5.aspx.cs">
       <DependentUpon>Upgrade Membership 5.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2427,6 +2447,20 @@
     <Compile Include="FAQ.aspx.designer.cs">
       <DependentUpon>FAQ.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Article Writer.aspx.cs">
+      <DependentUpon>Article Writer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Article Writer.aspx.designer.cs">
+      <DependentUpon>Article Writer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm13.aspx.cs">
+      <DependentUpon>WebForm13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm13.aspx.designer.cs">
+      <DependentUpon>WebForm13.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="font\less\brands.less" />
@@ -2483,7 +2517,6 @@
     <Content Include="font\webfonts\fa-v4compatibility.ttf" />
     <Content Include="font\webfonts\fa-v4compatibility.woff2" />
     <Content Include="AI.Master" />
-    <Content Include="Dashboard.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

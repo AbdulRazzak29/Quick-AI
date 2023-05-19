@@ -1,10 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Blog Intros.aspx.cs" Inherits="Quick_AI_01.Blog_Intros" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Blog Conclusion.aspx.cs" Inherits="Quick_AI_01.Blog_Conclusion" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+ 
     <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="font/css/all.css" rel="stylesheet" />
     <link href="boostrap/css/style.css" rel="stylesheet" />
@@ -285,7 +286,7 @@ select:focus,select:hover
 <body>
     <form id="form1" runat="server">
         <div>
-             <div>
+            <div>
             <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
 
                 <div class="user-status-message">
@@ -562,7 +563,7 @@ select:focus,select:hover
             <!-- Dashboard Headline -->
            <div class="dashboard-headline">
                     <h3 class="d-flex align-items-center">
-                      Blog Intros                       
+                      Blog Conclusion                       
                         <div class="word-used-wrapper margin-left-10" style="background: #B2BEB5;">
                            <i class="fa-solid fa-chart-simple"></i>
                             <i id="quick-words-left">0 / 10,000  
@@ -574,7 +575,7 @@ select:focus,select:hover
                         <ul>
                             <li><a href="https://localhost:44308/Home.aspx">Home</a></li>
                             <li>Templetes</li>
-                            <li>Blog Intros</li>
+                            <li>Blog Conclusion</li>
                         </ul>
                     </nav>
                 </div>
@@ -584,15 +585,15 @@ select:focus,select:hover
                         <!-- Headline -->
                         <div class="headline">
                             <h3>
-                                <i class="fa fa-align-left"></i>Blog Intros </h3>
+                                <i class="fa fa-check-square"></i>Blog Conclusion</h3>
                         </div>
                         <div class="content with-padding">
-                            <div class="notification small-notification notice">Article/blog ideas that you can use to generate more traffic, leads, and sales for your business.</div>
+                            <div class="notification small-notification notice">Create powerful conclusion that will make a reader take action.</div>
                             <div class="submit-field margin-bottom-20">
                                 <div class="submit-field margin-bottom-20">
                                                 <h6>Blog Title<span class="form-required">*</span></h6>
                                                 <input name="title" class="with-border quick-text-counter small-input" data-maxlength="200" required="">
-                                    <div class="form-text" id="simple-txt-counter-0">0 / 200</div>
+                                    <div class="form-text"  >0 / 200</div>
                                             </div>
                                 <h6>What is your blog is about?<span class="form-required">*</span></h6>
                                 <textarea name="description" class="with-border quick-text-counter small-input" data-maxlength="400" placeholder="Describe your blog here..." required=""></textarea><div class="form-text" id="simple-txt-counter-0">0 / 400</div>
@@ -839,7 +840,7 @@ select:focus,select:hover
         </div>
          </div>
     </form>
-      <script type="text/javascript">
+  <script type="text/javascript">
 
         $("#icon").on("click", function () {
             $(".sidebar").toggle();

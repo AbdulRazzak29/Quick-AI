@@ -3,6 +3,8 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+
     <img src="img/home-hero-icon.png" / style=" display: block;margin-left: auto;margin-right: auto;width: 270px;height: 10%;">
     <section>
         

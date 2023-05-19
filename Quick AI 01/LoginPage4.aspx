@@ -19,7 +19,8 @@
                         <div class="form-group">
                             <div >
                                 <i class="la la-user"></i>
-                                 <span class="input-group-addon" ><i class="glyphicon glyphicon-user"></i></span><asp:TextBox  ID="TextBox1" class="form-control" name="Full Name" placeholder="Full Name"   runat="server" >
+                                 <span class="input-group-addon" ><i class="glyphicon glyphicon-user"></i></span>
+                                <asp:TextBox  ID="TextBox1" class="form-control" name="Full Name" placeholder="Full Name"   runat="server" >
                   </asp:TextBox>
                             </div>
                             <span id="name-availability-status"></span>
@@ -27,7 +28,8 @@
                         <div class="form-group">
                             <div>
                                 <i class="la la-user"></i>
-                               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><asp:TextBox ID="TextBox2" class="form-control" name="Full Name" placeholder="Username" runat="server">
+                               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <asp:TextBox ID="TextBox2" class="form-control" name="Full Name" placeholder="Username" runat="server">
                     </asp:TextBox>
                             </div>
                            
@@ -35,7 +37,8 @@
                         <div class="form-group">
                             <div>
                                 <i class="la la-envelope"></i>
-                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><asp:TextBox ID="TextBox3" class="form-control" name="email" placeholder="Email"  runat="server" >
+                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <asp:TextBox ID="TextBox3" class="form-control" name="email" placeholder="Email"  runat="server" >
                  </asp:TextBox>
                             </div>
                             
@@ -43,7 +46,8 @@
                         <div class="form-group">
                             <div >
                                 <i class="la la-unlock"></i>
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><asp:TextBox ID="TextBox4" class="form-control" name="password" placeholder="Password"  runat="server">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <asp:TextBox ID="TextBox4" class="form-control" name="password" placeholder="Password"  runat="server">
                  </asp:TextBox>
                             </div>
                             
@@ -64,4 +68,5 @@
             </div>
         </div>
 </div>
+    
 </asp:Content>
