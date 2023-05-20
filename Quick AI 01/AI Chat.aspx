@@ -448,39 +448,7 @@ body {
                    <div class="main-content">
 
                 <main  style="margin-left: -270px;    margin-top: 130px;">
-                   <!-- <div class="cards">
-                        <div class="card-single">
-                          <div class="fun-fact" data-fun-fact-color="#b81b7f">
-                    <div class="fun-fact-text">
-                                  <span>Words Used</span>
-                                  <h4>0<small>/ 10,000</small>
-                                  </h4>
-                              </div>
-                    <div class="fun-fact-icon" style="background-color: rgba(184, 27, 127, 0.07);"><i class="icon-feather-trending-up" style="color: rgb(184, 27, 127);"></i></div>
-                </div>
-                            <div>
-                                <span class="las la-user"></span>
-                            </div>
-                        </div>
-                        <div class="card-single">
-                            <div>
-                                <span>Images Used</span>
-                                <h1>0/100</h1>
-                            </div>
-                            <div>
-                                <span class="las la-user"></span>
-                            </div>
-                        </div>
-                        <div class="card-single">
-                            <div>
-                                <span>Speech to Text</span>
-                                <h1>0/0</h1>
-                            </div>
-                            <div>
-                                <span class="las la-user"></span>
-                            </div>
-                        </div>
-                    </div> -->
+                  
                     <div class="simplebar-content" style="margin-left: 261px;">
         <div class="dashboard-content-inner" >
 
@@ -504,30 +472,6 @@ body {
                     </nav>
                 </div>
 
-          <%-- 
-           <div class="dashboard-box">
-                        <!-- Headline -->
-                        <div class="headline">
-                            <h3><i class="fa-light fa-file"></i> All Images</h3>
-                        </div>
-                        <div class="content with-padding">
-                            <div class="table-responsive">
-                                <table id="js-table-list" class="basic-table dashboard-box-list">
-                                    <tbody><tr>
-                                        <th>Image</th>
-                                        <th>Resolution</th>
-                                        <th> Date</th>
-                                        <th> Action</th>
-                                                                            </tr>
-                                    <tr>
-                                        <td colspan="4" class="text-center">No images found.</td>
-                                        
-                                                                            </tr>
-                                   
-                                </tbody></table>
-                            </div>
-                        </div>
-                    </div>--%>
             <div class="notification small-notification error">
                         You can not use the chat feature with your OpenAI model. Upgrade your membership plan to use this feature.  
             </div>

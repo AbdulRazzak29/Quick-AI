@@ -3,13 +3,79 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style>
+         
+        .text {
 
+ 
+  font-size: 30px;
+  animation: change 5s linear 0s infinite;
+}
 
+@keyframes change {
+  0% {
+    background: linear-gradient(to left, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  25% {
+    background: linear-gradient(to left, rgb(76, 62, 158), #4c00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: linear-gradient(to right, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    background: linear-gradient(to left, rgb(76, 62, 158), #4c00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: linear-gradient(to right, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes change-shape {
+  0% {
+    border-radius: 0px;
+  }
+  25% {
+    border-radius: 50%;
+  }
+  50% {
+    border-radius: 0px;
+  }
+  75% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 0px;
+  }
+}
+
+    </style>
+
+    <div style="margin-top:10%">
     <img src="img/home-hero-icon.png" / style=" display: block;margin-left: auto;margin-right: auto;width: 270px;height: 10%;">
     <section>
         
-        <div style="text-align:center">
-<h1 class="margin-bottom-10 text_gradient_animation" style="font-size:60px">
+        <div class="margin-bottom-10 text_gradient_animation" style="text-align:center">
+<h1 class="text" style="font-size:60px">
                              <strong>Best AI Content Writer</strong>
                         </h1>
             <p>Create SEO-optimized and unique content for your blogs, ads, emails,<br />and website 10X faster &amp; save hours of work.      m  </p>
@@ -104,7 +170,7 @@
             </div>
             <div class="row ai-template-blocks">
                                     <div class="col-md-12 ai-templates-category-title">
-                        <h4>Article And Blogs</h4>
+                        <h4 >Article And Blogs</h4>
                     </div>
                                             <div class="col-md-4 col-sm-6 category-1">
                             <a href="https://localhost:44308/Blog%20Ideas.aspx">
@@ -113,7 +179,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-comment"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Blog Ideas                                                                                    </h4>
                                         <p class="margin-bottom-0">Article/blog ideas that you can use to generate more traffic, leads, and sales for your business.</p>
                                     </div>
@@ -127,7 +193,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-align-left"></i>
                                         </div>
-                                        <h4> Blog Intros </h4>
+                                        <h4 style="color: #333;"> Blog Intros </h4>
                                         <p class="margin-bottom-0">Enticing article/blog introductions that capture the attention of the audience.</p>
                                     </div>
                                 </div>
@@ -140,7 +206,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-ellipsis-h"></i>
                                         </div>
-                                        <h4>Blog Titles </h4>
+                                        <h4 style="color: #333;">Blog Titles </h4>
                                         <p class="margin-bottom-0">Nobody wants to read boring blog titles, generate catchy blog titles with this tool.</p>
                                     </div>
                                 </div>
@@ -153,7 +219,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-book"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Blog Section   <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Write a few paragraphs about a subheading of your article.</p>
@@ -168,7 +234,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-check-square"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Blog Conclusion                                                                                    </h4>
                                         <p class="margin-bottom-0">Create powerful conclusion that will make a reader take action.</p>
                                     </div>
@@ -182,7 +248,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-pencil-square"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Article Writer                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Create a fully complete high quality article from a title and outline text.</p>
@@ -197,7 +263,7 @@
                                         <div class="ai-templates-icon">
                                           <i class="fa-light fa-pen-to-square"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Article Rewriter                                                                                    </h4>
                                         <p class="margin-bottom-0">Copy an article, paste it in to the program, and with just one click you'll have an entirely different article to read.</p>
                                     </div>
@@ -211,7 +277,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-list-ul"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Article Outlines                                                                                    </h4>
                                         <p class="margin-bottom-0">Detailed article outlines that help you write better content on a consistent basis.</p>
                                     </div>
@@ -225,7 +291,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-list-ol"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Talking Points                                                                                    </h4>
                                         <p class="margin-bottom-0">Write short, simple and informative points for the subheadings of your article</p>
                                     </div>
@@ -239,7 +305,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-align-justify"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Paragraph Writer                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Perfectly structured paragraphs that are easy to read and packed with persuasive words.</p>
@@ -254,7 +320,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-refresh"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Content Rephrase                                                                                    </h4>
                                         <p class="margin-bottom-0">Rephrase your content in a different voice and style to appeal to different readers.</p>
                                     </div>
@@ -271,7 +337,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-facebook-f"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Facebook Ads                                                                                    </h4>
                                         <p class="margin-bottom-0">Facebook ad copies that make your ads truly stand out.</p>
                                     </div>
@@ -285,7 +351,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-facebook-f"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Facebook Ads Headlines                                                                                    </h4>
                                         <p class="margin-bottom-0">Write catchy and convincing headlines to make your Facebook Ads stand out.</p>
                                     </div>
@@ -299,7 +365,7 @@
                                         <div class="ai-templates-icon">
                                            <i class="fa-solid fa-g"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Google Ad Titles                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Creating ads with unique and appealing titles that entice people to click on your ad and purchase from your site.</p>
@@ -314,7 +380,7 @@
                                         <div class="ai-templates-icon">
                                            <i class="fa-solid fa-g"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Google Ad Descriptions                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">The best-performing Google ad copy converts visitors into customers.</p>
@@ -329,7 +395,7 @@
                                         <div class="ai-templates-icon">
                                              <i class="fa-brands fa-linkedin"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             LinkedIn Ad Headlines                                                                                    </h4>
                                         <p class="margin-bottom-0">Attention-grabbing, click-inducing, and high-converting ad headlines for Linkedin.</p>
                                     </div>
@@ -343,7 +409,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-linkedin"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             LinkedIn Ad Descriptions                                                                                    </h4>
                                         <p class="margin-bottom-0">Professional and eye-catching ad descriptions that will make your product shine.</p>
                                     </div>
@@ -357,7 +423,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-bell"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             App and SMS Notifications                                                                                    </h4>
                                         <p class="margin-bottom-0">Notification messages for your apps, websites, and mobile devices that keep users coming back for more.</p>
                                     </div>
@@ -365,7 +431,7 @@
                             </a>
                         </div>
                                         <div class="col-md-12 ai-templates-category-title">
-                        <h4>General Writing</h4>
+                        <h4 style="color: black;">General Writing</h4>
                     </div>
                                             <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
@@ -374,7 +440,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-text-width"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Text Extender                                                                                    </h4>
                                         <p class="margin-bottom-0">Extend short sentences into more descriptive and interesting ones.</p>
                                     </div>
@@ -388,7 +454,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-text-width"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Content Shorten                                                                                    </h4>
                                         <p class="margin-bottom-0">Short your content in a different voice and style to appeal to different readers.</p>
                                     </div>
@@ -402,7 +468,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-quora"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Quora Answers                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Answers to Quora questions that will position you as an authority.</p>
@@ -417,7 +483,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-child"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Summarize for a 2nd grader                                                                                    </h4>
                                         <p class="margin-bottom-0">Translates difficult text into simpler concepts.</p>
                                     </div>
@@ -431,7 +497,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa-regular fa-heart"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Stories                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Engaging and persuasive stories that will capture your reader's attention and interest.</p>
@@ -446,7 +512,8 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-list"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
+                                       
                                             Bullet Point Answers                                                                                    </h4>
                                         <p class="margin-bottom-0">Precise and informative bullet points that provide quick and valuable answers to your customers' questions.</p>
                                     </div>
@@ -460,7 +527,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-tasks"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Definition                                                                                    </h4>
                                         <p class="margin-bottom-0">A definition for a word, phrase, or acronym that's used often by your target buyers.</p>
                                     </div>
@@ -474,8 +541,8 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-check-circle"></i>
                                         </div>
-                                        <h4>
-                                            Answers                                                                                    </h4>
+                                        <h4 style="color: #333;">
+                                            Answers    </h4>
                                         <p class="margin-bottom-0">Instant, quality answers to any questions or concerns that your audience might have.</p>
                                     </div>
                                 </div>
@@ -488,7 +555,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-question-circle"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Questions                                                                                    </h4>
                                         <p class="margin-bottom-0">A tool to create engaging questions and polls that increase audience participation and engagement.</p>
                                     </div>
@@ -502,7 +569,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-sort-alpha-desc"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Passive to Active Voice                                                                                    </h4>
                                         <p class="margin-bottom-0">Easy and quick solution to converting your passive voice sentences into active voice sentences.</p>
                                     </div>
@@ -516,7 +583,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-key"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Pros and Cons                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">List of the main benefits versus the most common problems and concerns.</p>
@@ -531,7 +598,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-refresh"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Rewrite With Keywords                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Rewrite your existing content to include more keywords and boost your search engine rankings.</p>
@@ -546,7 +613,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-envelope"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Emails                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Professional-looking emails that help you engage leads and customers.</p>
@@ -561,7 +628,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-envelope"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Emails V2                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Personalized email outreach to your target prospects that get better results.</p>
@@ -576,7 +643,7 @@
                                         <div class="ai-templates-icon">
                                            <i class="fa-regular fa-envelope-open"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Email Subject Lines                                                                                    </h4>
                                         <p class="margin-bottom-0">Powerful email subject lines that increase open rates.</p>
                                     </div>
@@ -590,7 +657,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-bullhorn"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Startup Name Generator                                                                                    </h4>
                                         <p class="margin-bottom-0">Generate cool, creative, and catchy names for your startup in seconds.</p>
                                     </div>
@@ -604,7 +671,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-file-text"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Company Bios                                                                                    </h4>
                                         <p class="margin-bottom-0">Short and sweet company bio that will help you connect with your target audience.</p>
                                     </div>
@@ -618,7 +685,7 @@
                                         <div class="ai-templates-icon">
                                           <i class="fa-regular fa-file-lines"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Company Mission                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">A clear and concise statement of your company's goals and purpose.</p>
@@ -633,7 +700,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-align-left"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Company Vision                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">A vision that attracts the right people, clients, and employees.</p>
@@ -642,7 +709,7 @@
                             </a>
                         </div>
                                         <div class="col-md-12 ai-templates-category-title">
-                        <h4>Ecommerce</h4>
+                        <h4 style="color: #333;">Ecommerce</h4>
                     </div>
                                             <div class="col-md-4 col-sm-6 category-4">
                             <a href="#">
@@ -651,7 +718,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-gift"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Product Name Generator                                                                                    </h4>
                                         <p class="margin-bottom-0">Create creative product names from examples words.</p>
                                     </div>
@@ -665,7 +732,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-gift"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Product Descriptions                                                                                    </h4>
                                         <p class="margin-bottom-0">Authentic product descriptions that will compel, inspire, and influence.</p>
                                     </div>
@@ -679,7 +746,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-amazon"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Amazon Product Titles                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Product titles that will make your product stand out in a sea of competition.</p>
@@ -694,7 +761,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-amazon"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Amazon Product Descriptions                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Descriptions for Amazon products that rank on the first page of the search results.</p>
@@ -709,7 +776,7 @@
                                         <div class="ai-templates-icon">
                                            <i class="fa-brands fa-amazon"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Amazon Product Features                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Advantages and features of your products that will make them irresistible to shoppers.</p>
@@ -727,7 +794,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-facebook-f"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Social Media Post (Personal)                                                                                    </h4>
                                         <p class="margin-bottom-0">Write a social media post for yourself to be published on any platform.</p>
                                     </div>
@@ -741,7 +808,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-facebook-f"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Social Media Post (Business)                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Write a post for your business to be published on any social media platform.</p>
@@ -756,7 +823,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-instagram"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Instagram Captions                                                                                    </h4>
                                         <p class="margin-bottom-0">Captions that turn your images into attention-grabbing Instagram posts.</p>
                                     </div>
@@ -770,7 +837,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-instagram"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Instagram Hashtags                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Trending and highly relevant hashtags to help you get more followers and engagement.</p>
@@ -785,7 +852,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-twitter"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Twitter Tweets                                                                                    </h4>
                                         <p class="margin-bottom-0">Generate tweets using AI, that are relevant and on-trend.</p>
                                     </div>
@@ -799,7 +866,7 @@
                                         <div class="ai-templates-icon">
                                            <i class="fa-brands fa-youtube"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             YouTube Titles                                                                                    </h4>
                                         <p class="margin-bottom-0">Catchy titles that attract more views and increase the number of shares.</p>
                                     </div>
@@ -813,7 +880,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa-brands fa-youtube"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             YouTube Descriptions                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Catchy and persuasive YouTube descriptions that help your videos rank higher.</p>
@@ -828,7 +895,7 @@
                                         <div class="ai-templates-icon">
                                            <i class="fa-brands fa-youtube"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             YouTube Outlines                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Video outlines that are a breeze to create and uber-engaging.</p>
@@ -843,7 +910,7 @@
                                         <div class="ai-templates-icon">
                                            <i class="fa-brands fa-linkedin"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             LinkedIn Posts                                                                                    </h4>
                                         <p class="margin-bottom-0">Inspiring LinkedIn posts that will help you build trust and authority in your industry.</p>
                                     </div>
@@ -857,7 +924,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-film"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             TikTok Video Scripts                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Video scripts that are ready to shoot and will make you go viral.</p>
@@ -866,7 +933,7 @@
                             </a>
                         </div>
                                         <div class="col-md-12 ai-templates-category-title">
-                        <h4>Website</h4>
+                        <h4 style="color: black;">Website</h4>
                     </div>
                                             <div class="col-md-4 col-sm-6 category-6">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
@@ -875,7 +942,7 @@
                                         <div class="ai-templates-icon">
                                            <i class="fa-solid fa-g"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             SEO Meta Tags (Blog Post)                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">A set of optimized meta title and meta description tags that will boost your search rankings for your blog.</p>
@@ -890,7 +957,7 @@
                                         <div class="ai-templates-icon">
                                           <i class="fa-solid fa-g"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             SEO Meta Tags (Homepage)                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">A set of optimized meta title and meta description tags that will boost your search rankings for your home page.</p>
@@ -905,7 +972,7 @@
                                         <div class="ai-templates-icon">
                                            <i class="fa-solid fa-g"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             SEO Meta Tags (Product Page)                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">A set of optimized meta title and meta description tags that will boost your search rankings for your product page.</p>
@@ -914,7 +981,7 @@
                             </a>
                         </div>
                                         <div class="col-md-12 ai-templates-category-title">
-                        <h4>Other</h4>
+                        <h4 style="color: #333;">Other</h4>
                     </div>
                                             <div class="col-md-4 col-sm-6 category-7">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
@@ -923,7 +990,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-refresh"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: black;">
                                             Tone Changer                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Change the tone of your writing to match your audience and copy.</p>
@@ -938,7 +1005,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-music"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Song Lyrics                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Unique song lyrics that will be perfect for your next hit song.</p>
@@ -953,7 +1020,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-language"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Translate                                                                                    </h4>
                                         <p class="margin-bottom-0">Translate your content into any language you want.</p>
                                     </div>
@@ -967,7 +1034,7 @@
                                         <div class="ai-templates-icon">
                                           <i class="fa-regular fa-circle-question"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             FAQs                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Generate frequently asked questions based on your product description.</p>
@@ -982,7 +1049,7 @@
                                         <div class="ai-templates-icon">
                                            <i class="fa-regular fa-circle-question"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             FAQ Answers                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Generate creative answers to questions (FAQs) about your business or website.</p>
@@ -997,7 +1064,7 @@
                                         <div class="ai-templates-icon">
                                             <i class="fa-solid fa-star-half-stroke"></i>
                                         </div>
-                                        <h4>
+                                        <h4 style="color: #333;">
                                             Testimonials / Reviews                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Add social proof to your website by generating user testimonials.</p>
@@ -1249,6 +1316,7 @@
             </div>
         </div>
     </div>
+        </div>
   
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");

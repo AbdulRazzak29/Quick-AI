@@ -377,7 +377,7 @@ select:focus,select:hover
                                                 </div>
                                         </a>
                                     </div>
-                                    <!-- Dropdown -->
+                                    <!-- Dropdown -->   
                                    
                                 </div>
 
@@ -682,6 +682,16 @@ select:focus,select:hover
                             </div>
                          <div class="container">
       <div class="options">
+          <!-- Headings -->
+        <select id="formatBlock" class="adv-option-button">
+             <option value="Paragrahh">Paragrahh</option>
+          <option value="H1">Heading1</option>
+          <option value="H2">Heading2</option>
+          <option value="H3">Heading3</option>
+          <option value="H4">Heading4</option>
+          <option value="H5">Heading5</option>
+          <option value="H6">Heading6</option>
+        </select>
         <!-- Text Format -->
         <button id="bold" class="option-button format">
           <i class="fa-solid fa-bold"></i>
@@ -741,29 +751,16 @@ select:focus,select:hover
         <button id="outdent" class="option-button spacing">
           <i class="fa-solid fa-outdent"></i>
         </button>
-        <!-- Headings -->
-        <select id="formatBlock" class="adv-option-button">
-          <option value="H1">H1</option>
-          <option value="H2">H2</option>
-          <option value="H3">H3</option>
-          <option value="H4">H4</option>
-          <option value="H5">H5</option>
-          <option value="H6">H6</option>
-        </select>
-        <!-- Font -->
-        <select id="fontName" class="adv-option-button"></select>
-        <select id="fontSize" class="adv-option-button"></select>
-        <!-- Color -->
-        <div class="input-wrapper">
-          <input type="color" id="foreColor" class="adv-option-button" />
-          <label for="foreColor">Font Color</label>
-        </div>
-        <div class="input-wrapper">
-          <input type="color" id="backColor" class="adv-option-button" />
-          <label for="backColor">Highlight Color</label>
-        </div>
+        
+        
+         
       </div>
+
       <div id="text-input" contenteditable="true"></div>
+                             <textarea name="" id="field-writting" cols="70" rows="10" ></textarea>
+        <div id="res">
+            You've written <span id='words'>0</span>  <strong> words</strong> and <span id='characters'>0</span>  <strong>characters</strong>  .
+        </div>
     </div>
     
 
@@ -989,6 +986,81 @@ select:focus,select:hover
              counterEle.innerHTML = `${currentLength}/${maxLength}`;
          });
      </script>
-    
+    <script>
+        const messageEle = document.getElementById('text');
+        const counterEle = document.getElementById('counter');
+
+        messageEle.addEventListener('input', function (e) {
+            const target = e.target;
+
+            // Get the `maxlength` attribute
+            const maxLength = target.getAttribute('maxlength');
+
+            // Count the current number of characters
+            const currentLength = target.value.length;
+
+            counterEle.innerHTML = `${currentLength}/${maxLength}`;
+        });
+    </script>
+    <script>
+        let input = document.getElementById("text-input"),
+            words = document.getElementById('words'),
+            characters = document.getElementById('characters');
+        function wordCounter(text) {
+            var text = input.value;
+            var wordCount = 0;
+            for (var i = 0; i <= text.length; i++) {
+                if (text.charAt(i) == ' ') {
+                    wordCount++;
+                }
+            }
+            words.innerText = wordCount;
+        }
+        input.addEventListener('keyup', function (e) {
+            wordCounter(e.value);
+        });
+
+        function caracterCounter(text) {
+            var text = input.value;
+            var wordCount = 0;
+            for (var i = 0; i <= text.length - 1; i++) {
+                text.charAt(i) == wordCount++;
+            }
+            characters.innerText = wordCount;
+        }
+        input.addEventListener('keyup', function (e) {
+            caracterCounter(e.value);
+        });
+    </script>
+    <script>
+        let input = document.getElementById("field-writting"),
+            words = document.getElementById('words'),
+            characters = document.getElementById('characters');
+        function wordCounter(text) {
+            var text = input.value;
+            var wordCount = 0;
+            for (var i = 0; i <= text.length; i++) {
+                if (text.charAt(i) == ' ') {
+                    wordCount++;
+                }
+            }
+            words.innerText = wordCount;
+        }
+        input.addEventListener('keyup', function (e) {
+            wordCounter(e.value);
+        });
+
+        function caracterCounter(text) {
+            var text = input.value;
+            var wordCount = 0;
+            for (var i = 0; i <= text.length - 1; i++) {
+                text.charAt(i) == wordCount++;
+            }
+            characters.innerText = wordCount;
+        }
+        input.addEventListener('keyup', function (e) {
+            caracterCounter(e.value);
+        });
+    </script>
 </body>
 </html>
