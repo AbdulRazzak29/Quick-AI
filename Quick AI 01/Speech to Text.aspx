@@ -429,8 +429,8 @@ select:focus,select:hover
          
     
           <div class="row">
-            <div class="col-lg-3">
-                 <div class="sidebar" style="    margin-top: 61px; height: calc(100% - 90px);    width: 329px;"  >
+                        <div class="col-lg-3">
+                 <div class="sidebar" style="    margin-top: 61px; height: calc(100% - 90px);  width: 329px; " >
                          <ul>
                              
                              <li>
@@ -470,22 +470,22 @@ select:focus,select:hover
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/AI%20Images.aspx">
                                   <i class="fa-solid fa-image"></i> <div>AI Images</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/AI%20Chat.aspx">
                                   <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
                               </a>
                            </li>                    
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/Speech%20to%20Text.aspx">
                                   <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/AI%20Code.aspx">
                                  <i class="fa-solid fa-code"></i><div>AI Code</div>
                               </a>
                            </li> 
@@ -529,6 +529,7 @@ select:focus,select:hover
                          
                      </div>
             </div>
+
             <div class="col-lg-9">
                    <div class="main-content">
 

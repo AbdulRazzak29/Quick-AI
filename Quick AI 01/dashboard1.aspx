@@ -324,8 +324,8 @@ body {
                                         <a href="#" title="">
                                            
                                                 <div class="dropdown">
-                                                    <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px; margin-left: -59px; margin-top: -24px;">
-                                                        <img src="img/default_user.png" style="height: 69px;" />
+                                                    <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px; margin-left: -59px; margin-top: -24px;border-radius: 50%;">
+                                                        <img src="img/image_2023_05_20T12_58_15_456Z.png" style="height: 58px;border-radius: 70px;" />
                                                     </a>
                                                     <ul class="dropdown-menu" >
                                                         <li><a class="dropdown-item" href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
@@ -435,17 +435,17 @@ body {
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/AI%20Chat.aspx">
                                   <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
                               </a>
                            </li>                    
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/Speech%20to%20Text.aspx">
                                   <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/AI%20Code.aspx">
                                  <i class="fa-solid fa-code"></i><div>AI Code</div>
                               </a>
                            </li> 

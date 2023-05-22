@@ -8,7 +8,7 @@
                 <span>by Admin</span>
 
                 <!-- Breadcrumbs -->
-                <nav id="breadcrumbs" class="dark">
+                <nav id="breadcrumbs" class="dark"  style="  margin-top: -24%; ">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Blog</a></li>

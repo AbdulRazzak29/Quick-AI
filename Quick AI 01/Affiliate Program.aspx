@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AI Code.aspx.cs" Inherits="Quick_AI_01.AI_Code" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Affiliate Program.aspx.cs" Inherits="Quick_AI_01.Affiliate_Program" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-          <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
+            <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="font/css/all.css" rel="stylesheet" />
     <link href="boostrap/css/style.css" rel="stylesheet" />
     <link href="boostrap/css/all.min.css" rel="stylesheet" />
@@ -15,8 +15,8 @@
     <script src="boostrap/js/jquery.slim.min.js"></script>
     <script src="boostrap/js/popper.min.js"></script>
     <script src="boostrap/js/bootstrap.bundle.min.js"></script>
-
-   <style>
+    
+    <style>
        * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -213,99 +213,15 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
-:root
-{
-    --primary-color: white;
-    --secondary-color: black;
-
-}
-iframe
-{
-    background-color: white;
-    min-height: 300px;
-    width: 100%;
-    resize: none;
-    outline: none;
-    padding: 15px;
-    margin-bottom: 20px;
-    position: relative;
-}
-button
-{
-    background-color: var(--primary-color);
-    border: 1px solid var(--secondary-color);
-    margin: 5px;
-    color: var(--secondary-color);
-    padding: 5px 8px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px;
-}
-button:focus,button:hover
-{
-    border: 2px solid #95d3e6;
-}
-    
-body
-{
-    background-color: var(--primary-color);
-    border: none;
-    margin: 1px;
-    color: var(--secondary-color);
-    padding: 5px 8px;
-   
-    text-decoration: none;
-    font-size: 15px;
-}
-input
-{
-    background-color: white;
-
-}
-
-.dark-mode {
-    --primary-color: #18181a;
-    --secondary-color: white;
-    
-}
-.raise:hover,.raise:focus 
-{
-    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(-0.25em);
-
-}
-select:focus,select:hover
-{
-    border: 1px solid #95d3e6;
-}
- #snackbar {
-  visibility: hidden;
-  min-width: 250px;
-  color: white;
-  color:red;
-  text-align: center;
-  border-radius: 2px;
-  padding: 16px;
-  position: absolute;
-  z-index: 1;
-  font-size: 15px;
-  margin-left:-31px;
-  top:500px;
-  }
-
-#snackbar.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-
+   .msg.from {
+  float: right;
 }
 </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-             <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
+              <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
 
                 <div class="user-status-message">
                     <div class="container container-active-msg">
@@ -356,7 +272,7 @@ select:focus,select:hover
                                 <div class="header-notifications user-menu">
                                     <div class="header-notifications-trigger">
                                         <a href="#" title="">
-                                           
+                                        
                                                 <div class="dropdown">
                                                     <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px; margin-left: -59px; margin-top: -24px;">
                                                         <img src="img/default_user.png" style="height: 69px;" />
@@ -377,7 +293,7 @@ select:focus,select:hover
                                         </a>
                                     </div>
                                     <!-- Dropdown -->
-                                  
+                                    
                                 </div>
 
                             </div>
@@ -385,6 +301,8 @@ select:focus,select:hover
 
                             <div class="header-widget">
                                
+                                
+                                   
                                     
                                      <div class="dropdown" style="float: right; margin-top: -88px; padding-right: 10px; border-left: 2px solid #e0e0e0; padding-top: 20px; padding-left: 10px; height: 82px;">
                                 <label for="Language"></label>
@@ -414,15 +332,19 @@ select:focus,select:hover
                             </div>
                                     </div>
                               
-                            </div>
+                           
                         </div>
                         <!-- Right Side Content / End -->
 
                     
                 </div>
-                    </header>
-             <div class="row">
-                      <div class="col-lg-3">
+                        </div>
+             
+                <!-- Header / End -->
+            </header>
+        </div>
+         <div class="row">
+            <div class="col-lg-3">
                  <div class="sidebar" style="    margin-top: 61px; height: calc(100% - 90px);  width: 329px; " >
                          <ul>
                              
@@ -490,11 +412,19 @@ select:focus,select:hover
                                     <h9>  Account</h9>
                                  </div>
                              </li>
+                                 </ul>
+                     <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">  Affiliate Program </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Affiliate Program</a></li>
+    <li><a class="dropdown-item" href="#">Withdrawals</a></li>
+    
+  </ul>
                               <li>
                               <a href="#">
                                   <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
                               </a>
                            </li>
+                     <ul>
                              <li>
                               <a href="https://localhost:44308/Current%20Plan.aspx">
                                  <i class="fa-solid fa-gift"></i> <div>Membership</div>
@@ -522,11 +452,10 @@ select:focus,select:hover
                          
                      </div>
             </div>
-
-            <div class="col-lg-9">
+            <div class="col-lg-9" style="    margin-top: 10%;">
                    <div class="main-content">
 
-                <main  style="margin-left: -270px;    margin-top: 130px;">
+                <main  >
                    <!-- <div class="cards">
                         <div class="card-single">
                           <div class="fun-fact" data-fun-fact-color="#b81b7f">
@@ -560,170 +489,170 @@ select:focus,select:hover
                             </div>
                         </div>
                     </div> -->
-                    <div class="simplebar-content" style="margin-left: 261px;">
-        <div class="dashboard-content-inner" >
+                    <div class="simplebar-content">
+                        <div class="dashboard-content-inner">
 
-            
-            <!-- Dashboard Headline -->
-           <div class="dashboard-headline">
-                    <h3 class="d-flex align-items-center">
-                        AI Code
-                   
-                        <div class="word-used-wrapper margin-left-10" style="background: #B2BEB5;">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <i id="quick-words-left"0 / 10,000 </i>
-                            <strong>Words Used</strong>
-                        </div>
-                    </h3>
-                    <!-- Breadcrumbs -->
-                    <nav id="breadcrumbs" class="dark">
-                        <ul>
-                            <li><a href="https://localhost:44308/Home.aspx">Home</a></li>
-                            <li> AI Code </li>
-                        </ul>
-                    </nav>
-                </div>
 
-          <%-- 
-           <div class="dashboard-box">
-                        <!-- Headline -->
-                        <div class="headline">
-                            <h3><i class="fa-light fa-file"></i> All Images</h3>
-                        </div>
-                        <div class="content with-padding">
-                            <div class="table-responsive">
-                                <table id="js-table-list" class="basic-table dashboard-box-list">
-                                    <tbody><tr>
-                                        <th>Image</th>
-                                        <th>Resolution</th>
-                                        <th> Date</th>
-                                        <th> Action</th>
-                                                                            </tr>
-                                    <tr>
-                                        <td colspan="4" class="text-center">No images found.</td>
-                                        
-                                                                            </tr>
-                                   
-                                </tbody></table>
+                            <!-- Dashboard Headline -->
+                            <div class="dashboard-headline">
+                                <h3>Affiliate Program</h3>
+                                <!-- Breadcrumbs -->
+                                <nav id="breadcrumbs" class="dark">
+                                    <ul>
+                                        <li><a href="https://localhost:44308/Home.aspx">Home</a></li>
+                                        <li>Affiliate Program</li>
+                                    </ul>
+                                </nav>
                             </div>
-                        </div>
-                    </div>--%>
-              <div class="row">
-                    <!-- Dashboard Box -->
-                    <div class="col-md-4">
-                        <form id="speech_to_text" name="speech_to_text" method="post" action="#">
-                            <div class="dashboard-box margin-top-0 margin-bottom-30">
-                                <!-- Headline -->
-                                <div class="headline">
-                                    <h3> <> AI Code  </h3>
-                                </div>
-                                <div class="content with-padding">
-                                    <div class="notification small-notification notice">Use this code generator to create code in any programming language.</div>
-                                    <div>
-                                        <div class="submit-field margin-bottom-20">
-                                            <h6>Title</h6>
-                                            <input name="title" type="text" class="with-border small-input quick-text-counter"
-                                                   data-maxlength="100">
-                                        </div>
-                                        
-                                        <div class="submit-field margin-bottom-20">
-                                            <h6>Description<span class="form-required">*</span></h6>
-                                            <textarea rows="4" name="description" class="with-border small-input" placeholder="Write a javascript function to generate a random string" required=""></textarea>
-                                        </div>
-                                       <div id="snackbar" style="    margin-top: -114px;"  >Unexpected error, please try again.</div>
-                                        <button type="submit" name="submit"
-                                                    class="button ripple-effect full-width" onclick="myFunction3()" >Generate  <i class="fa-solid fa-arrow-right"></i></button>
-                                        
+
+                            <!-- Fun Facts Container -->
+                            <div class="fun-facts-container">
+                                <div class="fun-fact" data-fun-fact-color="#b81b7f">
+                                    <div class="fun-fact-text">
+                                        <span>Wallet</span>
+                                        <h4>0.00                            </h4>
+                                    </div>
+                                    <div class="fun-fact-icon" style="background-color: rgba(184, 27, 127, 0.07);">
+                                        <i class="fa-brands fa-get-pocket" style="color: #c205bc;"></i>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="dashboard-box margin-top-0 margin-bottom-30">
-                            <!-- Headline -->
-                            <div class="headline">
-                                <h3><i class="fa fa-align-left"></i>Generated Result</h3>
-                                
-                            </div>
-                            <div class="container">     
-                                <div class="content with-padding">
-                                <div class="ai-generated-text" id="content-focus">
-                                    <div class="notification notice">Generated code will appear here.</div>
+                                <div class="fun-fact" data-fun-fact-color="#36bd78">
+                                    <div class="fun-fact-text">
+                                        <span>Total Referred</span>
+                                        <h4>0                            </h4>
+                                    </div>
+                                    <div class="fun-fact-icon" style="background-color: rgba(54, 189, 120, 0.07);">
+                                        <i class="fa-solid fa-user-plus" style="color: #177b0a;"></i>
+                                    </div>
+                                </div>
+                                <div class="fun-fact" data-fun-fact-color="#efa80f">
+                                    <div class="fun-fact-text">
+                                        <span>Total Earning</span>
+                                        <h4></h4>
+                                    </div>
+                                    <div class="fun-fact-icon" style="background-color: rgba(239, 168, 15, 0.07);"><i class="fa-solid fa-money-bill" style="color: #d6b300;"></i></div>
                                 </div>
                             </div>
-                                 
-                                <%-- <div class="content with-padding">
-                                <div id="content-focus"></div>
-                                <textarea  name="content" class="tiny-editor"></textarea>
-                            </div>--%>
-                            </div>
-                    </div>
-                </div>
-                         
-           
-                        <!-- Footer -->
-            <div class="dashboard-footer-spacer" style="padding-top: 151.705px;"></div>
-            <div class="small-footer margin-top-15">
-                <div class="footer-copyright">
-                    2023 Socius IGB Pvt Ltd, All right reserved                </div>
-                  <ul class="footer-social-links">
-                                <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="https://www.twitter.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-twitter" ></i></a></li>
-                                <li><a href="https://instagram.com" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram" ></i></a></li>
-                                <li><a href="https://www.linkedin.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin" ></i></a></li>
-                                <li><a href="https://pinterest.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-pinterest"></i></a></li>
-                                <li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                <div class="clearfix"></div>
-            </div>
 
-        </div>
-    </div>
+                            <!-- Dashboard Box -->
+                            <div class="dashboard-box main-box-in-row">
+                                <div class="headline">
+                                    <h3><i class="fa-sharp fa-solid fa-share-nodes"></i>Start earning with the affiliate program</h3>
+                                </div>
+                                <div class="content">
+                                    <!-- Chart -->
+                                    <div class="content with-padding">
+                                       
+                                        <!-- Chart -->
+                                        <div class="notification notice" style="font-size: 10px;">Invite new customers to our site using your affiliate link and when they purchase any membership plan, you will get a commission.</div>
+                                    </div>
+                                    <div class="margin-top-30" style="padding:5%;" >
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="bidding-widget margin-bottom-30">
+                                                    <!-- Headline -->
+                                                    <span class="bidding-detail">Current <strong>Commission Rate</strong></span>
+
+                                                    <div class="bidding-value">30%</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="bidding-widget margin-bottom-30">
+                                                    <!-- Headline -->
+                                                    <span class="bidding-detail">Affiliate <strong>Rule</strong></span>
+                                                    <div class="bidding-value">
+                                                        First Subscription <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="You will get a commission on the first successful subscription payment."></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h4 class="margin-bottom-10">Affiliate URL</h4>
+                                                <div class="d-flex">
+                                                    <input type="text" class="with-border margin-bottom-0 affiliate-url" onfocus="this.select()" value="https://localhost:44308/Home.aspx" readonly="" style="width:100%;"/>
+                                                    <button class="button ripple-effect margin-left-5 copy-url" data-tippy-placement="top" title="Copy URL" style="top:0;"><i class="fa fa-copy"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                               
+                            </div>
+                             <div class="dashboard-box main-box-in-row"">
+                                    <div class="headline">
+                                        <h3><i class="fa-solid fa-money-bill" style="color: #d6b300;"></i>Commissions</h3>
+                                    </div>
+                                 <div class="content">
+                                     <!-- Chart -->
+                                     <div class="content with-padding">
+                                           <div class="content with-padding">
+                            <div class="table-responsive">
+                                <table id="js-table-list" class="basic-table dashboard-box-list">
+                                    <thead>
+                                        <tr>
+                                            <th style="background-color: #ffffff; color: #080808;">Commission</th>
+                                            <th style="background-color: #ffffff; color: #080808;">Total Amount</th>
+                                            <th style="background-color: #ffffff; color: #080808;">Commission Rate</th>
+                                            <th style="background-color: #ffffff; color: #080808;">Transaction ID</th>
+                                            <th style="background-color: #ffffff; color: #080808;">Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbady>
+                                        <tr>
+                                            <td colspan="5" class="text-center" style="border-top-width: thin; ">No result found.</td>
+
+                                        </tr>
+                                    </tbady>
+                                   
+                                </table>
+                            </div>
+                        </div>
+                                     </div>
+                                 </div>
+
+                                </div>
+                            <!-- Dashboard Box / End -->
+                            <!-- Footer -->
+                            <div class="dashboard-footer-spacer" style="padding-top: 151.705px;"></div>
+                            <div class="small-footer margin-top-15">
+                                <div class="footer-copyright">
+                                    2023 Socius IGB Pvt Ltd, All right reserved               
+                                </div>
+                                <ul class="footer-social-links">
+                                    <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.twitter.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://instagram.com" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></a></li>
+                                    <li><a href="https://pinterest.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-pinterest"></i></a></li>
+                                    <li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+
+                        </div>
+                    </div>
                 </main>
             </div>
             
         </div>
          </div>
-        </div>
     </form>
-    <script type="text/javascript">
+    <script>
+        $('.copy-url').on('click', function (e) {
+            e.preventDefault();
+            $('.affiliate-url').select();
+            document.execCommand("copy");
 
-        $("#icon").on("click", function () {
-            $(".sidebar").toggle();
-            $(".col-lg-9").toggleClass('col-lg-12 full-width');
-
+            Snackbar.show({
+                text: "Copied successfully.",
+                pos: 'bottom-center',
+                showAction: false,
+                actionText: "Dismiss",
+                duration: 2000,
+                textColor: '#fff',
+                backgroundColor: '#383838'
+            });
         });
-
     </script>
-    
-      <script>
-          /* When the user clicks on the button, 
-          toggle between hiding and showing the dropdown content */
-          function myFunction1() {
-              document.getElementById("login").classList.toggle("show");
-          }
-
-          // Close the dropdown if the user clicks outside of it
-          window.onclick = function (event) {
-              if (!event.target.matches('.dropbtn1')) {
-                  var dropdowns = document.getElementsByClassName("dropdown-content");
-                  var i;
-                  for (i = 0; i < dropdowns.length; i++) {
-                      var openDropdown = dropdowns[i];
-                      if (openDropdown.classList.contains('show')) {
-
-                      }
-                  }
-              }
-          }
-      </script>
-        <script>
-            function myFunction3() {
-                var x = document.getElementById("snackbar");
-                x.className = "show";
-                setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
-            }
-        </script> 
 </body>
 </html>

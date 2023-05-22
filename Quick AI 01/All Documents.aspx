@@ -339,112 +339,124 @@ body {
                 <!-- Header / End -->
             </header>
         </div>
-         <div class="row">
+        <div class="row">
             <div class="col-lg-3">
-                 <div class="sidebar" style="    margin-top: 61px; height: calc(100% - 90px);    width: 329px;"  >
-                         <ul>
-                              
-                             <li>
-                                 <div style="color:darkblue;font-weight:600;">
-                                    <h9> My Account</h9>
-                                 </div>
-                             </li>
-                            <li>
-                              <a href="https://localhost:44308/dashboard1.aspx">
-                                  <i class="fa fa-th-large"></i> <div>Dashboard</div>
-                              </a>
-                           </li>
-                            <li>
+                <div class="sidebar" style="margin-top: 61px; height: calc(100% - 90px); width: 329px;">
+                    <ul>
 
-                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline"><span class="fa fa-file-text"></span>My Documents</span></a>
-                        <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                            <li class="w-100">
-                                <a href="https://localhost:44308/All%20Documents.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">All Documents</span> </a>
-                            </li>
-                            <li>
-                                <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">All Images</span> </a>
-                            </li>
-                        </ul>
-                    </li>
-                         </ul>
+                        <li>
+                            <div style="color: darkblue; font-weight: 600;">
+                                <h9>My Account</h9>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/dashboard1.aspx">
+                                <i class="fa fa-th-large"></i>
+                                <div>Dashboard</div>
+                            </a>
+                        </li>
+                        <li>
 
-                         <ul>
-                             <li>
-                                 <div style="color:darkblue;font-weight:600;">
-                                    <h9>  Organize And Manage</h9>
-                                 </div>
-                             </li>
-                            <li>
-                              <a href="https://localhost:44308/Templates.aspx">
-                                 <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
-                              </a>
-                           </li>
-                             <li>
-                              <a href="https://localhost:44308/AI%20Images.aspx">
-                                  <i class="fa-solid fa-image"></i> <div>AI Images</div>
-                              </a>
-                           </li>
-                             <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
-                              </a>
-                           </li>                    
-                            <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
-                              </a>
-                           </li>
-                             <li>
-                              <a href="#">
-                                 <i class="fa-solid fa-code"></i><div>AI Code</div>
-                              </a>
-                           </li> 
-                             </ul>
+                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                <i class="fs-4 bi-bootstrap"></i><span class="ms-1 d-none d-sm-inline"><span class="fa fa-file-text"></span>My Documents</span></a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="https://localhost:44308/All%20Documents.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All Documents</span> </a>
+                                </li>
+                                <li>
+                                    <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All AI Images</span> </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
 
-                             <ul>
-                                 <li>
-                                 <div style="color:darkblue;font-weight:600;">
-                                    <h9>  Account</h9>
-                                 </div>
-                             </li>
-                              <li>
-                              <a href="#">
-                                  <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
-                              </a>
-                           </li>
-                             <li>
-                              <a href="https://localhost:44308/Current%20Plan.aspx">
-                                 <i class="fa-solid fa-gift"></i> <div>Membership</div>
-                              </a>
-                           </li>
-                            
-                             <li>
-                              <a href="https://localhost:44308/Transactions.aspx">
-                                  <i class="fa-solid fa-file"></i> <div>Transaction</div>
-                              </a>
-                           </li>
-                              <li>
-                              <a href="https://localhost:44308/Account%20Setting.aspx">
-                                  <i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div>
-                              </a>
-                           </li>
-                              <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
-                              </a>
-                           </li>
-                         </ul>
-                         
-                       
-                         
-                     </div>
+                    <ul>
+                        <li>
+                            <div style="color: darkblue; font-weight: 600;">
+                                <h9>Organize And Manage</h9>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/Templates.aspx">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <div>Templates</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/AI%20Images.aspx">
+                                <i class="fa-solid fa-image"></i>
+                                <div>AI Images</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/AI%20Chat.aspx">
+                                <i class="fa-solid fa-comment-dots"></i>
+                                <div>AI Chats</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/Speech%20to%20Text.aspx">
+                                <i class="fa-solid fa-headphones"></i>
+                                <div>Speech To Text</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/AI%20Code.aspx">
+                                <i class="fa-solid fa-code"></i>
+                                <div>AI Code</div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <div style="color: darkblue; font-weight: 600;">
+                                <h9>Account</h9>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-th-large"></i>
+                                <div>Affiliate Program</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/Current%20Plan.aspx">
+                                <i class="fa-solid fa-gift"></i>
+                                <div>Membership</div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://localhost:44308/Transactions.aspx">
+                                <i class="fa-solid fa-file"></i>
+                                <div>Transaction</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/Account%20Setting.aspx">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <div>Account Setting</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-power-off"></i>
+                                <div>Log Out</div>
+                            </a>
+                        </li>
+                    </ul>
+
+
+
+                </div>
             </div>
-            <div class="col-lg-9">
-                   <div class="main-content">
 
-                <main  style="margin-left: -270px;    margin-top: 130px;">
-                   <!-- <div class="cards">
+            <div class="col-lg-9">
+                <div class="main-content">
+
+                    <main style="margin-left: -270px; margin-top: 130px;">
+                        <!-- <div class="cards">
                         <div class="card-single">
                           <div class="fun-fact" data-fun-fact-color="#b81b7f">
                     <div class="fun-fact-text">
@@ -477,31 +489,30 @@ body {
                             </div>
                         </div>
                     </div> -->
-                    <div class="simplebar-content" style="margin-left: 261px;">
-        <div class="dashboard-content-inner" >
+                        <div class="simplebar-content" style="margin-left: 261px;">
+                            <div class="dashboard-content-inner">
 
-            
-            <!-- Dashboard Headline -->
-           <div class="dashboard-headline">
-                    <h3 class="d-flex align-items-center">
-                        All Documents                        
+
+                                <!-- Dashboard Headline -->
+                                <div class="dashboard-headline">
+                                    <h3 class="d-flex align-items-center">All Documents                        
                         <div class="word-used-wrapper margin-left-10" style="background: #B2BEB5;">
-                           <i class="fa-solid fa-chart-simple"></i>
+                            <i class="fa-solid fa-chart-simple"></i>
                             <i id="quick-words-left">0</i> / 10,000 
                             <strong>Words Used</strong>
                         </div>
-                    </h3>
-                    <!-- Breadcrumbs -->
-                    <nav id="breadcrumbs" class="dark">
-                        <ul>
-                            <li><a href="http://hype.sociusus.com/">Home</a></li>
-                            <li>All Documents</li>
-                        </ul>
-                    </nav>
-                </div>
+                                    </h3>
+                                    <!-- Breadcrumbs -->
+                                    <nav id="breadcrumbs" class="dark">
+                                        <ul>
+                                            <li><a href="http://hype.sociusus.com/">Home</a></li>
+                                            <li>All Documents</li>
+                                        </ul>
+                                    </nav>
+                                </div>
 
-            <!-- Fun Facts Container -->
-            <%--<div class="fun-facts-container">
+                                <!-- Fun Facts Container -->
+                                <%--<div class="fun-facts-container">
                 <div class="fun-fact" data-fun-fact-color="#b81b7f">
                     <div class="fun-fact-text">
                         <span>Words Used</span>
@@ -530,32 +541,34 @@ body {
                     <div class="fun-fact-icon" style="background-color: rgba(239, 168, 15, 0.07);"><i class="fas fa-headphones" style="color: #dde010;"></i></div>
                 </div>
                             </div>--%>
-           <div class="dashboard-box">
-                        <!-- Headline -->
-                        <div class="headline">
-                            <h3><i class="fa-light fa-file"></i> All Documents</h3>
-                        </div>
-                        <div class="content with-padding">
-                            <div class="table-responsive">
-                                <table id="js-table-list" class="basic-table dashboard-box-list">
-                                    <tbody><tr>
-                                        <th>Document</th>
-                                        <th>Content</th>
-                                        <th> Date</th>
-                                        <th> Action</th>
-                                                                            </tr>
-                                    <tr>
-                                        <td colspan="4" class="text-center">No documents found.</td>
-                                        
-                                                                            </tr>
-                                   
-                                </tbody></table>
-                            </div>
-                        </div>
-                    </div>
+                                <div class="dashboard-box">
+                                    <!-- Headline -->
+                                    <div class="headline">
+                                        <h3><i class="fa-light fa-file"></i>All Documents</h3>
+                                    </div>
+                                    <div class="content with-padding">
+                                        <div class="table-responsive">
+                                            <table id="js-table-list" class="basic-table dashboard-box-list">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Document</th>
+                                                        <th>Content</th>
+                                                        <th>Date</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="4" class="text-center">No documents found.</td>
 
-            <!-- Dashboard Box -->
-            <%--<div class="dashboard-box main-box-in-row">
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Dashboard Box -->
+                                <%--<div class="dashboard-box main-box-in-row">
                 <div class="headline">
                     <h3><i class="icon-feather-bar-chart-2"></i> Word used this month</h3>
                 </div>
@@ -577,31 +590,32 @@ body {
 
                 </div>
             </div>--%>
-           
-            <!-- Dashboard Box / End -->
-                        <!-- Footer -->
-            <div class="dashboard-footer-spacer" style="padding-top: 151.705px;"></div>
-            <div class="small-footer margin-top-15">
-                <div class="footer-copyright">
-                    2023 Socius IGB Pvt Ltd, All right reserved                </div>
-                  <ul class="footer-social-links">
-                                <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="https://www.twitter.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-twitter" ></i></a></li>
-                                <li><a href="https://instagram.com" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram" ></i></a></li>
-                                <li><a href="https://www.linkedin.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin" ></i></a></li>
-                                <li><a href="https://pinterest.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-pinterest"></i></a></li>
-                                <li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                <div class="clearfix"></div>
-            </div>
 
-        </div>
-    </div>
-                </main>
+                                <!-- Dashboard Box / End -->
+                                <!-- Footer -->
+                                <div class="dashboard-footer-spacer" style="padding-top: 151.705px;"></div>
+                                <div class="small-footer margin-top-15">
+                                    <div class="footer-copyright">
+                                        2023 Socius IGB Pvt Ltd, All right reserved               
+                                    </div>
+                                    <ul class="footer-social-links">
+                                        <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.twitter.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="https://instagram.com" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></a></li>
+                                        <li><a href="https://pinterest.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-pinterest"></i></a></li>
+                                        <li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-youtube"></i></a></li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </main>
+                </div>
+
             </div>
-            
         </div>
-         </div>
     </form>
         <script type="text/javascript">
 

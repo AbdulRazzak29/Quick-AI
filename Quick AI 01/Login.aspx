@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-        <div style="margin-top: 12%;">
+        <div style="margin-top: 12%;" >
             <div id="sign-in-dialog" class="zoom-anim-dialog dialog-with-tabs popup-dialog">
                 <ul class="popup-tabs-nav" style="pointer-events: none;">
                     <li class="active"><a href="https://localhost:44308/LoginPage4.aspx">Login</a></li>

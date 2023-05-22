@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AI.Master" AutoEventWireup="true" CodeBehind="love blog.aspx.cs" Inherits="Quick_AI_01.love_blog" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AI.Master" AutoEventWireup="true" CodeBehind="WebForm15.aspx.cs" Inherits="Quick_AI_01.WebForm15" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -18,7 +18,7 @@
                 <div class="row bloghm">
 
                     <div class="col-6">
-                        <h3 style="padding: 15px;">Search Results for “love”</h3>
+                        <h3 style="padding: 15px;">Search Results for “travel fun”</h3>
                         <h4 style="color: #888888">Recent Blogs</h4>
                     </div>
                    
@@ -131,7 +131,7 @@
                             <div class="tag">
                                 <h3>tags</h3>
                                 <span>
-                                    <a href="https://localhost:44308/love%20blog.aspx" class="travelbtn">Travel Fun</a></span>
+                                    <a href="TravelFun.aspx" class="travelbtn">Travel Fun</a></span>
                                 <span>
                                     <a href="https://localhost:44308/love%20blog.aspx"  class="lovebtn" >Love</a></span>
                             </div>

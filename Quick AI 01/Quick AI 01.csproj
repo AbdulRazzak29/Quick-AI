@@ -68,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Affiliate Program.aspx" />
     <Content Include="AI Chat.aspx" />
     <Content Include="AI Code.aspx" />
     <Content Include="Blog Conclusion.aspx" />
@@ -2155,6 +2156,7 @@
     <Content Include="img\default.png" />
     <Content Include="img\default_user %281%29.png" />
     <Content Include="img\default_user.png" />
+    <Content Include="img\image_2023_05_20T12_58_15_456Z.png" />
     <Content Include="img\logo-carousel-01.png" />
     <Content Include="img\logo-carousel-02.png" />
     <Content Include="img\logo-carousel-03.png" />
@@ -2206,8 +2208,16 @@
     <Content Include="FAQ.aspx" />
     <Content Include="Article Writer.aspx" />
     <Content Include="WebForm13.aspx" />
+    <Content Include="WebForm15.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Affiliate Program.aspx.cs">
+      <DependentUpon>Affiliate Program.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affiliate Program.aspx.designer.cs">
+      <DependentUpon>Affiliate Program.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AI Chat.aspx.cs">
       <DependentUpon>AI Chat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2460,6 +2470,13 @@
     </Compile>
     <Compile Include="WebForm13.aspx.designer.cs">
       <DependentUpon>WebForm13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm15.aspx.cs">
+      <DependentUpon>WebForm15.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm15.aspx.designer.cs">
+      <DependentUpon>WebForm15.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

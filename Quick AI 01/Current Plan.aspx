@@ -336,8 +336,8 @@ body {
             </header>
         </div>
         <div class="row">
-            <div class="col-lg-3">
-                 <div class="sidebar" style="    margin-top: 61px; height: calc(100% - 90px);    width: 329px;"  >
+                        <div class="col-lg-3">
+                 <div class="sidebar" style="    margin-top: 61px; height: calc(100% - 90px);  width: 329px; " >
                          <ul>
                              
                              <li>
@@ -350,7 +350,7 @@ body {
                                   <i class="fa fa-th-large"></i> <div>Dashboard</div>
                               </a>
                            </li>
-                             <li>
+                            <li>
 
                         <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
                             <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline"><span class="fa fa-file-text"></span>My Documents</span></a>
@@ -359,7 +359,7 @@ body {
                                 <a href="https://localhost:44308/All%20Documents.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">All Documents</span> </a>
                             </li>
                             <li>
-                                <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">All Images</span> </a>
+                                <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">All AI Images</span> </a>
                             </li>
                         </ul>
                     </li>
@@ -377,22 +377,22 @@ body {
                               </a>
                            </li>
                              <li>
-                              <a href="https://localhost:44308/AI%20Images.aspx#">
+                              <a href="https://localhost:44308/AI%20Images.aspx">
                                   <i class="fa-solid fa-image"></i> <div>AI Images</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/AI%20Chat.aspx">
                                   <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
                               </a>
                            </li>                    
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/Speech%20to%20Text.aspx">
                                   <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/AI%20Code.aspx">
                                  <i class="fa-solid fa-code"></i><div>AI Code</div>
                               </a>
                            </li> 
@@ -421,7 +421,7 @@ body {
                               </a>
                            </li>
                               <li>
-                              <a href="https://localhost:44308/Account%20Setting.aspx#">
+                              <a href="https://localhost:44308/Account%20Setting.aspx">
                                   <i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div>
                               </a>
                            </li>
@@ -436,6 +436,7 @@ body {
                          
                      </div>
             </div>
+
             <div class="col-lg-9">
                    <div class="main-content">
 
