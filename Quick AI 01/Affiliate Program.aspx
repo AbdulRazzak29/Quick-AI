@@ -274,8 +274,8 @@ body {
                                         <a href="#" title="">
                                         
                                                 <div class="dropdown">
-                                                    <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px; margin-left: -59px; margin-top: -24px;">
-                                                        <img src="img/default_user.png" style="height: 69px;" />
+                                                    <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px; margin-left: -59px; margin-top: -24px;border-radius: 50%;">
+                                                         <img src="img/image_2023_05_20T12_58_15_456Z.png" style="height: 58px;border-radius: 70px;" />
                                                     </a>
                                                     <ul class="dropdown-menu" >
                                                         <li><a class="dropdown-item" href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
@@ -413,17 +413,17 @@ body {
                                  </div>
                              </li>
                                  </ul>
-                     <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">  Affiliate Program </a>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">Affiliate Program</a></li>
-    <li><a class="dropdown-item" href="#">Withdrawals</a></li>
-    
-  </ul>
-                              <li>
-                              <a href="#">
-                                  <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
-                              </a>
-                           </li>
+                   <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline"><span class="fa-sharp fa-solid fa-share-nodes"></span>Affiliate Program</span></a>
+                        <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="https://localhost:44308/Affiliate%20Program.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">Affiliate Program</span> </a>
+                            </li>
+                            <li>
+                                <a href="https://localhost:44308/Withdrawals.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">Withdrawals</span> </a>
+                            </li>
+                        </ul>
+                            
                      <ul>
                              <li>
                               <a href="https://localhost:44308/Current%20Plan.aspx">
@@ -654,5 +654,14 @@ body {
             });
         });
     </script>
+    <script type="text/javascript">
+
+        $("#icon").on("click", function () {
+            $(".sidebar").toggle();
+            $(".col-lg-9").toggleClass('col-lg-12 full-width');
+
+        });
+
+    </script> 
 </body>
 </html>

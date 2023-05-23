@@ -91,7 +91,6 @@
     <Content Include="boostrap\js\jquery.slim.min.js" />
     <Content Include="boostrap\js\popper.min.js" />
     <Content Include="Current Plan.aspx" />
-    <Content Include="DashBoard.aspx" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
     <Content Include="First Blog.aspx" />
@@ -2153,6 +2152,7 @@
     <Content Include="font\svgs\solid\z.svg" />
     <Content Include="Forgot Passward.aspx" />
     <Content Include="Forgotpasswardsucess.aspx" />
+    <Content Include="homepageaspx.aspx" />
     <Content Include="img\default.png" />
     <Content Include="img\default_user %281%29.png" />
     <Content Include="img\default_user.png" />
@@ -2164,6 +2164,7 @@
     <Content Include="img\logo-carousel-05.png" />
     <Content Include="img\logo-carousel-06.png" />
     <Content Include="img\logo.png" />
+    <Content Include="img\unnamed.png" />
     <Content Include="jsss\bootstrap-select.min.js" />
     <Content Include="jsss\bootstrap-slider.min.js" />
     <Content Include="jsss\chosen.min.js" />
@@ -2209,6 +2210,7 @@
     <Content Include="Article Writer.aspx" />
     <Content Include="WebForm13.aspx" />
     <Content Include="WebForm15.aspx" />
+    <Content Include="Withdrawals.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Affiliate Program.aspx.cs">
@@ -2288,13 +2290,6 @@
     <Compile Include="Current Plan.aspx.designer.cs">
       <DependentUpon>Current Plan.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DashBoard.aspx.cs">
-      <DependentUpon>DashBoard.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DashBoard.aspx.designer.cs">
-      <DependentUpon>DashBoard.aspx</DependentUpon>
-    </Compile>
     <Compile Include="First Blog.aspx.cs">
       <DependentUpon>First Blog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2315,6 +2310,13 @@
     </Compile>
     <Compile Include="Forgotpasswardsucess.aspx.designer.cs">
       <DependentUpon>Forgotpasswardsucess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homepageaspx.aspx.cs">
+      <DependentUpon>homepageaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homepageaspx.aspx.designer.cs">
+      <DependentUpon>homepageaspx.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -2477,6 +2479,13 @@
     </Compile>
     <Compile Include="WebForm15.aspx.designer.cs">
       <DependentUpon>WebForm15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Withdrawals.aspx.cs">
+      <DependentUpon>Withdrawals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Withdrawals.aspx.designer.cs">
+      <DependentUpon>Withdrawals.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

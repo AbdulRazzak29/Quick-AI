@@ -294,7 +294,7 @@ body {
                         <div class="left-side">
                             <!-- Logo -->
                             <div id="logo" style="width: 261px;">
-                                <a href="https://localhost:44308/Home.aspx">
+                                <a href="https://localhost:44308/homepageaspx.aspx">
                                     <img src="img/hhh.png" alt="Hype" style=" margin-top: 40px;" />
                                 </a>
                             </div>
@@ -457,79 +457,47 @@ body {
                                     <h9>  Account</h9>
                                  </div>
                              </li>
+                              </ul>
+                   <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline"><span class="fa-sharp fa-solid fa-share-nodes"></span>Affiliate Program</span></a>
+                        <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="https://localhost:44308/Affiliate%20Program.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">Affiliate Program</span> </a>
+                            </li>
+                            <li>
+                                <a href="https://localhost:44308/Withdrawals.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">Withdrawals</span> </a>
+                            </li>
+                        </ul>
+                     <ul>
+                         <li>
+                             <a href="https://localhost:44308/Current%20Plan.aspx">
+                                 <i class="fa-solid fa-gift"></i>
+                                 <div>Membership</div>
+                             </a>
+                         </li> 
+                         <li>
+                             <a href="https://localhost:44308/Transactions.aspx">
+                                 <i class="fa-solid fa-file"></i>
+                                 <div>Transaction</div>
+                             </a>
+                         </li> 
                               <li>
-                              <a href="#">
-                                  <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
-                              </a>
-                           </li>
-                             <li>
-                              <a href="https://localhost:44308/Current%20Plan.aspx">
-                                 <i class="fa-solid fa-gift"></i> <div>Membership</div>
-                              </a>
-                           </li>
-                            
-                             <li>
-                              <a href="https://localhost:44308/Transactions.aspx">
-                                  <i class="fa-solid fa-file"></i> <div>Transaction</div>
-                              </a>
-                           </li>
-                              <li>
-                              <a href="https://localhost:44308/Account%20Setting.aspx">
-                                  <i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div>
-                              </a>
-                           </li>
-                              <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
-                              </a>
-                           </li>
-                         </ul>
+                                  <a href="#">
+                                      <i class="fa-solid fa-power-off"></i>
+                                      <div>Log Out</div>
+                                  </a>
+                              </li>
+                     </ul>
                          
                        
                          
                      </div>
             </div>
             <div class="col-lg-9" >
-                   <div class="main-content">
-
-                <main  style="margin-left: -21px;">
-                   <!-- <div class="cards">
-                        <div class="card-single">
-                          <div class="fun-fact" data-fun-fact-color="#b81b7f">
-                    <div class="fun-fact-text">
-                                  <span>Words Used</span>
-                                  <h4>0<small>/ 10,000</small>
-                                  </h4>
-                              </div>
-                    <div class="fun-fact-icon" style="background-color: rgba(184, 27, 127, 0.07);"><i class="icon-feather-trending-up" style="color: rgb(184, 27, 127);"></i></div>
-                </div>
-                            <div>
-                                <span class="las la-user"></span>
-                            </div>
-                        </div>
-                        <div class="card-single">
-                            <div>
-                                <span>Images Used</span>
-                                <h1>0/100</h1>
-                            </div>
-                            <div>
-                                <span class="las la-user"></span>
-                            </div>
-                        </div>
-                        <div class="card-single">
-                            <div>
-                                <span>Speech to Text</span>
-                                <h1>0/0</h1>
-                            </div>
-                            <div>
-                                <span class="las la-user"></span>
-                            </div>
-                        </div>
-                    </div> -->
+                   <div class="main-content"> 
+                <main  style="margin-left: -21px;"> 
                     <div class="simplebar-content" >
         <div class="dashboard-content-inner" >
-
-            
             <!-- Dashboard Headline -->
             <div class="headline">
                 <h3>Dashboard</h3>
@@ -601,7 +569,7 @@ body {
             <div class="dashboard-footer-spacer" style="padding-top: 151.705px;"></div>
             <div class="small-footer margin-top-15">
                 <div class="footer-copyright">
-                    2023 Socius IGB Pvt Ltd, All right reserved                </div>
+                    2023 Socius IGB Pvt Ltd, All right reserved </div>
                   <ul class="footer-social-links">
                                 <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook-f"></i></a></li>
                                 <li><a href="https://www.twitter.com/" target="_blank" rel="nofollow"><i class="fa-brands fa-twitter" ></i></a></li>
