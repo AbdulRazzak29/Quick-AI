@@ -93,6 +93,7 @@
     <Content Include="Current Plan.aspx" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
+    <Content Include="Feedback.aspx" />
     <Content Include="First Blog.aspx" />
     <Content Include="font\css\all.css" />
     <Content Include="font\css\all.min.css" />
@@ -2192,6 +2193,7 @@
     <Content Include="StyleSheet1.css" />
     <Content Include="Testimonials1.aspx" />
     <Content Include="testing.aspx" />
+    <Content Include="Thanks!.aspx" />
     <Content Include="Upgrade Membership 5.aspx" />
     <Content Include="Upgrade Membership 50.aspx" />
     <Content Include="Upgrade Membership 550.aspx" />
@@ -2206,10 +2208,10 @@
     <Content Include="Membership Plan.aspx" />
     <Content Include="Templates.aspx" />
     <Content Include="AI Images.aspx" />
-    <Content Include="FAQ.aspx" />
     <Content Include="Article Writer.aspx" />
     <Content Include="WebForm13.aspx" />
     <Content Include="WebForm15.aspx" />
+    <Content Include="FAQ.aspx" />
     <Content Include="Withdrawals.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -2289,6 +2291,13 @@
     </Compile>
     <Compile Include="Current Plan.aspx.designer.cs">
       <DependentUpon>Current Plan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="First Blog.aspx.cs">
       <DependentUpon>First Blog.aspx</DependentUpon>
@@ -2389,6 +2398,13 @@
     <Compile Include="testing.aspx.designer.cs">
       <DependentUpon>testing.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Thanks!.aspx.cs">
+      <DependentUpon>Thanks!.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Thanks!.aspx.designer.cs">
+      <DependentUpon>Thanks!.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Upgrade Membership 5.aspx.cs">
       <DependentUpon>Upgrade Membership 5.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2452,13 +2468,6 @@
     <Compile Include="AI Images.aspx.designer.cs">
       <DependentUpon>AI Images.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FAQ.aspx.cs">
-      <DependentUpon>FAQ.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FAQ.aspx.designer.cs">
-      <DependentUpon>FAQ.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Article Writer.aspx.cs">
       <DependentUpon>Article Writer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2479,6 +2488,13 @@
     </Compile>
     <Compile Include="WebForm15.aspx.designer.cs">
       <DependentUpon>WebForm15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
     </Compile>
     <Compile Include="Withdrawals.aspx.cs">
       <DependentUpon>Withdrawals.aspx</DependentUpon>

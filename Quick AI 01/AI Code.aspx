@@ -307,20 +307,7 @@ select:focus,select:hover
         <div>
              <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
 
-                <div class="user-status-message">
-                    <div class="container container-active-msg">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <i class="icon-lock text-18"></i>
-                                <span>Your email address is not verified. Please verify your email address to use all the features.</span>
-                            </div>
-                            <div class="col-lg-4">
-                                <a class="button ripple-effect gray resend_buttons21 resend" href="javascript:void(0);" id="21">Resend Email</a>
-                                <span class="resend_count" id="resend_count21"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+             
                 <!-- Header -->
                 <div id="header">
                     <div class="container">
@@ -328,7 +315,7 @@ select:focus,select:hover
                         <div class="left-side">
                             <!-- Logo -->
                             <div id="logo" style="width: 261px;">
-                                <a href="https://localhost:44308/Home.aspx">
+                                <a href="https://localhost:44308/homepageaspx.aspx">
                                     <img src="img/hhh.png" alt="Hype" style=" margin-top: 40px;" />
                                 </a>
                             </div>
@@ -423,7 +410,7 @@ select:focus,select:hover
                     </header>
              <div class="row">
                       <div class="col-lg-3">
-                 <div class="sidebar" style="    margin-top: 61px; height: calc(100% - 90px);  width: 329px; " >
+                 <div class="sidebar" style=" height: calc(100% - 90px);  width: 329px; " >
                          <ul>
                              
                              <li>
@@ -534,7 +521,7 @@ select:focus,select:hover
             <div class="col-lg-9">
                    <div class="main-content">
 
-                <main  style="margin-left: -270px;    margin-top: 130px;">
+                <main  style="     margin-top: 130px;">
                    <!-- <div class="cards">
                         <div class="card-single">
                           <div class="fun-fact" data-fun-fact-color="#b81b7f">
@@ -568,7 +555,7 @@ select:focus,select:hover
                             </div>
                         </div>
                     </div> -->
-                    <div class="simplebar-content" style="margin-left: 261px;">
+                    <div class="simplebar-content" >
         <div class="dashboard-content-inner" >
 
             
@@ -586,7 +573,7 @@ select:focus,select:hover
                     <!-- Breadcrumbs -->
                     <nav id="breadcrumbs" class="dark">
                         <ul>
-                            <li><a href="https://localhost:44308/Home.aspx">Home</a></li>
+                            <li><a href="https://localhost:44308/homepageaspx.aspx">Home</a></li>
                             <li> AI Code </li>
                         </ul>
                     </nav>

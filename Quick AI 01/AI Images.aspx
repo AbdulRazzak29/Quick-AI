@@ -250,20 +250,7 @@
        
         <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
 
-            <div class="user-status-message">
-                <div class="container container-active-msg">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <i class="icon-lock text-18"></i>
-                            <span>Your email address is not verified. Please verify your email address to use all the features.</span>
-                        </div>
-                        <div class="col-lg-4">
-                            <a class="button ripple-effect gray resend_buttons21 resend" href="javascript:void(0);" id="21">Resend Email</a>
-                            <span class="resend_count" id="resend_count21"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+             
             <!-- Header -->
             <div id="header">
                 <div class="container">
@@ -271,7 +258,7 @@
                     <div class="left-side">
                         <!-- Logo -->
                         <div id="logo" style="width: 261px;">
-                            <a href="https://localhost:44308/Home.aspx">
+                            <a href="https://localhost:44308/homepageaspx.aspx">
                                 <img src="img/hhh.png" alt="Hype" style="margin-top: 40px;" />
                             </a>
                         </div>
@@ -371,8 +358,8 @@
         </header>
             <div class="row">
             <div class="col-lg-3">
-                 <div class="sidebar" style="    margin-top: 61px; height: calc(100% - 90px);    width: 329px;"  >
-                         <ul>
+                 <div class="sidebar" style=" height: calc(100% - 90px);    width: 329px;"  >
+                        <ul>
                              
                              <li>
                                  <div style="color:darkblue;font-weight:600;">
@@ -384,7 +371,7 @@
                                   <i class="fa fa-th-large"></i> <div>Dashboard</div>
                               </a>
                            </li>
-                             <li>
+                            <li>
 
                         <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
                             <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline"><span class="fa fa-file-text"></span>My Documents</span></a>
@@ -393,7 +380,7 @@
                                 <a href="https://localhost:44308/All%20Documents.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">All Documents</span> </a>
                             </li>
                             <li>
-                                <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">All Images</span> </a>
+                                <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">All AI Images</span> </a>
                             </li>
                         </ul>
                     </li>
@@ -411,22 +398,22 @@
                               </a>
                            </li>
                              <li>
-                              <a href="https://localhost:44308/AI%20Images.aspx#">
+                              <a href="https://localhost:44308/AI%20Images.aspx">
                                   <i class="fa-solid fa-image"></i> <div>AI Images</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/AI%20Chat.aspx">
                                   <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
                               </a>
                            </li>                    
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/Speech%20to%20Text.aspx">
                                   <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44308/AI%20Code.aspx">
                                  <i class="fa-solid fa-code"></i><div>AI Code</div>
                               </a>
                            </li> 
@@ -438,7 +425,7 @@
                                     <h9>  Account</h9>
                                  </div>
                              </li>
-                               </ul>
+                              </ul>
                    <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
                             <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline"><span class="fa-sharp fa-solid fa-share-nodes"></span>Affiliate Program</span></a>
                         <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
@@ -449,30 +436,26 @@
                                 <a href="https://localhost:44308/Withdrawals.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">Withdrawals</span> </a>
                             </li>
                         </ul>
-                            
                      <ul>
-                             <li>
-                              <a href="https://localhost:44308/Current%20Plan.aspx">
-                                 <i class="fa-solid fa-gift"></i> <div>Membership</div>
-                              </a>
-                           </li>
-                            
-                             <li>
-                              <a href="https://localhost:44308/Transactions.aspx">
-                                  <i class="fa-solid fa-file"></i> <div>Transaction</div>
-                              </a>
-                           </li>
+                         <li>
+                             <a href="https://localhost:44308/Current%20Plan.aspx">
+                                 <i class="fa-solid fa-gift"></i>
+                                 <div>Membership</div>
+                             </a>
+                         </li> 
+                         <li>
+                             <a href="https://localhost:44308/Transactions.aspx">
+                                 <i class="fa-solid fa-file"></i>
+                                 <div>Transaction</div>
+                             </a>
+                         </li> 
                               <li>
-                              <a href="https://localhost:44308/Account%20Setting.aspx">
-                                  <i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div>
-                              </a>
-                           </li>
-                              <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
-                              </a>
-                           </li>
-                         </ul>
+                                  <a href="https://localhost:44308/Home.aspx">
+                                      <i class="fa-solid fa-power-off"></i>
+                                      <div>Log Out</div>
+                                  </a>
+                              </li>
+                     </ul>
                          
                        
                          
@@ -481,9 +464,9 @@
             <div class="col-lg-9">
                    <div class="main-content">
 
-                <main  style="margin-left: -270px;    margin-top: 130px;">
+                <main  style=" margin-top: 130px;">
                  
-                    <div class="simplebar-content" style="margin-left: 261px;">
+                    <div class="simplebar-content"  >
         <div class="dashboard-content-inner" >
 
             
@@ -500,7 +483,7 @@
                     <!-- Breadcrumbs -->
                     <nav id="breadcrumbs" class="dark">
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="https://localhost:44308/homepageaspx.aspx">Home</a></li>
                             <li>AI Images</li>
                         </ul>
                     </nav>
@@ -516,7 +499,7 @@
                         <div class="col-sm-3">
                             <div class="submit-field margin-bottom-20">
                                 <h6>Image Title</h6>
-                                <input name="title" class="with-border small-input" type="text" value="New Image">
+                                <input name="title" class="with-border small-input" type="text" value="New Image"/>
                             </div>
                         </div>
                         <div class="col-sm-3" style="    margin-left: 198px; margin-top: -76px;">

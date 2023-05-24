@@ -296,23 +296,7 @@ body {
         <div>
               <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
 
-                <div class="user-status-message">
-                    <div class="container container-active-msg">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <i class="icon-lock text-18"></i>
-                                <span>Your email address is not verified. Please verify your email address to use all the features.</span>
-                                <div class="alert alert-danger" role="alert" style="display:none;">
-                                    A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <a class="button ripple-effect gray resend_buttons21 resend" href="javascript:void(0);" id="21">Resend Email</a>
-                                <span class="resend_count" id="resend_count21"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                 
                 <!-- Header -->
                 <div id="header">
                     <div class="container">
@@ -320,7 +304,7 @@ body {
                         <div class="left-side">
                             <!-- Logo -->
                             <div id="logo" style="width: 261px;">
-                                <a href="https://localhost:44308/Home.aspx">
+                                <a href="https://localhost:44308/homepageaspx.aspx">
                                     <img src="img/hhh.png" alt="Hype" style=" margin-top: 40px;" />
                                 </a>
                             </div>
@@ -543,7 +527,7 @@ body {
                                 <!-- Breadcrumbs -->
                                 <nav id="breadcrumbs" class="dark">
                                     <ul>
-                                        <li><a href="https://localhost:44308/Home.aspx">Home</a></li>
+                                        <li><a href="https://localhost:44308/homepageaspx.aspx">Home</a></li>
                                         <li>Withdrawals</li>
                                     </ul>
                                 </nav>
@@ -790,6 +774,6 @@ body {
 
         });
 
-    </script> 
+    </script>
 </body>
 </html>

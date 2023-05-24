@@ -223,21 +223,7 @@
     <form id="form1" runat="server">
         <div>
              <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
-
-                <div class="user-status-message">
-                    <div class="container container-active-msg">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <i class="icon-lock text-18"></i>
-                                <span>Your email address is not verified. Please verify your email address to use all the features.</span>
-                            </div>
-                            <div class="col-lg-4">
-                                <a class="button ripple-effect gray resend_buttons21 resend" href="javascript:void(0);" id="21">Resend Email</a>
-                                <span class="resend_count" id="resend_count21"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+ 
                 <!-- Header -->
                 <div id="header">
                     <div class="container">
@@ -245,7 +231,7 @@
                         <div class="left-side">
                             <!-- Logo -->
                             <div id="logo" style="width: 261px;">
-                                <a href="https://localhost:44308/Home.aspx">
+                                <a href="https://localhost:44308/homepageaspx.aspx">
                                     <img src="img/hhh.png" alt="Hype" style=" margin-top: 40px;" />
                                 </a>
                             </div>
@@ -285,7 +271,7 @@
                         <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
                         <li><a class="dropdown-item" href="https://localhost:44308/Current%20Plan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
                         <li><a class="dropdown-item" href="https://localhost:44308/Account%20Setting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
-                        <li><a class="dropdown-item" href="homepage.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                        <li><a class="dropdown-item" href="https://localhost:44308/Home.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
                                                     </ul>
                                                 </div>
                                         </a>

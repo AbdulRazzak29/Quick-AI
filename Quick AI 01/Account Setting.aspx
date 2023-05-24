@@ -230,20 +230,7 @@
         <div>
             <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
 
-                <div class="user-status-message">
-                    <div class="container container-active-msg">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <i class="icon-lock text-18"></i>
-                                <span>Your email address is not verified. Please verify your email address to use all the features.</span>
-                            </div>
-                            <div class="col-lg-4">
-                                <a class="button ripple-effect gray resend_buttons21 resend" href="javascript:void(0);" id="21">Resend Email</a>
-                                <span class="resend_count" id="resend_count21"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              
                 <!-- Header -->
                 <div id="header">
                     <div class="container">
@@ -251,7 +238,7 @@
                         <div class="left-side">
                             <!-- Logo -->
                             <div id="logo" style="width: 261px;">
-                                <a href="https://localhost:44308/Home.aspx">
+                                <a href="https://localhost:44308/homepageaspx.aspx">
                                     <img src="img/hhh.png" alt="Hype" style="margin-top: 40px;" />
                                 </a>
                             </div>
@@ -348,7 +335,7 @@
         </div>
         <div class="row">
                         <div class="col-lg-3">
-                 <div class="sidebar" style="    margin-top: 61px; height: calc(100% - 90px);  width: 329px; " >
+                 <div class="sidebar" style="height: calc(100% - 90px);  width: 329px; " >
                          <ul>
                              
                              <li>
@@ -459,9 +446,9 @@
             <div class="col-lg-9">
                    <div class="main-content">
 
-                <main  style="margin-left: -270px;    margin-top: 130px;">
+                <main  style="margin-top: 130px;">
                    
-                    <div class="simplebar-content" style="margin-left: 261px;">
+                    <div class="simplebar-content">
         <div class="dashboard-content-inner" >
 
             
@@ -471,7 +458,7 @@
                 <!-- Breadcrumbs -->
                 <nav id="breadcrumbs" class="dark">
                     <ul>
-                        <li><a href="https://localhost:44308/Home.aspx">Home</a></li>
+                        <li><a href="https://localhost:44308/homepageaspx.aspx">Home</a></li>
                         <li>Dashboard</li>
                     </ul>
                 </nav>
@@ -490,7 +477,7 @@
                             <div class="submit-field">
                                 <h5>Avatar</h5>
                                 <div class="uploadButton">
-                                    <input class="uploadButton-input" type="file" accept="images/*" id="avatar" name="avatar">
+                                    <input class="uploadButton-input" type="file" accept="images/*" id="avatar" name="avatar"/>
                                     <label class="uploadButton-button ripple-effect" for="avatar" style="background-color: #0e38df; color: white;">Upload Avatar</label>
                                     <span class="uploadButton-file-name">Use 150x150px for better use</span>
                                 </div>
@@ -501,7 +488,7 @@
                                 <h5>Username *</h5>
                                 <div class="input-with-icon-left">
 
-                                    <input type="text" class="with-border" id="username" name="username" value="#" onblur="checkAvailabilityUsername()" style="height: 48px; margin-left: -384px;">
+                                    <input type="text" class="with-border" id="username" name="username" value="#" onblur="checkAvailabilityUsername()" style="height: 48px; margin-left: -384px;"/>
                                 </div>
                                 <span id="user-availability-status"></span>
                             </div>
@@ -511,7 +498,7 @@
                                 <h5>Email Address *</h5>
                                 <div class="input-with-icon-left" style="left: -13px;">
 
-                                    <input type="text" class="with-border" id="email" name="email" value="#" onblur="checkAvailabilityEmail()" style="height: 48px;">
+                                    <input type="text" class="with-border" id="email" name="email" value="#" onblur="checkAvailabilityEmail()" style="height: 48px;"/>
                                 </div>
                                 <span id="email-availability-status"></span>
                             </div>
@@ -521,14 +508,14 @@
                         <div class="col-xl-6">
                             <div class="submit-field">
                                 <h5>New Password</h5>
-                                <input type="password" id="password" name="password" class="with-border" onkeyup="checkAvailabilityPassword()" style="height: 48px;">
+                                <input type="password" id="password" name="password" class="with-border" onkeyup="checkAvailabilityPassword()" style="height: 48px;"/>
                             </div>
                         </div>
 
                         <div class="col-xl-6">
                             <div class="submit-field">
                                 <h5>Confirm Password</h5>
-                                <input type="password" id="re_password" name="re_password" class="with-border" onkeyup="checkRePassword()" style="height: 48px;">
+                                <input type="password" id="re_password" name="re_password" class="with-border" onkeyup="checkRePassword()" style="height: 48px;"/>
                             </div>
                         </div>
                     </div>
@@ -565,31 +552,31 @@
                                <label>
                                    Name*
                                </label>
-                               <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                               <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"/>
                            </div>
                            <div>
                                <label>
                                    Address *
                                </label>
-                               <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                               <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"/>
                            </div>
                            <div class="row">
                                <div class="col-md-6">
                                    <div class="submit-field">
                                        <h5>City *</h5>
-                                       <input type="text" id="billing_city" name="billing_city" class="with-border" value="" required="">
+                                       <input type="text" id="billing_city" name="billing_city" class="with-border" value="" required=""/>
                                    </div>
                                </div>
                                <div class="col-md-4">
                                    <div class="submit-field">
                                        <h5>State *</h5>
-                                       <input type="text" id="billing_state" name="billing_state" class="with-border" value="" required="">
+                                       <input type="text" id="billing_state" name="billing_state" class="with-border" value="" required=""/>
                                    </div>
                                </div>
                                <div class="col-md-2">
                                    <div class="submit-field">
                                        <h5>Zip code *</h5>
-                                       <input type="text" id="billing_zipcode" name="billing_zipcode" class="with-border" value="" required="">
+                                       <input type="text" id="billing_zipcode" name="billing_zipcode" class="with-border" value="" required=""/>
                                    </div>
                                </div>
                            </div>
@@ -597,7 +584,7 @@
                                <label>
                                    Country *
                                </label>
-                                 <input type="text" id="-billing_coun"  div="">
+                                 <input type="text" id="-billing_coun"  div=""/>
                                <div class="submit-field">
                                    <h5>Country *</h5>
                                    <select class="form-select" aria-label="Default select example" style="height: 50px;">
