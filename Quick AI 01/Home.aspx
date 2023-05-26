@@ -1071,9 +1071,9 @@
                     <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Free Setup</li>
                     <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Free Support</li>
                     <li>
-                        <button class="btn btn-primary" id="btn btn-primary1" name="buttons" style="width: 200px;"><a href="https://localhost:44308/Upgrade%20Membership%205.aspx">Upgrade</a></button>
-                        <button class="btn btn-primary" id="btn btn-primary2" name="buttons" style="width: 200px;"><a href="https://localhost:44308/Upgrade%20Membership%2050.aspx">Upgrade</a></button>
-                        <button class="btn btn-primary" id="btn btn-primary3" name="buttons"  style="width: 200px;"><a href="https://localhost:44308/Upgrade%20Membership%20550.aspx">Upgrade</a></button>
+                        <button class="btn btn-primary" id="btn btn-primary1" name="buttons" style="width: 200px;"><a style="color: #ebedef;" href="https://localhost:44308/Upgrade%20Membership%205.aspx">Upgrade</a></button>
+                        <button class="btn btn-primary" id="btn btn-primary2" name="buttons" style="width: 200px;"><a style="color: #ebedef;" href="https://localhost:44308/Upgrade%20Membership%2050.aspx">Upgrade</a></button>
+                        <button class="btn btn-primary" id="btn btn-primary3" name="buttons"  style="width: 200px;"><a style="color: #ebedef;" href="https://localhost:44308/Upgrade%20Membership%20550.aspx">Upgrade</a></button>
                     </li>
                     
                 </ul>

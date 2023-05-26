@@ -81,6 +81,7 @@
     <Content Include="boostrap\css\bootstrap.min.css" />
     <Content Include="boostrap\css\chart.js" />
     <Content Include="boostrap\css\color.css" />
+    <Content Include="boostrap\css\custom.js" />
     <Content Include="boostrap\css\flags.min.css" />
     <Content Include="boostrap\css\jquery.min.js" />
     <Content Include="boostrap\css\style.css" />
