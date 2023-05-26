@@ -624,14 +624,13 @@ select:focus,select:hover
                                     <div>
                                         <div class="submit-field margin-bottom-20">
                                             <h6>Title</h6>
-                                            <input name="title" type="text" id="text" class="with-border small-input quick-text-counter"
-                                                data-maxlength="100">
+                                            <input name="title" type="text" id="text" class="with-border small-input quick-text-counter" data-maxlength="100" />
                                             <div id="counter"></div>
                                         </div>
                                         <div class="submit-field margin-bottom-20">
                                             <h6>Upload Media<span class="form-required">*</span></h6>
                                             <div class="uploadButton margin-top-0">
-                                                <input class="uploadButton-input" name="file" type="file" id="upload">
+                                                <input class="uploadButton-input" name="file" type="file" id="upload" />
                                                 <label class="uploadButton-button ripple-effect" for="upload">Upload Media</label>
                                             </div>
                                             <small>.mp3, .mp4, .mpeg, .mpga, .m4a, .wav, .webm allowed.&nbsp;Max file size: 0 MB</small>

@@ -451,7 +451,7 @@
 
         <div class="row">
             <div class="col-lg-3">
-                <div class="sidebar" style="height: calc(100% - 90px); width: 329px;">
+                 <div class="sidebar" style="height: calc(100% - 90px); width: 329px;">
                     <ul>
 
                         <li>
@@ -535,6 +535,7 @@
                             <a href="https://localhost:44308/Withdrawals.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">Withdrawals</span> </a>
                         </li>
                     </ul>
+
                     <ul>
                         <li>
                             <a href="https://localhost:44308/Current%20Plan.aspx">
@@ -542,6 +543,7 @@
                                 <div>Membership</div>
                             </a>
                         </li>
+
                         <li>
                             <a href="https://localhost:44308/Transactions.aspx">
                                 <i class="fa-solid fa-file"></i>
@@ -549,7 +551,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://localhost:44308/Home.aspx">
+                            <a href="https://localhost:44308/Account%20Setting.aspx">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <div>Account Setting</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
                                 <i class="fa-solid fa-power-off"></i>
                                 <div>Log Out</div>
                             </a>

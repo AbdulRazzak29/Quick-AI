@@ -29,7 +29,7 @@ namespace Quick_AI_01
                 {
                     con.Open();
                 }
-                SqlCommand cmd = new SqlCommand("select * from Regictration where user_name ='" + TextBox1.Text.Trim() + "' and Password = '" + TextBox2.Text.Trim() + "'", con);
+                SqlCommand cmd = new SqlCommand("select * from Regictration where Email_address ='" + TextBox1.Text.Trim() + "' and Password = '" + TextBox2.Text.Trim() + "'", con);
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.HasRows)
                 {

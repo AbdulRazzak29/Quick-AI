@@ -51,7 +51,7 @@
                         <div class="submit-field">
                         </div>
 
-                        <input type="submit" name="Submit" class="button" value="Submit"/>
+                        <input href="https://localhost:44308/Thanks!.aspx" type="submit" name="Submit" class="button" value="Submit"/>
                     </form>
                 </div>
             </div>

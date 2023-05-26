@@ -2209,9 +2209,11 @@
     <Content Include="Templates.aspx" />
     <Content Include="AI Images.aspx" />
     <Content Include="Article Writer.aspx" />
+    <Content Include="contact.aspx" />
     <Content Include="WebForm13.aspx" />
     <Content Include="WebForm15.aspx" />
     <Content Include="FAQ.aspx" />
+    <Content Include="WebForm17.aspx" />
     <Content Include="Withdrawals.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -2475,6 +2477,13 @@
     <Compile Include="Article Writer.aspx.designer.cs">
       <DependentUpon>Article Writer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm13.aspx.cs">
       <DependentUpon>WebForm13.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2495,6 +2504,13 @@
     </Compile>
     <Compile Include="FAQ.aspx.designer.cs">
       <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm17.aspx.cs">
+      <DependentUpon>WebForm17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm17.aspx.designer.cs">
+      <DependentUpon>WebForm17.aspx</DependentUpon>
     </Compile>
     <Compile Include="Withdrawals.aspx.cs">
       <DependentUpon>Withdrawals.aspx</DependentUpon>

@@ -538,7 +538,7 @@ body {
                                 <div class="dashboard-box">
                                     <!-- Headline -->
                                     <div class="headline">
-                                        <h3><i class="fa-light fa-file"></i>All Documents</h3>
+                                        <h3><i class="fa-solid fa-file-lines"></i>All Documents</h3>
                                     </div>
                                     <div class="content with-padding">
                                         <div class="table-responsive">

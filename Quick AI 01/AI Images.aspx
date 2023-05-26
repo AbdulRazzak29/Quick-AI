@@ -20,14 +20,12 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
         }
-
         .container {
             padding: 0px;
             margin: 0;
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
         }
-
         .topbar {
             position: fixed;
             background-color: #fff;
@@ -39,7 +37,6 @@
             align-items: center;
             z-index: 1;
         }
-
         .logo {
             border-right: 1px solid #e0e0e0;
             justify-content: center;
@@ -47,13 +44,11 @@
             padding-top: 10px;
             width: 260px;
         }
-
         .user {
             position: relative;
             width: 50px;
             height: 50px;
         }
-
             .user img {
                 position: absolute;
                 top: 0;
@@ -61,7 +56,6 @@
                 height: 100%;
                 width: 100%;
             }
-
         .selectlang {
             float: right;
             padding-right: 30px;
@@ -70,7 +64,6 @@
             padding-left: 30px;
             height: 82px;
         }
-
         #langbtn {
             border: none;
             background-color: #444444;
@@ -79,17 +72,14 @@
             border-radius: 4px 4px;
             color: white;
         }
-
         option {
             background-color: white;
             box-sizing: border-box;
             color: black;
         }
-
         #langbtn:hover {
             background-color: #314cc6;
         }
-
         .sidebar {
             position: fixed;
             top: 85px;
@@ -101,17 +91,14 @@
             box-shadow: 0px 0px 8px 02px rgb(0,0,0,0.5);
             height: 100%
         }
-
             .sidebar ul {
                 margin-top: 10px;
                 margin-bottom: 10px;
             }
-
                 .sidebar ul li {
                     width: 100%;
                     list-style: none;
                 }
-
                     .sidebar ul li a {
                         width: 100%;
                         text-decoration: none;
@@ -121,13 +108,11 @@
                         align-items: center;
                         font-size: 13px;
                     }
-
                         .sidebar ul li a i {
                             min-width: 60PX;
                             font-size: 15PX;
                             text-align: center;
                         }
-
         .dropbtn {
             background-color: white;
             color: #6c757d;
@@ -136,16 +121,13 @@
             border: none;
             cursor: pointer;
         }
-
             .dropbtn:hover, .dropbtn:focus {
                 background-color: white;
             }
-
         .dropdown {
             position: relative;
             display: inline-block;
         }
-
         .dropdown-content {
             display: none;
             position: absolute;
@@ -155,26 +137,21 @@
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
         }
-
             .dropdown-content a {
                 color: black;
                 padding: 12px 16px;
                 text-decoration: none;
                 display: block;
             }
-
         .dropdown a:hover {
             background-color: #ddd;
         }
-
         .show {
             display: block;
         }
-
         body {
             font-family: "Lato", sans-serif;
         }
-
         .sidenav {
             height: 100%;
             width: 0;
@@ -187,7 +164,6 @@
             transition: 0.5s;
             padding-top: 60px;
         }
-
             .sidenav a {
                 padding: 8px 8px 8px 32px;
                 text-decoration: none;
@@ -196,11 +172,9 @@
                 display: block;
                 transition: 0.3s;
             }
-
                 .sidenav a:hover {
                     color: #f1f1f1;
                 }
-
             .sidenav .closebtn {
                 position: absolute;
                 top: 0;
@@ -208,17 +182,14 @@
                 font-size: 36px;
                 margin-left: 50px;
             }
-
         #main {
             transition: margin-left .5s;
             padding: 16px;
         }
-
         @media screen and (max-height: 450px) {
             .sidenav {
                 padding-top: 15px;
             }
-
                 .sidenav a {
                     font-size: 18px;
                 }
@@ -237,12 +208,12 @@
   margin-left:0;
   top:270px;
   }
-
 #snackbar.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
+
     </style>
 </head>
 <body>
@@ -250,7 +221,7 @@
        
         <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
 
-             
+            
             <!-- Header -->
             <div id="header">
                 <div class="container">
@@ -258,7 +229,7 @@
                     <div class="left-side">
                         <!-- Logo -->
                         <div id="logo" style="width: 261px;">
-                            <a href="https://localhost:44308/homepageaspx.aspx">
+                            <a href="https://localhost:44308/Home.aspx">
                                 <img src="img/hhh.png" alt="Hype" style="margin-top: 40px;" />
                             </a>
                         </div>
@@ -358,115 +329,129 @@
         </header>
             <div class="row">
             <div class="col-lg-3">
-                 <div class="sidebar" style=" height: calc(100% - 90px);    width: 329px;"  >
-                        <ul>
-                             
-                             <li>
-                                 <div style="color:darkblue;font-weight:600;">
-                                    <h9> My Account</h9>
-                                 </div>
-                             </li>
-                            <li>
-                              <a href="https://localhost:44308/dashboard1.aspx">
-                                  <i class="fa fa-th-large"></i> <div>Dashboard</div>
-                              </a>
-                           </li>
-                            <li>
+                 <div class="sidebar" style="height: calc(100% - 90px); width: 329px;">
+                    <ul>
 
-                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline"><span class="fa fa-file-text"></span>My Documents</span></a>
-                        <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                            <li class="w-100">
-                                <a href="https://localhost:44308/All%20Documents.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">All Documents</span> </a>
-                            </li>
-                            <li>
-                                <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">All AI Images</span> </a>
-                            </li>
-                        </ul>
-                    </li>
-                         </ul>
+                        <li>
+                            <div style="color: darkblue; font-weight: 600;">
+                                <h9>My Account</h9>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/dashboard1.aspx">
+                                <i class="fa fa-th-large"></i>
+                                <div>Dashboard</div>
+                            </a>
+                        </li>
+                        <li>
 
-                         <ul>
-                             <li>
-                                 <div style="color:darkblue;font-weight:600;">
-                                    <h9>  Organize And Manage</h9>
-                                 </div>
-                             </li>
-                            <li>
-                              <a href="https://localhost:44308/Templates.aspx">
-                                 <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
-                              </a>
-                           </li>
-                             <li>
-                              <a href="https://localhost:44308/AI%20Images.aspx">
-                                  <i class="fa-solid fa-image"></i> <div>AI Images</div>
-                              </a>
-                           </li>
-                             <li>
-                              <a href="https://localhost:44308/AI%20Chat.aspx">
-                                  <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
-                              </a>
-                           </li>                    
-                            <li>
-                              <a href="https://localhost:44308/Speech%20to%20Text.aspx">
-                                  <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
-                              </a>
-                           </li>
-                             <li>
-                              <a href="https://localhost:44308/AI%20Code.aspx">
-                                 <i class="fa-solid fa-code"></i><div>AI Code</div>
-                              </a>
-                           </li> 
-                             </ul>
+                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                <i class="fs-4 bi-bootstrap"></i><span class="ms-1 d-none d-sm-inline"><span class="fa fa-file-text"></span>My Documents</span></a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="https://localhost:44308/All%20Documents.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All Documents</span> </a>
+                                </li>
+                                <li>
+                                    <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All AI Images</span> </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
 
-                             <ul>
-                                 <li>
-                                 <div style="color:darkblue;font-weight:600;">
-                                    <h9>  Account</h9>
-                                 </div>
-                             </li>
-                              </ul>
-                   <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline"><span class="fa-sharp fa-solid fa-share-nodes"></span>Affiliate Program</span></a>
-                        <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                            <li class="w-100">
-                                <a href="https://localhost:44308/Affiliate%20Program.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">Affiliate Program</span> </a>
-                            </li>
-                            <li>
-                                <a href="https://localhost:44308/Withdrawals.aspx" class="nav-link px-0"> <span class="d-none d-sm-inline">Withdrawals</span> </a>
-                            </li>
-                        </ul>
-                     <ul>
-                         <li>
-                             <a href="https://localhost:44308/Current%20Plan.aspx">
-                                 <i class="fa-solid fa-gift"></i>
-                                 <div>Membership</div>
-                             </a>
-                         </li> 
-                         <li>
-                             <a href="https://localhost:44308/Transactions.aspx">
-                                 <i class="fa-solid fa-file"></i>
-                                 <div>Transaction</div>
-                             </a>
-                         </li> 
-                              <li>
-                                  <a href="https://localhost:44308/Home.aspx">
-                                      <i class="fa-solid fa-power-off"></i>
-                                      <div>Log Out</div>
-                                  </a>
-                              </li>
-                     </ul>
-                         
-                       
-                         
-                     </div>
+                    <ul>
+                        <li>
+                            <div style="color: darkblue; font-weight: 600;">
+                                <h9>Organize And Manage</h9>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/Templates.aspx">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <div>Templates</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/AI%20Images.aspx">
+                                <i class="fa-solid fa-image"></i>
+                                <div>AI Images</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/AI%20Chat.aspx">
+                                <i class="fa-solid fa-comment-dots"></i>
+                                <div>AI Chats</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/Speech%20to%20Text.aspx">
+                                <i class="fa-solid fa-headphones"></i>
+                                <div>Speech To Text</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/AI%20Code.aspx">
+                                <i class="fa-solid fa-code"></i>
+                                <div>AI Code</div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <div style="color: darkblue; font-weight: 600;">
+                                <h9>Account</h9>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                        <i class="fs-4 bi-bootstrap"></i><span class="ms-1 d-none d-sm-inline"><span class="fa-sharp fa-solid fa-share-nodes"></span>Affiliate Program</span></a>
+                    <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                        <li class="w-100">
+                            <a href="https://localhost:44308/Affiliate%20Program.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">Affiliate Program</span> </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/Withdrawals.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">Withdrawals</span> </a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="https://localhost:44308/Current%20Plan.aspx">
+                                <i class="fa-solid fa-gift"></i>
+                                <div>Membership</div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://localhost:44308/Transactions.aspx">
+                                <i class="fa-solid fa-file"></i>
+                                <div>Transaction</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44308/Account%20Setting.aspx">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <div>Account Setting</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-power-off"></i>
+                                <div>Log Out</div>
+                            </a>
+                        </li>
+                    </ul>
+
+
+
+                </div>
             </div>
             <div class="col-lg-9">
                    <div class="main-content">
 
-                <main  style=" margin-top: 130px;">
+                <main  style="margin-left: -270px;    margin-top: 130px;">
                  
-                    <div class="simplebar-content"  >
+                    <div class="simplebar-content" style="margin-left: 261px;">
         <div class="dashboard-content-inner" >
 
             
@@ -483,7 +468,7 @@
                     <!-- Breadcrumbs -->
                     <nav id="breadcrumbs" class="dark">
                         <ul>
-                            <li><a href="https://localhost:44308/homepageaspx.aspx">Home</a></li>
+                            <li><a href="#">Home</a></li>
                             <li>AI Images</li>
                         </ul>
                     </nav>
@@ -499,7 +484,7 @@
                         <div class="col-sm-3">
                             <div class="submit-field margin-bottom-20">
                                 <h6>Image Title</h6>
-                                <input name="title" class="with-border small-input" type="text" value="New Image"/>
+                                <input name="title" class="with-border small-input" type="text" value="New Image">
                             </div>
                         </div>
                         <div class="col-sm-3" style="    margin-left: 198px; margin-top: -76px;">
@@ -655,13 +640,10 @@
          </div>
     </form>
     <script type="text/javascript">
-
         $("#icon").on("click", function () {
             $(".sidebar").toggle();
             $(".col-lg-9").toggleClass('col-lg-12 full-width');
-
         });
-
     </script>
      
       
@@ -683,14 +665,12 @@
         // text counter
         $('.quick-text-counter').each(function () {
             var $this = $(this);
-
             $this.simpleTxtCounter({
                 maxLength: $this.data('maxlength'),
                 countElem: '<div class="form-text"></div>',
                 lineBreak: false,
             });
         });
-
         var examples = ["A boombox reflecting the surroundings in a cave, Painting by H.R. Giger, Closeup",
             "SpongeBob SquarePants talking to a mouse in an airport, 1960s Cartoon",
             "SpongeBob SquarePants dressed as a mailman drinking a cup of coffee in a mountainside scene, watercolors by 5 year old",
@@ -700,17 +680,17 @@
             "Super Mario dressed as a medieval knight riding a pterodactyl in the back of a bus, Baroque painting"];
         $('.try-example').on('click', function (e) {
             e.preventDefault();
-
             $('.image-description').val(examples[Math.floor(Math.random() * examples.length)]);
         })
     </script>
     <script>
-            function myFunction3() {
-                var x = document.getElementById("snackbar");
-                x.className = "show";
-                setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
-            }
+        function myFunction3() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
     </script>
+  
   
  
 </body>

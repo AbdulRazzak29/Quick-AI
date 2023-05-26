@@ -20,14 +20,12 @@
        * {
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .container {
     padding: 0px;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .topbar {
     position: fixed;
     background-color: #fff;
@@ -39,7 +37,6 @@
     align-items: center;
     z-index: 1;
 }
-
 .logo {
    
     border-right: 1px solid #e0e0e0;
@@ -48,13 +45,11 @@
     padding-top: 10px;
     width: 260px;
 }
-
 .user {
     position: relative;
     width: 50px;
     height: 50px;
 }
-
     .user img {
         position: absolute;
         top: 0;
@@ -62,7 +57,6 @@
         height: 100%;
         width: 100%;
     }
-
 .selectlang {
     float: right;
     padding-right: 30px;
@@ -71,7 +65,6 @@
     padding-left: 30px;
     height: 82px;
 }
-
 #langbtn {
     border: none;
     background-color: #444444;
@@ -80,17 +73,14 @@
     border-radius: 4px 4px;
     color: white;
 }
-
 option {
     background-color: white;
     box-sizing: border-box;
     color: black;
 }
-
 #langbtn:hover {
     background-color: #314cc6;
 }
-
 .sidebar {
     position: fixed;
     top: 85px;
@@ -102,17 +92,14 @@ option {
     box-shadow: 0px 0px 8px 02px rgb(0,0,0,0.5);
     height: 100%
 }
-
     .sidebar ul {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-
         .sidebar ul li {
             width: 100%;
             list-style: none;
         }
-
             .sidebar ul li a {
                 width: 100%;
                 text-decoration: none;
@@ -122,7 +109,6 @@ option {
                 align-items: center;
                 font-size:13px;
             }
-
                 .sidebar ul li a i {
                     min-width: 60PX;
                     font-size: 15PX;
@@ -136,16 +122,13 @@ option {
   border: none;
   cursor: pointer;
 }
-
 .dropbtn:hover, .dropbtn:focus {
   background-color:white;
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -155,21 +138,17 @@ option {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
 .dropdown a:hover {background-color: #ddd;}
-
 .show {display: block;}
 body {
   font-family: "Lato", sans-serif;
 }
-
 .sidenav {
   height: 100%;
   width: 0;
@@ -182,7 +161,6 @@ body {
   transition: 0.5s;
   padding-top: 60px;
 }
-
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -191,11 +169,9 @@ body {
   display: block;
   transition: 0.3s;
 }
-
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -203,12 +179,10 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
-
 #main {
   transition: margin-left .5s;
   padding: 16px;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -217,7 +191,6 @@ body {
   float: right;
 }
    /* @author Tim himself */
-
 .ziehharmonika h3 {
 	background: #f7f8f9;
 	color: #131212;
@@ -288,7 +261,6 @@ body {
     top: 38px;
     left: 0;
 }*/
-
 </style>
 </head>
 <body>
@@ -304,7 +276,7 @@ body {
                         <div class="left-side">
                             <!-- Logo -->
                             <div id="logo" style="width: 261px;">
-                                <a href="https://localhost:44308/homepageaspx.aspx">
+                                <a href="https://localhost:44308/Home.aspx">
                                     <img src="img/hhh.png" alt="Hype" style=" margin-top: 40px;" />
                                 </a>
                             </div>
@@ -405,7 +377,7 @@ body {
         </div>
         <div class="row">
             <div class="col-lg-3">
-                 <div class="sidebar" style="    margin-top: 61px; height: calc(100% - 90px);  width: 329px; " >
+                 <div class="sidebar" style="height: calc(100% - 90px);  width: 329px; " >
                          <ul>
                              
                              <li>
@@ -527,7 +499,7 @@ body {
                                 <!-- Breadcrumbs -->
                                 <nav id="breadcrumbs" class="dark">
                                     <ul>
-                                        <li><a href="https://localhost:44308/homepageaspx.aspx">Home</a></li>
+                                        <li><a href="https://localhost:44308/Home.aspx">Home</a></li>
                                         <li>Withdrawals</li>
                                     </ul>
                                 </nav>
@@ -618,7 +590,6 @@ body {
                                     <tbady>
                                         <tr>
                                             <td colspan="5" class="text-center" style="border-top-width: thin; ">No result found.</td>
-
                                         </tr>
                                     </tbady>
                                    
@@ -627,9 +598,7 @@ body {
                         </div>
                                      </div>
                                  </div>
-
                                 </div>
-
                                  <div class="container">
                                 <!-- Footer -->
                                 <div class="dashboard-footer-spacer" style="padding-top: 151.705px;"></div>
@@ -647,7 +616,6 @@ body {
                                     </ul>
                                     <div class="clearfix"></div>
                                 </div>
-
                             </div>
                             </div>
                     </div>
@@ -659,7 +627,6 @@ body {
     </form>
     <script>
         // @author Tim himself
-
         (function ($) {
             var settings;
             $.fn.ziehharmonika = function (actionOrSettings, parameter) {
@@ -721,7 +688,6 @@ body {
                     // forceCloseAll ignores collapsible setting
                     $(settings.headline).ziehharmonika('forceClose');
                 }
-
                 if (settings.prefix) {
                     $(settings.headline, this).attr('data-prefix', settings.prefix);
                 }
@@ -740,7 +706,6 @@ body {
                 if (settings.collapseIconsAlign == 'left') {
                     $('.collapseIcon, ' + settings.headline).addClass('alignLeft');
                 }
-
                 $(settings.headline, this).click(function () {
                     if ($(this).hasClass('active')) {
                         $(this).ziehharmonika('close');
@@ -749,7 +714,6 @@ body {
                     }
                 });
             };
-
             function smoothScrollTo(element, callback) {
                 var time = 400;
                 $('html, body').animate({
@@ -757,7 +721,6 @@ body {
                 }, time, callback);
             }
         }(jQuery));
-
     </script>
      <script>
          // When the user clicks the submit button, show the error message
@@ -767,13 +730,10 @@ body {
          });
      </script>
     <script type="text/javascript">
-
         $("#icon").on("click", function () {
             $(".sidebar").toggle();
             $(".col-lg-9").toggleClass('col-lg-12 full-width');
-
         });
-
-    </script>
+    </script> 
 </body>
 </html>

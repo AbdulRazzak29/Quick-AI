@@ -8,7 +8,9 @@
     	<div class="margin-0-auto">
             <h1 class="margin-bottom-20">Thanks!</h1>
             <p>Thank you for your feedback.</p>
-            <button onclick="window.location.href='javascript:history.back();'" class="button ripple-effect">Back            </button>
+            
+ <input type="button" value="No, really, go back!" onclick="history.go(-1)"/>
+
         </div>
     </div>
 </div>
