@@ -627,8 +627,7 @@ select:focus,select:hover
                                     <div>
                                         <div class="submit-field margin-bottom-20">
                                             <h6>Title</h6>
-                                            <input name="title" type="text" class="with-border small-input quick-text-counter"
-                                                   data-maxlength="100">
+                                            <input name="title" type="text" class="with-border small-input quick-text-counter"  data-maxlength="100"/>
                                         </div>
                                         
                                         <div class="submit-field margin-bottom-20">

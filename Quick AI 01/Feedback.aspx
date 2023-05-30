@@ -50,8 +50,7 @@
                         </div>
                         <div class="submit-field">
                         </div>
-
-                        <input href="https://localhost:44308/Thanks!.aspx" type="submit" name="Submit" class="button" value="Submit"/>
+                        <a href="Thanks!.aspx" class="btn btn-primary ripple-effect button-sliding-icon">Submit</a> 
                     </form>
                 </div>
             </div>

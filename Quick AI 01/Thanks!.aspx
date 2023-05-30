@@ -9,10 +9,17 @@
             <h1 class="margin-bottom-20">Thanks!</h1>
             <p>Thank you for your feedback.</p>
             
- <input type="button" value="No, really, go back!" onclick="history.go(-1)"/>
+ <input type="button" value="No, really, go back!" onclick="myFunction()"/>
 
         </div>
     </div>
 </div>
 </div>
+    <script>
+        
+        function myFunction() {
+            window.history.back();
+        }
+    </script>
+   
 </asp:Content>

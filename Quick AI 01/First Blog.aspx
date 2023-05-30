@@ -4,12 +4,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12" style="margin-top:10%;">
             <h2>First Blog</h2>
             <span>by Admin</span>
 
             <!-- Breadcrumbs -->
-            <nav id="breadcrumbs" class="dark" style="margin-top: -24%;">
+            <nav id="breadcrumbs" class="dark" style="margin-top: -10%;">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Blog</a></li>

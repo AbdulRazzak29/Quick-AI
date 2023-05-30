@@ -57,3 +57,11 @@ C:\Users\USERD006\source\repos\Quick AI 01\obj\Debug\Quick AI 01.csproj.CoreComp
 C:\Users\USERD006\source\repos\Quick AI 01\obj\Debug\Quick AI 01.csproj.CopyComplete
 C:\Users\USERD006\source\repos\Quick AI 01\obj\Debug\Quick AI 01.dll
 C:\Users\USERD006\source\repos\Quick AI 01\obj\Debug\Quick AI 01.pdb
+C:\Users\USERD006\source\repos\Quick AI 01\bin\Newtonsoft.Json.dll
+C:\Users\USERD006\source\repos\Quick AI 01\bin\System.Net.Http.Formatting.dll
+C:\Users\USERD006\source\repos\Quick AI 01\bin\System.Web.Http.dll
+C:\Users\USERD006\source\repos\Quick AI 01\bin\System.Web.Http.WebHost.dll
+C:\Users\USERD006\source\repos\Quick AI 01\bin\Newtonsoft.Json.xml
+C:\Users\USERD006\source\repos\Quick AI 01\bin\System.Net.Http.Formatting.xml
+C:\Users\USERD006\source\repos\Quick AI 01\bin\System.Web.Http.xml
+C:\Users\USERD006\source\repos\Quick AI 01\bin\System.Web.Http.WebHost.xml

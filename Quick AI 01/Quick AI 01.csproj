@@ -44,7 +44,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationFramework" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -54,6 +61,12 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -91,6 +104,7 @@
     <Content Include="boostrap\js\jquery.min.js" />
     <Content Include="boostrap\js\jquery.slim.min.js" />
     <Content Include="boostrap\js\popper.min.js" />
+    <Content Include="Content\Site.css" />
     <Content Include="Current Plan.aspx" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
@@ -2203,7 +2217,6 @@
     <Content Include="dashboard1.aspx" />
     <Content Include="All Documents.aspx" />
     <Content Include="Account Setting.aspx" />
-    <Content Include="WebForm1.aspx" />
     <Content Include="All Image.aspx" />
     <Content Include="Transactions.aspx" />
     <Content Include="Membership Plan.aspx" />
@@ -2212,9 +2225,8 @@
     <Content Include="Article Writer.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="WebForm13.aspx" />
-    <Content Include="WebForm15.aspx" />
+    <Content Include="travel fun.aspx" />
     <Content Include="FAQ.aspx" />
-    <Content Include="WebForm17.aspx" />
     <Content Include="Withdrawals.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -2380,6 +2392,7 @@
     <Compile Include="Account Setting.aspx.designer.cs">
       <DependentUpon>Account Setting.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RestClient.cs" />
     <Compile Include="Speech to Text.aspx.cs">
       <DependentUpon>Speech to Text.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2429,13 +2442,7 @@
     <Compile Include="Upgrade Membership 550.aspx.designer.cs">
       <DependentUpon>Upgrade Membership 550.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="ValuesController1.cs" />
     <Compile Include="All Image.aspx.cs">
       <DependentUpon>All Image.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2492,12 +2499,12 @@
     <Compile Include="WebForm13.aspx.designer.cs">
       <DependentUpon>WebForm13.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm15.aspx.cs">
-      <DependentUpon>WebForm15.aspx</DependentUpon>
+    <Compile Include="travel fun.aspx.cs">
+      <DependentUpon>travel fun.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm15.aspx.designer.cs">
-      <DependentUpon>WebForm15.aspx</DependentUpon>
+    <Compile Include="travel fun.aspx.designer.cs">
+      <DependentUpon>travel fun.aspx</DependentUpon>
     </Compile>
     <Compile Include="FAQ.aspx.cs">
       <DependentUpon>FAQ.aspx</DependentUpon>
@@ -2505,13 +2512,6 @@
     </Compile>
     <Compile Include="FAQ.aspx.designer.cs">
       <DependentUpon>FAQ.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm17.aspx.cs">
-      <DependentUpon>WebForm17.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm17.aspx.designer.cs">
-      <DependentUpon>WebForm17.aspx</DependentUpon>
     </Compile>
     <Compile Include="Withdrawals.aspx.cs">
       <DependentUpon>Withdrawals.aspx</DependentUpon>
@@ -2576,6 +2576,7 @@
     <Content Include="font\webfonts\fa-v4compatibility.ttf" />
     <Content Include="font\webfonts\fa-v4compatibility.woff2" />
     <Content Include="AI.Master" />
+    <Content Include=".editorconfig" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -2584,7 +2585,10 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

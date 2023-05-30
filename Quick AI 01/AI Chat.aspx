@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-         <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
+     <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="font/css/all.css" rel="stylesheet" />
     <link href="boostrap/css/style.css" rel="stylesheet" />
     <link href="boostrap/css/all.min.css" rel="stylesheet" />
@@ -216,6 +216,35 @@ body {
    .msg.from {
   float: right;
 }
+   #chatbox {
+      width: 100%;
+      height: 300px;
+      border: 1px solid #ccc;
+      overflow-y: scroll;
+      margin-bottom: 10px;
+    }
+
+    .chatMsgs{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .userMsg{
+       
+        display: block;
+        margin: 2.5%;
+        padding: 1.5%;
+        text-align: right;
+        margin-left: 20%;
+    }
+    .apiMsg{
+        
+        display: block;
+        margin: 2.5%;
+        padding: 1.5%;
+        text-align: left;
+        margin-right: 20%;
+    }
 </style>
 </head>
 <body>
@@ -501,15 +530,23 @@ body {
                             </div>
 
                             <!-- Message Content Inner -->
-                            <div class="message-content-inner">
-                                                            </div>
+                           <div class="card-body">
+                            <div id="chatbox">
+                                 
+                                <div  id="div1" runat="server" class="chatMsgs">
+                                </div> 
+
+                                
+                            </div>
                             <!-- Message Content Inner / End -->
 
                             <!-- Reply Area -->
                             <form id="ai-chat-form">
                                 <div class="message-reply"  >
-                                    <input type="text" placeholder="Type your message here..." id="ai-chat-textarea">
-                                    <button id="chat-send-button" type="submit" class="button ripple-effect" style="    background-color: #0d6efd;">Send</button>
+                                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                                    
+                                    <asp:Button ID="Button1" runat="server" Text="submit" class="button ripple-effect" OnClick="Button1_Click" />
+                                  
                                 </div>
                                 <div class="form-error message-reply padding-top-10 padding-bottom-10"></div>
                             </form>
@@ -581,7 +618,7 @@ body {
     </script>
   
      
-<script>
+<%--<script>
     $(function () {
         // Define some elements from the DOM and utility methods.
         let $form = $(".message-reply"),
@@ -664,7 +701,7 @@ body {
             return _send(theEnvelope);
         });
     });
-</script>
+</script>--%>
     <script>
         function downloadText() {
             var textToWrite = "This is the content of the text file.";
