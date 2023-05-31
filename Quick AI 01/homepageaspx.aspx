@@ -157,7 +157,7 @@
         @keyframes change {
             0% {
                 background: linear-gradient(to left, yellow, red);
-                -webkit-background-clip: text;
+                -webkit-background-clip:text;
                 background-clip: text;
                 -moz-background-clip: text;
                 -webkit-text-fill-color: transparent;

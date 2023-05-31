@@ -2204,6 +2204,7 @@
     <Content Include="img\Screenshot 2023-04-17 174526.png" />
     <Content Include="LoginPage4.aspx" />
     <Content Include="love blog.aspx" />
+    <Content Include="QuickAI.js" />
     <Content Include="Speech to Text.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Testimonials1.aspx" />
@@ -2224,9 +2225,11 @@
     <Content Include="AI Images.aspx" />
     <Content Include="Article Writer.aspx" />
     <Content Include="contact.aspx" />
+    <Content Include="WebForm1.aspx" />
     <Content Include="WebForm13.aspx" />
     <Content Include="travel fun.aspx" />
     <Content Include="FAQ.aspx" />
+    <Content Include="DashBoard.aspx" />
     <Content Include="Withdrawals.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -2306,6 +2309,13 @@
     </Compile>
     <Compile Include="Current Plan.aspx.designer.cs">
       <DependentUpon>Current Plan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.Master.cs">
+      <DependentUpon>Dashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Master.designer.cs">
+      <DependentUpon>Dashboard.Master</DependentUpon>
     </Compile>
     <Compile Include="Feedback.aspx.cs">
       <DependentUpon>Feedback.aspx</DependentUpon>
@@ -2492,6 +2502,13 @@
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm13.aspx.cs">
       <DependentUpon>WebForm13.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2512,6 +2529,13 @@
     </Compile>
     <Compile Include="FAQ.aspx.designer.cs">
       <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard.aspx.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashBoard.aspx.designer.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Withdrawals.aspx.cs">
       <DependentUpon>Withdrawals.aspx</DependentUpon>
@@ -2577,6 +2601,7 @@
     <Content Include="font\webfonts\fa-v4compatibility.woff2" />
     <Content Include="AI.Master" />
     <Content Include=".editorconfig" />
+    <Content Include="Dashboard.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

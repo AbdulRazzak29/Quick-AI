@@ -278,7 +278,7 @@
                         <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
                         <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
                         <li><a class="dropdown-item" href="Speech to Text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
-                        <li><a class="dropdown-item" href=" AI Image.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
+                        <li><a class="dropdown-item" href="AI Code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
                         <li><a class="dropdown-item" href="All Documents.aspx"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
                         <li><a class="dropdown-item" href="https://localhost:44308/Current%20Plan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
                         <li><a class="dropdown-item" href="https://localhost:44308/Account%20Setting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
@@ -547,7 +547,7 @@
 
                            <div>
                                <label>
-                                   <h3>Type*</h3>
+                                    Type* 
                                </label>
                                <select id="mySelect" onchange="myFunction2()" class="btn btn-primary" style="    background: white; color: #666; border: black;height: 60%;    width: 100%;">
                            <option value="Personal">Personal</option>

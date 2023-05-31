@@ -259,6 +259,7 @@
             cursor: default;
             transition: .3s;
         }
+
         .fun-fact-icon {
             border-radius: 4px;
             background-color: rgba(0, 0, 0, .04);
@@ -267,12 +268,14 @@
             display: flex;
             text-align: center;
         }
+
             .fun-fact-icon i {
                 font-size: 48px;
                 align-self: center;
                 margin: 0 auto;
                 color: #666;
             }
+
         .dashboard-box {
             display: block;
             border-radius: 4px;
@@ -281,6 +284,7 @@
             margin-top: 30px;
             position: relative;
         }
+
         .chartjs-size-monitor {
             position: absolute;
             inset: 0px;
@@ -289,18 +293,20 @@
             visibility: hidden;
             z-index: -1;
         }
-        .chartjs-size-monitor-expand{
+
+        .chartjs-size-monitor-expand {
             position: absolute;
             width: 1000000px;
             height: 1000000px;
-            left: 0; 
+            left: 0;
             top: 0;
             bottom: 0;
-            overflow: hidden; 
-            pointer-events: none; 
-            visibility: hidden; 
+            overflow: hidden;
+            pointer-events: none;
+            visibility: hidden;
             z-index: -1;
         }
+
         .chartjs-size-monitor-shrink {
             position: absolute;
             left: 0;
@@ -313,7 +319,6 @@
             z-index: -1;
             width: 200%;
             height: 200%;
-            
         }
 
         .dashboard-footer-spacer {
@@ -388,18 +393,18 @@
                                                 <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px; margin-left: -59px; margin-top: -24px; border-radius: 50%;">
                                                     <img src="img/image_2023_05_20T12_58_15_456Z.png" style="height: 58px; border-radius: 70px;" />
                                                 </a>
-                                                <ul class="dropdown-menu" >
-                                                        <li><a class="dropdown-item" href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
-                        <li><a class="dropdown-item" href="Speech to Text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
-                        <li><a class="dropdown-item" href=" AI Image.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
-                        <li><a class="dropdown-item" href="All Documents.aspx"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/Current%20Plan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/Account%20Setting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
-                        <li><a class="dropdown-item" href="home.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
-                                                    </ul>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
+                                                    <li><a class="dropdown-item" href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
+                                                    <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
+                                                    <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
+                                                    <li><a class="dropdown-item" href="Speech to Text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
+                                                    <li><a class="dropdown-item" href=" AI Code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
+                                                    <li><a class="dropdown-item" href="All Documents.aspx"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
+                                                    <li><a class="dropdown-item" href="https://localhost:44308/Current%20Plan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
+                                                    <li><a class="dropdown-item" href="https://localhost:44308/Account%20Setting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
+                                                    <li><a class="dropdown-item" href="home.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                                                </ul>
                                             </div>
                                         </a>
                                     </div>
@@ -451,7 +456,7 @@
 
         <div class="row">
             <div class="col-lg-3">
-              <div class="sidebar" style="height: calc(100% - 90px); width: 329px;">
+                <div class="sidebar" style="height: calc(100% - 90px); width: 329px;">
                     <ul>
 
                         <li>
@@ -627,7 +632,7 @@
                                                     <div class="chartjs-size-monitor-expand" style="">
                                                         <div style=""></div>
                                                     </div>
-                                                    <div class="chartjs-size-monitor-shrink" >
+                                                    <div class="chartjs-size-monitor-shrink">
                                                         <div></div>
                                                     </div>
                                                 </div>

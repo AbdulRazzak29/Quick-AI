@@ -95,5 +95,5 @@ namespace Quick_AI_01
             }
         }
     }
-    
+
 }
