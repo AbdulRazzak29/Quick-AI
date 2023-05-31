@@ -2204,6 +2204,7 @@
     <Content Include="img\Screenshot 2023-04-17 174526.png" />
     <Content Include="LoginPage4.aspx" />
     <Content Include="love blog.aspx" />
+    <Content Include="QuickAI.js" />
     <Content Include="Speech to Text.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Testimonials1.aspx" />
