@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Speech to Text.aspx.cs" Inherits="Quick_AI_01.Speech_to_Text" %>
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Speech to Text.aspx.cs" Inherits="Quick_AI_01.Speech_to_Text" %>
 
 <!DOCTYPE html>
 
@@ -444,7 +445,7 @@
                                     <a href="https://localhost:44308/All%20Documents.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All Documents</span> </a>
                                 </li>
                                 <li>
-                                    <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All AI Images</span> </a>
+                                    <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All Images</span> </a>
                                 </li>
                             </ul>
                         </li>

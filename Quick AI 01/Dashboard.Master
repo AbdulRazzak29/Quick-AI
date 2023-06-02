@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
-     <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="font/css/all.css" rel="stylesheet" />
     <link href="boostrap/css/style.css" rel="stylesheet" />
     <link href="boostrap/css/all.min.css" rel="stylesheet" />
@@ -259,6 +259,7 @@
             cursor: default;
             transition: .3s;
         }
+
         .fun-fact-icon {
             border-radius: 4px;
             background-color: rgba(0, 0, 0, .04);
@@ -267,12 +268,14 @@
             display: flex;
             text-align: center;
         }
+
             .fun-fact-icon i {
                 font-size: 48px;
                 align-self: center;
                 margin: 0 auto;
                 color: #666;
             }
+
         .dashboard-box {
             display: block;
             border-radius: 4px;
@@ -281,6 +284,7 @@
             margin-top: 30px;
             position: relative;
         }
+
         .chartjs-size-monitor {
             position: absolute;
             inset: 0px;
@@ -289,18 +293,20 @@
             visibility: hidden;
             z-index: -1;
         }
-        .chartjs-size-monitor-expand{
+
+        .chartjs-size-monitor-expand {
             position: absolute;
             width: 1000000px;
             height: 1000000px;
-            left: 0; 
+            left: 0;
             top: 0;
             bottom: 0;
-            overflow: hidden; 
-            pointer-events: none; 
-            visibility: hidden; 
+            overflow: hidden;
+            pointer-events: none;
+            visibility: hidden;
             z-index: -1;
         }
+
         .chartjs-size-monitor-shrink {
             position: absolute;
             left: 0;
@@ -313,7 +319,6 @@
             z-index: -1;
             width: 200%;
             height: 200%;
-            
         }
 
         .dashboard-footer-spacer {
@@ -338,6 +343,111 @@
             position: relative;
             top: 2px
         }
+
+        #snackbar {
+            visibility: hidden;
+            min-width: 250px;
+            color: white;
+            color: red;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: absolute;
+            z-index: 1;
+            font-size: 15px;
+            margin-left: 0;
+            top: 270px;
+        }
+
+            #snackbar.show {
+                visibility: visible;
+                -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            }
+
+        #chatbox {
+            width: 100%;
+            height: 300px;
+            border: 1px solid #ccc;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+        }
+
+        .chatMsgs {
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        .userMsg {
+            display: block;
+            margin: 2.5%;
+            padding: 1.5%;
+            text-align: right;
+            margin-left: 20%;
+        }
+
+        .apiMsg {
+            display: block;
+            margin: 2.5%;
+            padding: 1.5%;
+            text-align: left;
+            margin-right: 20%;
+        }
+
+        :root {
+            --primary-color: white;
+            --secondary-color: black;
+        }
+
+        iframe {
+            background-color: white;
+            min-height: 300px;
+            width: 100%;
+            resize: none;
+            outline: none;
+            padding: 15px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            border: 1px solid var(--secondary-color);
+            margin: 5px;
+            color: var(--secondary-color);
+            padding: 5px 8px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+            button:focus, button:hover {
+                border: 2px solid #95d3e6;
+            }
+
+        body {
+            background-color: var(--primary-color);
+            border: none;
+            margin: 1px;
+            color: var(--secondary-color);
+            padding: 5px 8px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        input {
+            background-color: white;
+        }
+
+        .dark-mode {
+            --primary-color: #18181a;
+            --secondary-color: white;
+        }
+
+        .raise:hover, .raise:focus {
+            box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+            transform: transla; 
+        }
     </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -345,237 +455,545 @@
 <body>
     <form id="form1" runat="server">
         <div>
-             <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
+            <div class="dark-mode-switch">
+                <header id="header-container" class="fullwidth dashboard-header sticky" style="position: fixed;">
 
 
-                <!-- Header -->
-                <div id="header">
-                    <div class="container">
-                        <!-- Left Side Content -->
-                        <div class="left-side">
-                            <!-- Logo -->
-                            <div id="logo" style="width: 261px;">
-                                <a href="https://localhost:44308/homepageaspx.aspx">
-                                    <img src="img/hhh.png" alt="Hype" style="margin-top: 40px;" />
+                    <!-- Header -->
+                    <div id="header">
+                        <div class="container">
+                            <!-- Left Side Content -->
+                            <div class="left-side">
+                                <!-- Logo -->
+                                <div id="logo" style="width: 261px;">
+                                    <a href="homepageaspx.aspx">
+                                        <img src="img/hhh.png" alt="Hype" style="margin-top: 40px;" />
+                                    </a>
+                                </div>
+
+
+
+                                <a href="javascript:void(0);" class="header-icon">
+
+                                    <i class="fa fa-bars" id="icon" style="margin-top: 32px;" onclick="myMine"></i>
                                 </a>
+
+
+
+
                             </div>
+                            <!-- Left Side Content / End -->
 
 
+                            <!-- Right Side Content / End -->
+                            <div class="right-side">
 
-                            <a href="javascript:void(0);" class="header-icon">
+                                <!-- User Menu -->
+                                <div class="header-widget">
 
-                                <i class="fa fa-bars" id="icon" style="margin-top: 32px;" onclick="myMine"></i>
-                            </a>
+                                    <!-- Messages -->
+                                    <div class="header-notifications user-menu">
+                                        <div class="header-notifications-trigger">
+                                            <a href="#" title="">
 
+                                                <div class="dropdown">
+                                                    <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px; margin-left: -59px; margin-top: -24px; border-radius: 50%;">
+                                                        <img src="img/image_2023_05_20T12_58_15_456Z.png" style="height: 58px; border-radius: 70px;" />
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="dashboard1.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
+                                                        <li><a class="dropdown-item" href=" Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
+                                                        <li><a class="dropdown-item" href=" AI Images.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
+                                                        <li><a class="dropdown-item" href=" AI Images.aspx#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
+                                                        <li><a class="dropdown-item" href="Speech to Text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
+                                                        <li><a class="dropdown-item" href=" AI Code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
+                                                        <li><a class="dropdown-item" href="All Documents.aspx"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
+                                                        <li><a class="dropdown-item" href=" Current Plan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
+                                                        <li><a class="dropdown-item" href=" Account Setting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
+                                                        <li><a class="dropdown-item" href="home.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- Dropdown -->
+
+                                    </div>
+
+                                </div>
+                                <!-- User Menu / End -->
+
+
+                                <div class="dropdown" style="float: right; margin-top: -88px; padding-right: 10px; border-left: 2px solid #e0e0e0; padding-top: 20px; padding-left: 10px; height: 82px;">
+                                    <label for="Language"></label>
+                                    <select name="Languge" id="Languge" style="height: auto; background-color: #444; margin-top: -15px;">
+                                        <option value="en">english</option>
+                                        <option value=" Arabic ">Arabic </option>
+                                        <option value="Bangali">Bangali</option>
+                                        <option value="Bulgarian">Bulgarian</option>
+                                        <option value="Chinese">Chinese</option>
+                                        <option value="English">English</option>
+                                        <option value="French">French</option>
+                                        <option value="German">German</option>
+                                        <option value="Hebrew">Hebrew</option>
+                                        <option value="Hindi">Hindi</option>
+                                        <option value="Italian">Italian</option>
+                                        <option value="Japanesh">Japanesh</option>
+                                        <option value="Polish">Polish</option>
+                                        <option value="Romanin">Romanian</option>
+                                        <option value="Russian">Russian</option>
+                                        <option value="Spanish">Spanish</option>
+                                        <option value="Swedish">Swedish</option>
+                                        <option value="Thai">Thai</option>
+                                        <option value="Turkish">Turkish</option>
+                                        <option value="Urdu">Urdu</option>
+                                        <option value="vietnamese">vietnamese</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                </header>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="sidebar" style="height: calc(100% - 90px); width: 329px;">
+                            <ul>
+
+                                <li>
+                                    <div style="color: darkblue; font-weight: 600;">
+                                        <h9>My Account</h9>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="dashboard1.aspx">
+                                        <i class="fa fa-th-large"></i>
+                                        <div>Dashboard</div>
+                                    </a>
+                                </li>
+                                <li>
+
+                                    <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                        <i class="fs-4 bi-bootstrap"></i><span class="ms-1 d-none d-sm-inline"><span class="fa fa-file-text"></span>My Documents</span></a>
+                                    <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                        <li class="w-100">
+                                            <a href="All Documents.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All Documents</span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="All Image.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All Images</span> </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <div style="color: darkblue; font-weight: 600;">
+                                        <h9>Organize And Manage</h9>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="Templates.aspx">
+                                        <i class="fa-solid fa-layer-group"></i>
+                                        <div>Templates</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="AI Images.aspx">
+                                        <i class="fa-solid fa-image"></i>
+                                        <div>AI Images</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="AI Chat.aspx">
+                                        <i class="fa-solid fa-comment-dots"></i>
+                                        <div>AI Chats</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Speech to Text.aspx">
+                                        <i class="fa-solid fa-headphones"></i>
+                                        <div>Speech To Text</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="AI Code.aspx">
+                                        <i class="fa-solid fa-code"></i>
+                                        <div>AI Code</div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <div style="color: darkblue; font-weight: 600;">
+                                        <h9>Account</h9>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                <i class="fs-4 bi-bootstrap"></i><span class="ms-1 d-none d-sm-inline"><span class="fa-sharp fa-solid fa-share-nodes"></span>Affiliate Program</span></a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="Affiliate Program.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">Affiliate Program</span> </a>
+                                </li>
+                                <li>
+                                    <a href="Withdrawals.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">Withdrawals</span> </a>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <a href="Current Plan.aspx">
+                                        <i class="fa-solid fa-gift"></i>
+                                        <div>Membership</div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Transactions.aspx">
+                                        <i class="fa-solid fa-file"></i>
+                                        <div>Transaction</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Account Setting.aspx">
+                                        <i class="fa-solid fa-right-from-bracket"></i>
+                                        <div>Account Setting</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="home.aspx">
+                                        <i class="fa-solid fa-power-off"></i>
+                                        <div>Log Out</div>
+                                    </a>
+                                </li>
+                            </ul>
 
 
 
                         </div>
-                        <!-- Left Side Content / End -->
-
-
-                        <!-- Right Side Content / End -->
-                        <div class="right-side">
-
-                            <!-- User Menu -->
-                            <div class="header-widget">
-
-                                <!-- Messages -->
-                                <div class="header-notifications user-menu">
-                                    <div class="header-notifications-trigger">
-                                        <a href="#" title="">
-
-                                            <div class="dropdown">
-                                                <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px; margin-left: -59px; margin-top: -24px; border-radius: 50%;">
-                                                    <img src="img/image_2023_05_20T12_58_15_456Z.png" style="height: 58px; border-radius: 70px;" />
-                                                </a>
-                                                <ul class="dropdown-menu" >
-                                                        <li><a class="dropdown-item" href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
-                        <li><a class="dropdown-item" href="Speech to Text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
-                        <li><a class="dropdown-item" href=" AI Code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
-                        <li><a class="dropdown-item" href="All Documents.aspx"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/Current%20Plan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/Account%20Setting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
-                        <li><a class="dropdown-item" href="home.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
-                                                    </ul>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- Dropdown -->
-
-                                </div>
-
-                            </div>
-                            <!-- User Menu / End -->
-
-
-                            <div class="dropdown" style="float: right; margin-top: -88px; padding-right: 10px; border-left: 2px solid #e0e0e0; padding-top: 20px; padding-left: 10px; height: 82px;">
-                                <label for="Language"></label>
-                                <select name="Languge" id="Languge" style="height: auto; background-color: #444; margin-top: -15px;">
-                                    <option value="en">english</option>
-                                    <option value=" Arabic ">Arabic </option>
-                                    <option value="Bangali">Bangali</option>
-                                    <option value="Bulgarian">Bulgarian</option>
-                                    <option value="Chinese">Chinese</option>
-                                    <option value="English">English</option>
-                                    <option value="French">French</option>
-                                    <option value="German">German</option>
-                                    <option value="Hebrew">Hebrew</option>
-                                    <option value="Hindi">Hindi</option>
-                                    <option value="Italian">Italian</option>
-                                    <option value="Japanesh">Japanesh</option>
-                                    <option value="Polish">Polish</option>
-                                    <option value="Romanin">Romanian</option>
-                                    <option value="Russian">Russian</option>
-                                    <option value="Spanish">Spanish</option>
-                                    <option value="Swedish">Swedish</option>
-                                    <option value="Thai">Thai</option>
-                                    <option value="Turkish">Turkish</option>
-                                    <option value="Urdu">Urdu</option>
-                                    <option value="vietnamese">vietnamese</option>
-                                </select>
-                            </div>
                     </div>
-                </div>
-            </header>
-            <div class="row">
-            <div class="col-lg-3">
-              <div class="sidebar" style="height: calc(100% - 90px); width: 329px;">
-                    <ul>
+                    <!-- Right Side Content / End -->
 
-                        <li>
-                            <div style="color: darkblue; font-weight: 600;">
-                                <h9>My Account</h9>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="https://localhost:44308/dashboard1.aspx">
-                                <i class="fa fa-th-large"></i>
-                                <div>Dashboard</div>
-                            </a>
-                        </li>
-                        <li>
-
-                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                <i class="fs-4 bi-bootstrap"></i><span class="ms-1 d-none d-sm-inline"><span class="fa fa-file-text"></span>My Documents</span></a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="https://localhost:44308/All%20Documents.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All Documents</span> </a>
-                                </li>
-                                <li>
-                                    <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All Images</span> </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            <div style="color: darkblue; font-weight: 600;">
-                                <h9>Organize And Manage</h9>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="https://localhost:44308/Templates.aspx">
-                                <i class="fa-solid fa-layer-group"></i>
-                                <div>Templates</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://localhost:44308/AI%20Images.aspx">
-                                <i class="fa-solid fa-image"></i>
-                                <div>AI Images</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://localhost:44308/AI%20Chat.aspx">
-                                <i class="fa-solid fa-comment-dots"></i>
-                                <div>AI Chats</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://localhost:44308/Speech%20to%20Text.aspx">
-                                <i class="fa-solid fa-headphones"></i>
-                                <div>Speech To Text</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://localhost:44308/AI%20Code.aspx">
-                                <i class="fa-solid fa-code"></i>
-                                <div>AI Code</div>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            <div style="color: darkblue; font-weight: 600;">
-                                <h9>Account</h9>
-                            </div>
-                        </li>
-                    </ul>
-                    <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                        <i class="fs-4 bi-bootstrap"></i><span class="ms-1 d-none d-sm-inline"><span class="fa-sharp fa-solid fa-share-nodes"></span>Affiliate Program</span></a>
-                    <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                        <li class="w-100">
-                            <a href="https://localhost:44308/Affiliate%20Program.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">Affiliate Program</span> </a>
-                        </li>
-                        <li>
-                            <a href="https://localhost:44308/Withdrawals.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">Withdrawals</span> </a>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            <a href="https://localhost:44308/Current%20Plan.aspx">
-                                <i class="fa-solid fa-gift"></i>
-                                <div>Membership</div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://localhost:44308/Transactions.aspx">
-                                <i class="fa-solid fa-file"></i>
-                                <div>Transaction</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://localhost:44308/Account%20Setting.aspx">
-                                <i class="fa-solid fa-right-from-bracket"></i>
-                                <div>Account Setting</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="home.aspx">
-                                <i class="fa-solid fa-power-off"></i>
-                                <div>Log Out</div>
-                            </a>
-                        </li>
-                    </ul>
-
-
-
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
                 </div>
             </div>
-                            <!-- Right Side Content / End -->
-                        
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-             </div>
-                 </div>
-       
+        </div>
     </form>
-     <script type="text/javascript">
+    <script type="text/javascript">
 
         $("#icon").on("click", function () {
             $(".sidebar").toggle();
             $(".col-lg-9").toggleClass('col-lg-12 full-width');
 
         });
+    </script>
+    <script>
+        const ctx = document.getElementById('myChart');
 
-     </script>
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["01 June", "02 June", "03 June", "04 June", "05 June", "06 June", "07 June", "08 June", "09 June", "10 June", "11 June", "12 June", "13 June", "14 June", "15 June", "16 June", "17 June", "18 June", "19 June", "20 June", "21 June", "22 June", "23 June", "24 June", "25 June", "26 June", "27 June", "28 June", "29 June", "30 June", "31 June"],
+                // Information about the dataset
+                datasets: [{
+                    label: "Words Used",
+                    backgroundColor: '#18469815',
+                    borderColor: '#184698',
+                    borderWidth: "3",
+                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    pointRadius: 5,
+                    pointHoverRadius: 5,
+                    pointHitRadius: 10,
+                    pointBackgroundColor: "#fff",
+                    pointHoverBackgroundColor: "#fff",
+                    pointBorderWidth: "2",
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        $('.ai-templates-category').on('click', function (e) {
+            e.preventDefault();
+            // make active
+            $('.template-categories li').removeClass('active');
+            $(this).parents('li').addClass('active');
+
+            if ($(this).data('category') === 'all') {
+                $('.ai-template-blocks > div').show();
+                $('.ai-templates-category-title').show();
+            } else {
+                $('.ai-template-blocks > div').hide();
+                $('.category-' + $(this).data('category')).show();
+                $('.ai-templates-category-title').hide();
+
+                // empty search
+                $('#template-search').val('category');
+            }
+        });
+
+        var div = document.getElementById('main');
+        var display = 0;
+        function hideshow() {
+            if (display == 1) {
+                div.style.display = 'block';
+                display = 0;
+            }
+            else {
+                div.style.display = 'none';
+                display = 1;
+            }
+        }
+    </script>
+    <script>
+        // text counter
+        $('.quick-text-counter').each(function () {
+            var $this = $(this);
+            $this.simpleTxtCounter({
+                maxLength: $this.data('maxlength'),
+                countElem: '<div class="form-text"></div>',
+                lineBreak: false,
+            });
+        });
+        var examples = ["A boombox reflecting the surroundings in a cave, Painting by H.R. Giger, Closeup",
+            "SpongeBob SquarePants talking to a mouse in an airport, 1960s Cartoon",
+            "SpongeBob SquarePants dressed as a mailman drinking a cup of coffee in a mountainside scene, watercolors by 5 year old",
+            "A cactus sitting next to onion rings in a farm, 1960s Cartoon",
+            "Garfield driving a school bus in a rock concert, Painting by Leonardo Da Vinci",
+            "A mouse riding on a horse in a mountainside scene, Painting by Rembrandt",
+            "Super Mario dressed as a medieval knight riding a pterodactyl in the back of a bus, Baroque painting"];
+        $('.try-example').on('click', function (e) {
+            e.preventDefault();
+            $('.image-description').val(examples[Math.floor(Math.random() * examples.length)]);
+        })
+    </script>
+    <script>
+        function myFunction3() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+    </script>
+    <script>
+
+        let optionsButtons = document.querySelectorAll(".option-button");
+        let advancedOptionButton = document.querySelectorAll(".adv-option-button");
+        let fontName = document.getElementById("fontName");
+        let fontSizeRef = document.getElementById("fontSize");
+        let writingArea = document.getElementById("text-input");
+        let linkButton = document.getElementById("createLink");
+        let alignButtons = document.querySelectorAll(".align");
+        let spacingButtons = document.querySelectorAll(".spacing");
+        let formatButtons = document.querySelectorAll(".format");
+        let scriptButtons = document.querySelectorAll(".script");
+
+        //List of fontlist
+        let fontList = [
+            "Arial",
+            "Verdana",
+            "Times New Roman",
+            "Garamond",
+            "Georgia",
+            "Courier New",
+            "cursive",
+        ];
+
+        //Initial Settings
+        const initializer = () => {
+            //function calls for highlighting buttons
+            //No highlights for link, unlink,lists, undo,redo since they are one time operations
+            highlighter(alignButtons, true);
+            highlighter(spacingButtons, true);
+            highlighter(formatButtons, false);
+            highlighter(scriptButtons, true);
+
+            //create options for font names
+            fontList.map((value) => {
+                let option = document.createElement("option");
+                option.value = value;
+                option.innerHTML = value;
+                fontName.appendChild(option);
+            });
+
+            //fontSize allows only till 7
+            for (let i = 1; i <= 7; i++) {
+                let option = document.createElement("option");
+                option.value = i;
+                option.innerHTML = i;
+                fontSizeRef.appendChild(option);
+            }
+
+            //default size
+            fontSizeRef.value = 3;
+        };
+
+        //main logic
+        const modifyText = (command, defaultUi, value) => {
+            //execCommand executes command on selected text
+            document.execCommand(command, defaultUi, value);
+        };
+
+        //For basic operations which don't need value parameter
+        optionsButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                event.preventDefault();
+                modifyText(button.id, false, null);
+            });
+        });
+
+        //options that require value parameter (e.g colors, fonts)
+        advancedOptionButton.forEach((button) => {
+            button.addEventListener("change", () => {
+                modifyText(button.id, false, button.value);
+            });
+        });
+
+        //link
+        linkButton.addEventListener("click", () => {
+            let userLink = prompt("Enter a URL");
+            //if link has http then pass directly else add https
+            if (/http/i.test(userLink)) {
+                modifyText(linkButton.id, false, userLink);
+            } else {
+                userLink = "http://" + userLink;
+                modifyText(linkButton.id, false, userLink);
+            }
+        });
+
+        //Highlight clicked button
+        const highlighter = (className, needsRemoval) => {
+            className.forEach((button) => {
+                button.addEventListener("click", () => {
+                    event.preventDefault();
+                    //needsRemoval = true means only one button should be highlight and other would be normal
+                    if (needsRemoval) {
+                        let alreadyActive = false;
+
+                        //If currently clicked button is already active
+                        if (button.classList.contains("active")) {
+                            alreadyActive = true;
+                        }
+
+                        //Remove highlight from other buttons
+                        highlighterRemover(className);
+                        if (!alreadyActive) {
+                            //highlight clicked button
+                            button.classList.add("active");
+                        }
+                    } else {
+                        //if other buttons can be highlighted
+                        button.classList.toggle("active");
+                    }
+                });
+            });
+        };
+
+        const highlighterRemover = (className) => {
+            className.forEach((button) => {
+                button.classList.remove("active");
+            });
+        };
+
+        window.onload = initializer();
+    </script>
+    <script>
+        function myFunction3() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 6000);
+        }
+
+        // When the user clicks the submit button, show the error message
+        document.getElementById("submit-btn").addEventListener("click", function () {
+            document.getElementById("error-msg").style.display = "block";
+        });
+
+
+        const messageEle = document.getElementById('text');
+        const counterEle = document.getElementById('counter');
+
+        messageEle.addEventListener('input', function (e) {
+            const target = e.target;
+
+            // Get the `maxlength` attribute
+            const maxLength = target.getAttribute('maxlength');
+
+            // Count the current number of characters
+            const currentLength = target.value.length;
+
+            counterEle.innerHTML = `${currentLength}/${maxLength}`;
+        });
+
+        let input = document.getElementById("text-input"),
+            words = document.getElementById('words'),
+            characters = document.getElementById('characters');
+        function wordCounter(text) {
+            var text = input.value;
+            var wordCount = 0;
+            for (var i = 0; i <= text.length; i++) {
+                if (text.charAt(i) == ' ') {
+                    wordCount++;
+                }
+            }
+            words.innerText = wordCount;
+        }
+        input.addEventListener('keyup', function (e) {
+            wordCounter(e.value);
+        });
+
+        function caracterCounter(text) {
+            var text = input.value;
+            var wordCount = 0;
+            for (var i = 0; i <= text.length - 1; i++) {
+                text.charAt(i) == wordCount++;
+            }
+            characters.innerText = wordCount;
+        }
+        input.addEventListener('keyup', function (e) {
+            caracterCounter(e.value);
+        });
+
+        let input = document.getElementById("field-writting"),
+            words = document.getElementById('words'),
+            characters = document.getElementById('characters');
+        function wordCounter(text) {
+            var text = input.value;
+            var wordCount = 0;
+            for (var i = 0; i <= text.length; i++) {
+                if (text.charAt(i) == ' ') {
+                    wordCount++;
+                }
+            }
+            words.innerText = wordCount;
+        }
+        input.addEventListener('keyup', function (e) {
+            wordCounter(e.value);
+        });
+
+        function caracterCounter(text) {
+            var text = input.value;
+            var wordCount = 0;
+            for (var i = 0; i <= text.length - 1; i++) {
+                text.charAt(i) == wordCount++;
+            }
+            characters.innerText = wordCount;
+        }
+        input.addEventListener('keyup', function (e) {
+            caracterCounter(e.value);
+        });
+    </script>
+    <script>
+
+        function myFunction3() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+    </script>
 </body>
 </html>

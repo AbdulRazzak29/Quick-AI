@@ -2204,7 +2204,6 @@
     <Content Include="img\Screenshot 2023-04-17 174526.png" />
     <Content Include="LoginPage4.aspx" />
     <Content Include="love blog.aspx" />
-    <Content Include="QuickAI.js" />
     <Content Include="Speech to Text.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Testimonials1.aspx" />
@@ -2230,6 +2229,15 @@
     <Content Include="travel fun.aspx" />
     <Content Include="FAQ.aspx" />
     <Content Include="DashBoard.aspx" />
+    <Content Include="All Document1.aspx" />
+    <Content Include="All Image1.aspx" />
+    <Content Include="Templates!.aspx" />
+    <Content Include="AI Image1.aspx" />
+    <Content Include="AI Chat1.aspx" />
+    <Content Include="Speech to Text1.aspx" />
+    <Content Include="WebForm24.aspx" />
+    <Content Include="WebForm25.aspx" />
+    <Content Include="WebForm26.aspx" />
     <Content Include="Withdrawals.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -2536,6 +2544,69 @@
     </Compile>
     <Compile Include="DashBoard.aspx.designer.cs">
       <DependentUpon>DashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="All Document1.aspx.cs">
+      <DependentUpon>All Document1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="All Document1.aspx.designer.cs">
+      <DependentUpon>All Document1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="All Image1.aspx.cs">
+      <DependentUpon>All Image1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="All Image1.aspx.designer.cs">
+      <DependentUpon>All Image1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Templates!.aspx.cs">
+      <DependentUpon>Templates!.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templates!.aspx.designer.cs">
+      <DependentUpon>Templates!.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AI Image1.aspx.cs">
+      <DependentUpon>AI Image1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AI Image1.aspx.designer.cs">
+      <DependentUpon>AI Image1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AI Chat1.aspx.cs">
+      <DependentUpon>AI Chat1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AI Chat1.aspx.designer.cs">
+      <DependentUpon>AI Chat1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Speech to Text1.aspx.cs">
+      <DependentUpon>Speech to Text1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Speech to Text1.aspx.designer.cs">
+      <DependentUpon>Speech to Text1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm24.aspx.cs">
+      <DependentUpon>WebForm24.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm24.aspx.designer.cs">
+      <DependentUpon>WebForm24.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm25.aspx.cs">
+      <DependentUpon>WebForm25.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm25.aspx.designer.cs">
+      <DependentUpon>WebForm25.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm26.aspx.cs">
+      <DependentUpon>WebForm26.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm26.aspx.designer.cs">
+      <DependentUpon>WebForm26.aspx</DependentUpon>
     </Compile>
     <Compile Include="Withdrawals.aspx.cs">
       <DependentUpon>Withdrawals.aspx</DependentUpon>

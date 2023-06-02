@@ -397,7 +397,7 @@
                                                     <li><a class="dropdown-item" href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
                                                     <li><a class="dropdown-item" href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
                                                     <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
-                                                    <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
+                                                    <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
                                                     <li><a class="dropdown-item" href="Speech to Text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                                                     <li><a class="dropdown-item" href=" AI Code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
                                                     <li><a class="dropdown-item" href="All Documents.aspx"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
@@ -479,7 +479,7 @@
                                     <a href="https://localhost:44308/All%20Documents.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All Documents</span> </a>
                                 </li>
                                 <li>
-                                    <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All AI Images</span> </a>
+                                    <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All Images</span> </a>
                                 </li>
                             </ul>
                         </li>
@@ -680,7 +680,7 @@
         new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ["01 May", "02 May", "03 May", "04 May", "05 May", "06 May", "07 May", "08 May", "09 May", "10 May", "11 May", "12 May", "13 May", "14 May", "15 May", "16 May", "17 May", "18 May", "19 May", "20 May", "21 May", "22 May", "23 May", "24 May", "25 May", "26 May", "27 May", "28 May", "29 May", "30 May", "31 May"],
+                labels: ["01 June", "02 June", "03 June", "04 June", "05 June", "06 June", "07 June", "08 June", "09 June", "10 June", "11 June", "12 June", "13 June", "14 June", "15 June", "16 June", "17 June", "18 June", "19 June", "20 June", "21 June", "22 June", "23 June", "24 June", "25 June", "26 June", "27 June", "28 June", "29 June", "30 June", "31 June"],
                 // Information about the dataset
                 datasets: [{
                     label: "Words Used",

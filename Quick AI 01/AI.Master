@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
-      <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="boostrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="font/css/all.css" rel="stylesheet" />
     <link href="boostrap/css/style.css" rel="stylesheet" />
     <link href="boostrap/css/all.min.css" rel="stylesheet" />
@@ -288,7 +288,7 @@ margin-top: 85px;"r-light">
                     <div class="left-side" style="margin-top: 4%;">
                         <!-- Logo -->
                         <div id="logo">
-                            <a href="https://localhost:44308/Home.aspx">
+                            <a href="Home.aspx">
                                 <img src="img/hhh.png" style="width: 65px; height: 42px;" /></a>
                         </div>
 
@@ -301,7 +301,7 @@ margin-top: 85px;"r-light">
                     <!-- Right Side Content / End -->
                     <div class="right-side" style="top: 30px;">
                         <div class="header-widget">
-                            <a href="https://localhost:44308/Login.aspx" class="popup-with-zoom-anim button ripple-effect" style="background-color: #0d6efd;">Join Now</a>
+                            <a href="Login.aspx" class="popup-with-zoom-anim button ripple-effect" style="background-color: #0d6efd;">Join Now</a>
                         </div>
 
                         <div class="header-widget">
@@ -336,7 +336,7 @@ margin-top: 85px;"r-light">
                             </div>
                         </div>
                     </div>
-                    <!-- Right Side Content / End -->
+                <!-- Right Side Content / End -->
 
                 </div>
             </div>
@@ -365,8 +365,8 @@ margin-top: 85px;"r-light">
                                 <div class=" footer-col1">
                                     <h6 class="foth6">My Account</h6>
                                     <ul class="footli">
-                                        <li><a href="https://localhost:44308/Login.aspx">Login</a></li>
-                                        <li><a href="https://localhost:44308/LoginPage4.aspx">Register</a></li>
+                                        <li><a href="Login.aspx">Login</a></li>
+                                        <li><a href="LoginPage4.aspx">Register</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -385,7 +385,7 @@ margin-top: 85px;"r-light">
                                     <h6 class="foth6">Information</h6>
                                     <ul class="footli" style="list-style: none;">
                                         <li><a href="Faq.aspx">FAQ</a></li>
-                                        <li><a href="https://localhost:44308/Testimonials1.aspx">Testinomials</a></li>
+                                        <li><a href="Testimonials1.aspx">Testinomials</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -403,7 +403,12 @@ margin-top: 85px;"r-light">
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-4">
                             <div class="icons">
-                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a><a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>

@@ -10,7 +10,7 @@
                     <div class="welcome-text">
                         <h3>Let's create your account!</h3>
                         <p>&nbsp;</p>
-                        <span>Already have an account? <a href="https://localhost:44308/Login.aspx">Log In!</a>
+                        <span>Already have an account? <a href="Login.aspx">Log In!</a>
 
                         </span>
                         &nbsp;

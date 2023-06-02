@@ -23,12 +23,8 @@ namespace Quick_AI_01
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //Console.WriteLine(sender.ToString(), TextBox1.Text);
-            //userMsgs.Add(TextBox1.Text);
             userMsgs.Add(new Label());
             ((Label)userMsgs[userMsgs.Count - 1]).Text = TextBox1.Text;
-            //this.Label2.Text = this.Label2.Text + "0";
-            //this.Label2.Visible = false;
             if (TextBox1.Text != "" || TextBox1.Text != null)
             {
                 var res = Task.Run(async () => await apiCall(TextBox1.Text)).Result;

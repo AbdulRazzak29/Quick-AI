@@ -512,7 +512,7 @@
                                         
                                     
                                     <!-- Breadcrumbs -->
-                                    <nav id="breadcrumbs" class="dark">
+                                    <nav id="breadcrumbs" class="dark" style="margin-top: -40%;">
                                         <ul>
                                             <li><a href="homepageaspx.aspx">Home</a></li>
                                             <li>AI Chat </li>
@@ -555,10 +555,10 @@
 
                                                 <!-- Reply Area -->
                                                 <form id="ai-chat-form">
-                                                    <div class="message-reply">
+                                                    <div class="message-reply" style="padding:0;">
                                                         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
 
-                                                        <asp:Button ID="Button1" runat="server" Text="submit" class="button ripple-effect" OnClick="Button1_Click" />
+                                                        <asp:Button ID="Button1" runat="server" Text="submit" class="button ripple-effect" OnClick="Button1_Click" style="margin-top:-3%;" />
 
                                                     </div>
                                                     <div class="form-error message-reply padding-top-10 padding-bottom-10"></div>

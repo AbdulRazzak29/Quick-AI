@@ -273,15 +273,15 @@
                                                          <img src="img/image_2023_05_20T12_58_15_456Z.png" style="height: 58px;border-radius: 70px;" />
                                                     </a>
                                                    <ul class="dropdown-menu" >
-                                                        <li><a class="dropdown-item" href="https://localhost:44308/dashboard1.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/AI%20Images.aspx#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
+                                                        <li><a class="dropdown-item" href="dashboard1.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
+                        <li><a class="dropdown-item" href="Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
+                        <li><a class="dropdown-item" href="AI Images.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
+                        <li><a class="dropdown-item" href="AI Images.aspx#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
                         <li><a class="dropdown-item" href="Speech to Text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                         <li><a class="dropdown-item" href="AI Code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
                         <li><a class="dropdown-item" href="All Documents.aspx"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/Current%20Plan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
-                        <li><a class="dropdown-item" href="https://localhost:44308/Account%20Setting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
+                        <li><a class="dropdown-item" href="Current Plan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
+                        <li><a class="dropdown-item" href="Account Setting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
                         <li><a class="dropdown-item" href="home.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
                                                     </ul>
                                                 </div>
@@ -355,10 +355,10 @@
                                 <i class="fs-4 bi-bootstrap"></i><span class="ms-1 d-none d-sm-inline"><span class="fa fa-file-text"></span>My Documents</span></a>
                             <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="https://localhost:44308/All%20Documents.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All Documents</span> </a>
+                                    <a href="All Documents.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All Documents</span> </a>
                                 </li>
                                 <li>
-                                    <a href="https://localhost:44308/All%20Image.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All AI Images</span> </a>
+                                    <a href="All Image.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">All AI Images</span> </a>
                                 </li>
                             </ul>
                         </li>
@@ -371,31 +371,31 @@
                             </div>
                         </li>
                         <li>
-                            <a href="https://localhost:44308/Templates.aspx">
+                            <a href="Templates.aspx">
                                 <i class="fa-solid fa-layer-group"></i>
                                 <div>Templates</div>
                             </a>
                         </li>
                         <li>
-                            <a href="https://localhost:44308/AI%20Images.aspx">
+                            <a href="AI Images.aspx">
                                 <i class="fa-solid fa-image"></i>
                                 <div>AI Images</div>
                             </a>
                         </li>
                         <li>
-                            <a href="https://localhost:44308/AI%20Chat.aspx">
+                            <a href="AI Chat.aspx">
                                 <i class="fa-solid fa-comment-dots"></i>
                                 <div>AI Chats</div>
                             </a>
                         </li>
                         <li>
-                            <a href="https://localhost:44308/Speech%20to%20Text.aspx">
+                            <a href="Speech to Text.aspx">
                                 <i class="fa-solid fa-headphones"></i>
                                 <div>Speech To Text</div>
                             </a>
                         </li>
                         <li>
-                            <a href="https://localhost:44308/AI%20Code.aspx">
+                            <a href="AI Code.aspx">
                                 <i class="fa-solid fa-code"></i>
                                 <div>AI Code</div>
                             </a>
@@ -413,29 +413,29 @@
                         <i class="fs-4 bi-bootstrap"></i><span class="ms-1 d-none d-sm-inline"><span class="fa-sharp fa-solid fa-share-nodes"></span>Affiliate Program</span></a>
                     <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                         <li class="w-100">
-                            <a href="https://localhost:44308/Affiliate%20Program.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">Affiliate Program</span> </a>
+                            <a href="Affiliate Program.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">Affiliate Program</span> </a>
                         </li>
                         <li>
-                            <a href="https://localhost:44308/Withdrawals.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">Withdrawals</span> </a>
+                            <a href="Withdrawals.aspx" class="nav-link px-0"><span class="d-none d-sm-inline">Withdrawals</span> </a>
                         </li>
                     </ul>
 
                     <ul>
                         <li>
-                            <a href="https://localhost:44308/Current%20Plan.aspx">
+                            <a href="Current Plan.aspx">
                                 <i class="fa-solid fa-gift"></i>
                                 <div>Membership</div>
                             </a>
                         </li>
 
                         <li>
-                            <a href="https://localhost:44308/Transactions.aspx">
+                            <a href="Transactions.aspx">
                                 <i class="fa-solid fa-file"></i>
                                 <div>Transaction</div>
                             </a>
                         </li>
                         <li>
-                            <a href="https://localhost:44308/Account%20Setting.aspx">
+                            <a href="Account Setting.aspx">
                                 <i class="fa-solid fa-right-from-bracket"></i>
                                 <div>Account Setting</div>
                             </a>
@@ -468,7 +468,7 @@
                 <!-- Breadcrumbs -->
                 <nav id="breadcrumbs" class="dark">
                     <ul>
-                        <li><a href="https://localhost:44308/homepageaspx.aspx">Home</a></li>
+                        <li><a href="homepageaspx.aspx">Home</a></li>
                         <li>Dashboard</li>
                     </ul>
                 </nav>

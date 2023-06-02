@@ -182,7 +182,7 @@
                         <h4>Article And Blogs</h4>
                     </div>
                     <div class="col-md-4 col-sm-6 category-1">
-                        <a href="https://localhost:44308/Blog%20Ideas.aspx">
+                        <a href="Blog Ideas.aspx">
                             <div class="dashboard-box ai-templates ">
                                 <div class="content">
                                     <div class="ai-templates-icon">
@@ -195,7 +195,7 @@
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-6 category-1">
-                        <a href="https://localhost:44308/Blog%20Ideas.aspx">
+                        <a href="Blog Ideas.aspx">
                             <div class="dashboard-box ai-templates ">
                                 <div class="content">
                                     <div class="ai-templates-icon">
@@ -208,7 +208,7 @@
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-6 category-1">
-                        <a href="https://localhost:44308/Blog%20Titles.aspx">
+                        <a href="Blog Titles.aspx">
                             <div class="dashboard-box ai-templates ">
                                 <div class="content">
                                     <div class="ai-templates-icon">
@@ -1074,9 +1074,9 @@
                     <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Free Setup</li>
                     <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Free Support</li>
                     <li>
-                        <button class="btn btn-primary" id="btn btn-primary1" name="buttons" style="width: 200px;"><a style="color: #ebedef;" href="https://localhost:44308/Upgrade%20Membership%205.aspx">Upgrade</a></button>
-                        <button class="btn btn-primary" id="btn btn-primary2" name="buttons" style="width: 200px;"><a style="color: #ebedef;" href="https://localhost:44308/Upgrade%20Membership%2050.aspx">Upgrade</a></button>
-                        <button class="btn btn-primary" id="btn btn-primary3" name="buttons" style="width: 200px;"><a style="color: #ebedef;" href="https://localhost:44308/Upgrade%20Membership%20550.aspx">Upgrade</a></button>
+                        <button class="btn btn-primary" id="btn btn-primary1" name="buttons" style="width: 200px;"><a style="color: #ebedef;" href="Upgrade Membership 5.aspx">Upgrade</a></button>
+                        <button class="btn btn-primary" id="btn btn-primary2" name="buttons" style="width: 200px;"><a style="color: #ebedef;" href="Upgrade Membership 50.aspx">Upgrade</a></button>
+                        <button class="btn btn-primary" id="btn btn-primary3" name="buttons" style="width: 200px;"><a style="color: #ebedef;" href="Upgrade Membership 550.aspx">Upgrade</a></button>
                     </li>
 
                 </ul>
@@ -1154,13 +1154,13 @@
                     <!-- Section Headline -->
                     <div class="section-headline margin-top-0 margin-bottom-45">
                         <h3>Recent Blog</h3>
-                        <a href="https://localhost:44308/Blog.aspx" class="headline" style="margin-left: 824px;">View Blog<i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="Blog.aspx" class="headline" style="margin-left: 824px;">View Blog<i class="fa-solid fa-arrow-right"></i></a>
                     </div>
 
                     <div class="row">
                         <!-- Blog Post Item -->
                         <div class="col-xl-4">
-                            <a href="https://localhost:44308/First%20Blog.aspx" class="blog-compact-item-container">
+                            <a href="First Blog.aspx" class="blog-compact-item-container">
                                 <div class="blog-compact-item">
                                     <img src="img/default_user%20(1).png" />
                                     <span class="blog-item-tag">Admin</span>
@@ -1192,8 +1192,9 @@
                                 <div class="item active">
                                     <div class="col-xs-2">
                                         <a href="#">
-                                            <center>
+                                            
                                                 <img src="img/logo-carousel-01.png" />
+                                                
                                         </a>
                                     </div>
                                 </div>
